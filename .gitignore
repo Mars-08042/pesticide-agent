@@ -1,0 +1,56 @@
+# =============================================
+# 农药智能体 (Pesticide Agent) Git 忽略规则
+# =============================================
+
+# ============ Python ============
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+
+# ============ IDE ============
+.idea/
+.vscode/
+*.swp
+*~
+
+# ============ Node.js ============
+node_modules/
+
+# ============ 构建产物 ============
+dist/
+build/
+
+# ============ 环境变量 ============
+.env
+.env.local
+!.env.example
+
+# ============ 系统文件 ============
+.DS_Store
+Thumbs.db
+nul
+
+# ============ 项目特定忽略 ============
+
+# Claude Code 本地配置
+.claude/
+
+# Dify RAG 参考实现
+dify-rag-reference/
+
+# 后端文档目录
+backend/docs/
+
+# ============ 知识库 ============
+# 忽略 knowledge_base 下所有内容，但保留目录结构
+backend/knowledge_base/**
+!backend/knowledge_base/01-原药信息/
+!backend/knowledge_base/01-原药信息/.gitkeep
+!backend/knowledge_base/02-助剂信息/
+!backend/knowledge_base/02-助剂信息/.gitkeep
+!backend/knowledge_base/03-制剂配方/
+!backend/knowledge_base/03-制剂配方/.gitkeep
+!backend/knowledge_base/04-配方实验/
+!backend/knowledge_base/04-配方实验/.gitkeep

@@ -1,0 +1,9 @@
+knowledge_base\03-制剂配方\科莱恩\EW配方示例补充_科莱恩.md
+knowledge_base/04-配方实验/WDG_2023/20230829_嘧菌酯+环唑醇+肟菌酯20+7_5+25%WDG.md
+knowledge_base/04-配方实验/WDG_2023/20230829_环丙唑醇80%WDG.md
+knowledge_base/04-配方实验/WDG_2023/20230829_5%甲维盐+30%KK_WDG.md
+knowledge_base/04-配方实验/WDG_2023/20230826_戊唑醇+嘧菌酯50+25%WDG.md
+knowledge_base/04-配方实验/WDG_2023/20230720_戊唑醇+丙硫菌唑_50+25_%WDG.md
+knowledge_base/04-配方实验/WDG_2023/20230719_吡唑+啶酰菌胺_12_8+25_2_%WDG.md
+knowledge_base/04-配方实验/SC_2023/20230831_虱螨脲+KK_5+10_%SC.md
+knowledge_base/04-配方实验/SC_2023/20230829_苯醚+戊唑醇160+240glSC.md

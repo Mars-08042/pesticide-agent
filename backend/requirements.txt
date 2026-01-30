@@ -1,0 +1,58 @@
+# =============================================
+# 农药智能体 (Pesticide Agent) 依赖列表
+# =============================================
+
+# ============ 核心框架 ============
+langgraph>=0.2.0                 # LangGraph 状态机
+langgraph-checkpoint-postgres>=2.0.0  # LangGraph PostgreSQL Checkpointer
+langchain>=0.3.0                 # LangChain 核心
+langchain-openai>=0.2.0          # OpenAI 兼容接口
+langchain-community>=0.3.0       # LangChain 社区工具
+
+# ============ LLM API ============
+openai>=1.0.0                    # OpenAI API 客户端 (兼容 OpenRouter/VLLM)
+
+# ============ 数据库 ============
+psycopg2-binary                  # PostgreSQL 驱动 (同步)
+psycopg[pool]>=3.1.0             # PostgreSQL 驱动 (异步，LangGraph Checkpointer)
+pgvector                         # pgvector Python 客户端
+asyncpg                          # 异步 PostgreSQL 驱动 (可选)
+
+# ============ Embedding & Rerank (API) ============
+# BGE-M3 和 BGE-Reranker 通过 API 调用，无需本地依赖
+requests                         # HTTP 请求
+aiohttp                          # 异步 HTTP
+
+# ============ 文档处理 ============
+pdfplumber                       # PDF 表格提取
+pdfminer.six                     # PDF 文本提取
+
+# ============ 文本处理 ============
+tiktoken                         # Token 计算
+langchain-text-splitters         # 文本切分
+
+# ============ 工具依赖 ============
+python-dotenv                    # 环境变量加载
+pydantic>=2.0.0                  # 数据验证
+tenacity                         # 重试机制
+tqdm                             # 进度条
+
+# ============ 网页处理 ============
+beautifulsoup4                   # HTML 解析
+lxml                             # XML/HTML 解析
+
+# ============ 开发工具 ============
+pytest                           # 测试框架
+python-dateutil                  # 日期解析
+
+# ============ Web API ============
+fastapi>=0.104.0                 # FastAPI 框架
+uvicorn[standard]>=0.24.0        # ASGI 服务器
+sse-starlette>=1.6.0             # SSE 支持
+python-multipart                 # 文件上传支持
+
+# ============ PDF 增强处理 ============
+pypdf>=3.0.0                     # PDF 拆分
+PyMuPDF>=1.23.0                  # PDF 渲染为图片 (可选，比 pdf2image 更快)
+# pdf2image                      # PDF 转图片 (备选，需要 poppler)
+

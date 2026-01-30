@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* ========== 主色调 - 鼠尾草绿系列（更低饱和度）========== */
+  --green-50: #f6f8f7;
+  --green-100: #eef2f0;
+  --green-200: #dce5e0;
+  --green-300: #b8ccc2;
+  --green-400: #8fb3a3;
+  --green-500: #6f9a8a;
+  --green-600: #5a8273;
+  --green-700: #4a6b5f;
+
+  /* ========== 中性色 - 自然基调 ========== */
+  --cream-50: #fafcfb;
+  --cream-100: #f7faf8;
+  --cream-200: #f2f6f4;
+  --cream-300: #e5ece8;
+
+  /* ========== 辅助色 - 功能标识 ========== */
+  --sky-400: #38bdf8;
+  --amber-400: #fbbf24;
+  --rose-400: #fb7185;
+  --violet-400: #a78bfa;
+  --indigo-400: #818cf8;
+  --teal-400: #2dd4bf;
+  --slate-500: #64748b;
+
+  /* ========== 文字色 ========== */
+  --text-primary: #4a6b5f;
+  --text-secondary: #5a8273;
+  --text-muted: #8fb3a3;
+  --text-dark: #2d4a40;
+
+  /* ========== 边框色 ========== */
+  --border-light: rgba(111, 154, 138, 0.12);
+  --border-medium: rgba(111, 154, 138, 0.24);
+  --border-strong: rgba(111, 154, 138, 0.40);
+
+  /* ========== 背景渐变 ========== */
+  --gradient-bg-main: linear-gradient(135deg, #f8f9f8 0%, #f6f8f7 50%, #eef2f0 100%);
+  --gradient-bg-sidebar: linear-gradient(180deg, rgba(246, 248, 247, 0.95) 0%, rgba(238, 242, 240, 0.90) 100%);
+
+  /* ========== 元素渐变 ========== */
+  --gradient-primary: linear-gradient(135deg, #b8ccc2 0%, #8fb3a3 50%, #6f9a8a 100%);
+  --gradient-card-hover: linear-gradient(135deg, rgba(184, 204, 194, 0.15) 0%, rgba(143, 179, 163, 0.08) 100%);
+  --gradient-border-glow: linear-gradient(90deg, rgba(143, 179, 163, 0.3) 0%, rgba(184, 204, 194, 0.6) 50%, rgba(143, 179, 163, 0.3) 100%);
+  --gradient-aurora: linear-gradient(135deg, rgba(184, 204, 194, 0.4) 0%, rgba(56, 189, 248, 0.2) 25%, rgba(167, 139, 250, 0.2) 50%, rgba(184, 204, 194, 0.4) 75%, rgba(251, 191, 36, 0.2) 100%);
+  --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(246, 248, 247, 0.5) 100%);
+
+  /* ========== 柔和阴影 ========== */
+  --shadow-sm: 0 1px 2px rgba(74, 107, 95, 0.04), 0 1px 3px rgba(74, 107, 95, 0.06);
+  --shadow-md: 0 4px 6px rgba(74, 107, 95, 0.05), 0 2px 4px rgba(74, 107, 95, 0.04);
+  --shadow-lg: 0 10px 15px rgba(74, 107, 95, 0.06), 0 4px 6px rgba(74, 107, 95, 0.04);
+  --shadow-xl: 0 20px 25px rgba(74, 107, 95, 0.08), 0 8px 10px rgba(74, 107, 95, 0.04);
+
+  /* ========== 发光效果 ========== */
+  --glow-primary: 0 0 20px rgba(143, 179, 163, 0.25), 0 0 40px rgba(143, 179, 163, 0.15);
+  --glow-focus: 0 0 0 3px rgba(143, 179, 163, 0.2), 0 0 12px rgba(143, 179, 163, 0.15);
+  --glow-hover: 0 0 16px rgba(184, 204, 194, 0.3);
+
+  /* ========== 玻璃效果 ========== */
+  --glass-blur: blur(12px);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.3);
+
+  /* ========== 圆角系统 ========== */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-full: 9999px;
+
+  /* ========== 过渡时间 ========== */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+  --duration-slower: 600ms;
+
+  /* ========== 缓动曲线 ========== */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ========== 字体系统 ========== */
+  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+
+  /* 保留旧变量以兼容 */
+  --cream: #fbfef8;
+  --cream-dark: #f5faf3;
+  --brand-green: #4ade80;
+  --brand-green-dark: #22c55e;
+  --ink: #1e293b;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: var(--font-body);
+  background: var(--gradient-bg-main);
+}
+
+/* ========== 关键帧动画 ========== */
+
+/* 页面/覆盖层过渡 */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fade-out-down {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+}
+
+/* 背景模糊过渡 */
+@keyframes backdrop-blur-in {
+  from {
+    backdrop-filter: blur(0px);
+    background-color: rgba(240, 253, 244, 0);
+  }
+  to {
+    backdrop-filter: blur(12px);
+    background-color: rgba(240, 253, 244, 0.85);
+  }
+}
+
+@keyframes backdrop-blur-out {
+  from {
+    backdrop-filter: blur(12px);
+    background-color: rgba(240, 253, 244, 0.85);
+  }
+  to {
+    backdrop-filter: blur(0px);
+    background-color: rgba(240, 253, 244, 0);
+  }
+}
+
+/* 卡片悬浮 */
+@keyframes card-lift {
+  from {
+    transform: translateY(0);
+    box-shadow: var(--shadow-sm);
+  }
+  to {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg), var(--glow-hover);
+  }
+}
+
+/* 列表交错进入 */
+@keyframes stagger-in {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 光斑漂浮 */
+@keyframes float-blob {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(10px, -15px) scale(1.05);
+  }
+  50% {
+    transform: translate(-5px, 10px) scale(0.95);
+  }
+  75% {
+    transform: translate(-15px, -5px) scale(1.02);
+  }
+}
+
+/* 边框流光 */
+@keyframes border-shimmer {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+/* 呼吸效果 */
+@keyframes breathe {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
+
+/* 涟漪扩散 */
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* 渐变位移 */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ========== 动画类 ========== */
+.animate-fade-in-up {
+  animation: fade-in-up 0.4s var(--ease-out) forwards;
+}
+
+.animate-fade-out-down {
+  animation: fade-out-down 0.3s var(--ease-in) forwards;
+}
+
+.animate-backdrop-in {
+  animation: backdrop-blur-in 0.3s var(--ease-out) forwards;
+}
+
+.animate-backdrop-out {
+  animation: backdrop-blur-out 0.3s var(--ease-in) forwards;
+}
+
+.animate-card-lift {
+  animation: card-lift 0.25s var(--ease-out) forwards;
+}
+
+.animate-stagger-in {
+  animation: stagger-in 0.3s var(--ease-out) forwards;
+}
+
+.animate-float-blob {
+  animation: float-blob 20s ease-in-out infinite;
+}
+
+.animate-border-shimmer {
+  animation: border-shimmer 3s linear infinite;
+}
+
+.animate-breathe {
+  animation: breathe 2s ease-in-out infinite;
+}
+
+.animate-ripple {
+  animation: ripple 0.6s var(--ease-out) forwards;
+}
+
+.animate-gradient-shift {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* ========== 玻璃拟态效果类 ========== */
+.glass {
+  background: var(--gradient-glass);
+  backdrop-filter: var(--glass-blur);
+  border: var(--glass-border);
+}
+
+.glass-subtle {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ========== 渐变文字效果 ========== */
+.text-gradient-primary {
+  background: linear-gradient(135deg, var(--green-600) 0%, var(--green-500) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ========== 自定义滚动条 ========== */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(34, 197, 94, 0.2);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(34, 197, 94, 0.4);
+}
+
+/* ========== 动画延迟工具类 ========== */
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-500 {
+  animation-delay: 500ms;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1000ms;
+}
+
+/* ========== 减少动画偏好支持 ========== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

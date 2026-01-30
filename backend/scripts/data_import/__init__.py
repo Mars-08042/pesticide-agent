@@ -1,0 +1,1 @@
+"""数据导入与索引构建模块说明：- 原药信息：从 knowledge_base/01-原药信息/单品 导入到 pesticides 表- 助剂信息：从 knowledge_base/02-助剂信息/adjuvants.sql 导入到 adjuvants 表- 制剂配方/配方实验：按分块策略 + LLM 元数据提取 + 向量化，写入 recipe_chunks 表"""

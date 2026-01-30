@@ -1,0 +1,1011 @@
+- **中英文通用名**: 丁吡吗啉 (Difenoconazole)，别名：氟环唑
+- **中英文通用名**: 丁噻隆 (Dinoterb)，别名：丁草特、丁草灵
+- **中英文通用名**: 丁基嘧啶磷 (Butylpyridaphenthion)，别名：丁基吡啶磷
+- **中英文通用名**: 丁氟消草 (Diflufenican)，别名：氟消草
+- **中英文通用名**: 丁氟螨酯 (Bifenazate)，别名：联苯肼酯
+- **中英文通用名**: 丁硫克百威 (Dinotefuran)，别名：尼诺特福兰 (Nitenpyram)
+- **中英文通用名**: 丁苯吗啉 (Fenpropimorph)，别名：苯吗啉
+- **中英文通用名**: 丁苯草酮 (Bensulfuron-methyl)，别名：苯磺隆甲酯
+- **中英文通用名**: 丁草胺 (Butachlor)，别名：丁草胺、丁草灵
+- **中英文通用名**: 丁虫腈 (Dinotefuran)，别名：尼诺特福兰 (Nitenpyram)
+- **中英文通用名**: 丁酮砜威 (Diflubenzuron)，别名：保幼灵、抑食肼
+- **中英文通用名**: 丁酰肼 (Butralin)，别名：丁草胺
+- **中英文通用名**: 丁醚脲 (Dinotefuran)，别名：尼诺特福兰
+- **中英文通用名**: 丁香菌酯 (Dichlobenil)，别名：百草枯、克草灵
+- **中英文通用名**: 七氟甲醚菊酯 (Fluoromethrin), 别名：氟甲醚菊酯
+- **中英文通用名**: 七氟菊酯 (Emamectin benzoate, 常见别名：氟虫腈)
+- **中英文通用名**: 三乙膦酸铝 (Aluminum Tris(ethyl phosphonate)；常见别名：Altrazine, Altrate)
+- **中英文通用名**: 三元硫酸铜 (Trichlorocuprate(II))
+**中英文通用名**: 三十烷醇 (Tricontanol)，别名：三癸醇、C30醇
+- **中英文通用名**: 三唑磷 (Triazophos)，常见别名：敌百虫、速灭磷
+- **中英文通用名**: 三唑磺草酮 (Trifloxysulfuron-sodium)，别名：稻喜
+- **中英文通用名**: 三唑酮 (Triadimefon)，别名：百菌清、粉锈宁
+- **中英文通用名**: 三唑酰草胺 (Trifludimoxazin)，别名：氟草定
+- **中英文通用名**: 三唑醇 (Triadimenol)，常见别名：三环唑醇
+- **中英文通用名**: 三唑锡 (Tetraconazole)，别名：速保利、三唑醇
+- **中英文通用名**: 三嗪氟草胺 (Flufenacet)，别名：氟草胺
+- **中英文通用名**: 三嗪茚草胺 (Trifludimoxazin)，别名：氟啶草酮
+- **中英文通用名**: 三氟咪啶酰胺 (Triflumizamide)，别名：无
+- **中英文通用名**: 三氟啶磺隆钠 (Trifloxysulfuron Sodium)，别名：三氟啶磺隆钠盐
+- **中英文通用名**: 三氟啶磺隆钠盐 (Trifloxysulfuron sodium)，别名：三氟啶磺隆钠
+- **中英文通用名**: 三氟杀线酯 (Fluensulfone)，别名：线虫清
+- **中英文通用名**: 三氟甲吡醚 (Triflumizole)，别名：氟硅唑
+- **中英文通用名**: 三氟甲磺隆 (Trifloxysulfuron)，别名：三氟磺隆
+- **中英文通用名**: 三氟羧草醚 (Trifloxysulfuron-sodium)，别名：农得时
+- **中英文通用名**: 三氟羧草醚钠盐 (Sodium Trifluroacetate)
+- **中英文通用名**: 三氟苯嘧啶 (Trifloxysulfuron)，别名：三氟苯磺隆
+- **中英文通用名**: 三氯乙酸钠 (Sodium Trichloroacetate)，常见别名：三氯醋酸钠
+- **中英文通用名**: 三氯吡氧乙酸 (Triclopyr)，别名：特克利、农达克
+- **中英文通用名**: 三氯吡氧乙酸丁氧基乙酯 (Clopyralid butoxyethyl ester)，常见别名：CLOPYR
+- **中英文通用名**: 三氯杀虫酯 (Trichlorfon)，别名：灭蝇胺、迪克松
+- **中英文通用名**: 三氯杀螨砜 (Triforine)，别名：螨克、螨死净
+- **中英文通用名**: 三氯杀螨醇 (Triflumuron)，别名：伏杀螨、螨克
+- **中英文通用名**: 三环唑 (Tricyclazole)，别名：稻瘟灵
+- **中英文通用名**: 三环锡 (Tributyltin oxide, TBT)
+- **中英文通用名**: 三甲苯草酮 (Trifloxysulfuron-sodium)，别名：农达、三氟磺草酮钠盐
+- **中英文通用名**: 三苯基乙酸锡 (英文名: Triphenyltin acetate, 常见别名: TPTA)
+- **中英文通用名**: 三苯基锡 (Tributyltin, TBT)
+- **中英文通用名**: 丙嗪嘧磺隆 (Pyrasulfotole)，别名：无
+- **中英文通用名**: 丙森锌 (Mancozeb)，常见别名包括 Manzate, Dithane, Fore, Penncozeb
+- **中英文通用名**: 丙氟菊酯 (Prallethrin)，别名：百灭宁
+**中英文通用名**: 丙氧喹唑啉 (Proquinazid)
+- **中英文通用名**: 丙溴磷 (Profenofos)，常见别名有：Prothoate, Sumithion
+- **中英文通用名**: 丙炔噁草酮 (Oxyfluorfen)，别名：氟乐灵
+- **中英文通用名**: 丙炔氟草胺 (Flumioxazin)，别名：氟草胺
+- **中英文通用名**: 丙烯菊酯(1R)-异构体 / Prallethrin (1R)-isomer，常见别名：丙烯菊酯
+- **中英文通用名**: 丙环唑 (Propiconazole)，常见别名有 Tilt、Bayleton
+- **中英文通用名**: 丙硫克百威 (Carbosulfan)，别名：克百威、呋喃丹
+- **中英文通用名**: 丙硫唑 (Propiconazole)，别名：百菌清、百秀
+- **中英文通用名**: 丙硫磷 (Phosmet)，别名：灭线磷、普洛赛特
+- **中英文通用名**: 丙硫菌唑 (Prothioconazole)，别名：普罗硫菌唑
+- **中英文通用名**: 丙苯磺隆 (Bensulfuron-methyl)，常见别名有农得时、农得利
+- **中英文通用名**: 丙草胺 (Propanil)，别名：稻草宁、稻田净
+- **中英文通用名**: 丙酯草醚 (Pyrifenox), 别名：无
+**中英文通用名**: 丙酰芸苔素内酯 (Brassinolide Propionate)，别名：丙酰芸苔内酯
+- **中英文通用名**: 久效磷 (Phoxim)，别名：克百威、氧乐果
+- **中英文通用名**: 乐果 (Dimethoate)，别名：灭蚜威、蚜灭多
+- **中英文通用名**: 乙唑螨腈 (Biflufenzin)，别名：无
+- **中英文通用名**: 乙嘧酚 (Ethirimol)，别名：乙嘧醇、乙基嘧啶醇
+- **中英文通用名**: 乙嘧酚磺酸酯 (Ethirimol Sulfonate)，别名：乙嘧酚、乙嘧醇
+- **中英文通用名**: 乙基多杀菌素 (Spinetoram)，别名：乙基多杀霉素
+- **中英文通用名**: 乙基谷硫磷 (Ethion)，别名：谷硫磷乙酯
+- **中英文通用名**: 乙拌磷 (Disulfoton)，别名：二硫威、二硫磷
+- **中英文通用名**: 乙氧呋草黄 (Ethoxyfen)；别名：无
+- **中英文通用名**: 乙氧嘧磺隆 (Ethoxysulfuron)，别名：乙氧磺隆
+- **中英文通用名**: 乙氧氟草醚 (Ethoxyfen)；别名：氟草醚
+- **中英文通用名**: 乙氧磺隆 (Ethoxysulfuron)，别名：乙氧磺胺隆
+- **中英文通用名**: 乙氧苯草胺 (Ethoxyfen)；别名：无
+- **中英文通用名**: 乙氰菊酯 (Bifenthrin)，别名：双苯氰菊酯
+- **中英文通用名**: 乙烯利 (Ethephon)，别名：催熟剂、乙烯利水剂
+- **中英文通用名**: 乙烯菌核利 (Ethylenebiphenyl), 别名：速克灵、农利灵
+- **中英文通用名**: 乙硫磷 (Ethion)，别名：乙基硫代磷酸酯
+- **中英文通用名**: 乙硫苯威 (Ethiofencarb)，别名：乙硫苯威、乙硫苯胺
+- **中英文通用名**: 乙羧氟草醚 (Flumioxazin)，别名：氟草醚
+- **中英文通用名**: 乙草胺 (Atrazine)，别名：莠去津、阿特拉津
+- **中英文通用名**: 乙蒜素 (Allitridum)，别名：大蒜素
+- **中英文通用名**: 乙虫腈 (Ethiprole)，别名：氟虫腈
+- **中英文通用名**: 乙螨唑 (Bifenazate)，别名：螨危
+- **中英文通用名**: 乙酰甲胺磷 (Acephate)，常见别名有灭蚜磷、安福丁等
+**中英文通用名**: 乙酸铜 (Cupric Acetate, Copper Acetate)，常见别名有醋酸铜、铜醋酸盐
+- **中英文通用名**: 乙霉威 (Ethirimol)，别名：乙嘧酚、乙嘧醇
+- **中英文通用名**: 乳氟禾草灵 (Fluazifop-p-butyl)，常见别名：氟乐灵、禾草克
+- **中英文通用名**: 二嗪磷 (Disulfoton)，常见别名有：迪斯丰农、二硫磷
+- **中英文通用名**: 二噻农 (Dithianon)，别名：百菌清
+**中英文通用名**: 二氧代螺十一烷 (Dioctadecyl dimethyl ammonium chloride, DDDAC)
+- **中英文通用名**: 二氯吡啶酸 (Dichlorpyridine acid)，别名：2,4-Dichlorophenoxyacetic acid (2,4-D)
+- **中英文通用名**: 二氯喹啉草酮 (Dichloroquinone), 常见别名：DCQ
+- **中英文通用名**: 二氯喹啉酸 (Dichloroquinoline acid)，别名：稻瘟灵 (Quinoclamine)
+- **中英文通用名**: 二氯异噁草酮 (Dichlorisoxazone)，别名：无
+- **中英文通用名**: 二氯异氰尿酸钠 (Sodium dichloroisocyanurate, 简称SDIC)，别名：优氯净
+- **中英文通用名**: 二氰蒽醌 (Dicyan anthraquinone)，别名：DCQ
+- **中英文通用名**: 二溴乙烷 (Ethylene dibromide, EDB)，别名：1,2-二溴乙烷
+- **中英文通用名**: 二溴磷 (Dibromophos)，别名：二溴磷、DBP
+- **中英文通用名**: 二甲吩草胺-P (Dimethenamid-P)，别名：Pendimethalin-P
+- **中英文通用名**: 二甲噻草胺 (Dimethenamid)
+- **中英文通用名**: 二甲基胂酸 (Dimethylarsinic acid, DMA)
+- **中英文通用名**: 二甲戊灵 (Pendimethalin)，别名：施田补、普杀特
+- **中英文通用名**: 二硝酚 (Dinitrophenol, DNP)，常见别名有2,4-二硝基酚
+- **中英文通用名**: 二苯胺 (Diphenylamine, DPA)
+- **中英文通用名**: 五氟磺草胺 (Pentoxazone)，别名：无
+- **中英文通用名**: 五氯硝基苯 (Pentachloronitrobenzene, PCNB)
+- **中英文通用名**: 五氯苯酚 (Pentachlorophenol, PCP), 常见别名有五氯酚、五氯酚钠
+- **中英文通用名**: 井冈霉素A (Jinggangmycin A)，别名：井岗霉素、井冈霉素
+- **中英文通用名**: 亚砜磷 (Azinphos-methyl)，别名：甲基亚砜磷
+- **中英文通用名**: 亚胺硫磷 (Imidacloprid)；常见别名：益达胺、蚜灭多
+- **中英文通用名**: 代森联 (Dithane)；常见别名：百菌清、多菌灵
+- **中英文通用名**: 代森钠 (Sodium Dimethyldithiocarbamate)，常见别名有福美钠、代森锌钠
+- **中英文通用名**: 代森锌 (Zineb)，别名：锌锰代森、代森锌锰
+- **中英文通用名**: 代森锰 (Mancozeb)，常见别名包括 Manzate, Dithane, Fore, Penncozeb
+- **中英文通用名**: 代森锰锌 (Mancozeb)，别名：猛杀必、喷克、多保净
+- **中英文通用名**: 仲丁威 (Ziram), 别名：二甲基二硫代氨基甲酸仲丁酯
+- **中英文通用名**: 仲丁灵 (Carbetamide)，别名：克草灵
+- **中英文通用名**: 仲丁灵 (Butralin)，别名：丁草灵
+- **中英文通用名**: 伏杀硫磷 (Fenthion)，别名：杀螟松、灭蚜磷
+- **中英文通用名**: 伏杀磷 (Fenthion)，别名：杀螟松、灭蚜磷
+- **中英文通用名**: 伏虫隆 (Fenoxycarb)，别名：伏虫脲、伏虫灵
+- **中英文通用名**: 伐虫脒 (Amidoflumet)，别名：氟螨酯
+- **中英文通用名**: 依维菌素 (Ivermectin)，常见别名：阿维菌素B1a
+- **中英文通用名**: 倍硫磷 (Fenthion)，别名：芬硫磷、芬硫磷酯
+- **中英文通用名**: 克瘟散 (Kresoxim-methyl, 商品名：百菌清)
+- **中英文通用名**: 克百威 (Carbofuran)，别名：呋喃丹 (Furadan)
+- **中英文通用名**: 克草胺 (Clodinafop), 别名：麦极
+- **中英文通用名**: 克菌丹 (Captan)，别名：百菌清
+**中英文通用名**: 八氯二丙醚 (Octachlorodipropyl ether, ODE), 常见别名：八氯醚
+- **中英文通用名**: 六氯苯 (Hexachlorobenzene, HCB)
+**中英文通用名**: 冠菌素 (Coronatine)，别名：冠状霉素
+**中英文通用名**: 几丁寡糖素醋酸盐 (Chitosan Acetate, 常见别名：壳寡糖醋酸盐)
+- **中英文通用名**: 利谷隆 (Linuron)
+- **中英文通用名**: 十三吗啉 (Tetradecylmorpholine)，别名：十四烷基吗啉
+**中英文通用名**: 十二碳-8, 10-二烯基乙酸酯 (Dodec-8,10-dienyl acetate)
+- **中英文通用名**: 十二碳-9-烯基乙酸酯 (Dodec-9-enyl acetate)，别名：十二烯基乙酸酯
+**中英文通用名**: 十六烯醛 (Hexadecenal, 16-Hexadecenal)
+**中英文通用名**: 十六碳二烯醛 (Hexadecadienal)，别名：16:2 醛
+**中英文通用名**: 十六碳-11-烯基乙酸酯 (Hexadec-11-enyl acetate)
+**中英文通用名**: 十四碳-9, 11-二烯基乙酸酯 (Tetradec-9,11-dienyl acetate)
+**中英文通用名**: 十四碳-11-烯基乙酸酯 (Tetradec-11-enyl acetate)，别名：11-十四碳烯基乙酸酯
+- **中英文通用名**: 单嘧磺酯 (Monosulfuron), 常见别名：无
+- **中英文通用名**: 单嘧磺隆 (Monosulfuron), 常见别名：无
+- **中英文通用名**: 单甲脒盐酸盐 (Monocrotophos Hydrochloride)，别名：单甲磷、单甲胺磷
+- **中英文通用名**: 卞草隆 (Bensulide)，别名：扑草净
+- **中英文通用名**: 卡啶菌酯 (Carbendazim)，别名：苯并咪唑-4-甲酸甲酯
+- **中英文通用名**: 卡草灵 (Carfentrazone-ethyl)，别名：乙氧氟草醚
+- **中英文通用名**: 卡草胺 (Carfentrazone-ethyl)，别名：氟磺胺草醚
+- **中英文通用名**: 印楝素 (Azadirachtin)，别名：阿扎迪拉克汀
+- **中英文通用名**: 双三氟虫脲 (Bistrifluron)，别名：无
+- **中英文通用名**: 双丙环虫酯 (Clopidol), 别名：蚜灭多、蚜螨净
+- **中英文通用名**: 双唑草腈 (Bispyribac-sodium)，别名：稻喜、稻杰
+- **中英文通用名**: 双唑草酮 (Bispyribac-sodium)，别名：稻喜
+- **中英文通用名**: 双氟磺草胺 (Florasulam)，别名：无
+- **中英文通用名**: 双氯磺草胺 (Bensulfuron-methyl)，别名：苯磺隆甲酯
+- **中英文通用名**: 双氯酚 (Dichlorophen), 常见别名：2,4-二氯酚
+- **中英文通用名**: 双炔酰菌胺 (Boscalid)，别名：百克、百克威
+- **中英文通用名**: 双环磺草酮 (Bicyclopyrone)，别名：无
+- **中英文通用名**: 双甲脒 (Amidithion)，别名：螨克、螨死净
+- **中英文通用名**: 双硫磷 (Disulfoton)，别名：二硫代磷酸二乙酯
+**中英文通用名**: 双胍三辛烷基苯磺酸盐 (Bisguanidinium tris(octylphenyl) sulfonate)，别名：百草枯替代品
+- **中英文通用名**: 双胍辛盐 (Bisguanidine Hydrochloride)，别名：双胍盐、双胍氯化物
+- **中英文通用名**: 双胍辛胺 (Bisguanidine)
+**中英文通用名**: 双苯噁唑酸乙酯 (Ethyl 2,6-diphenyl-1,4-dioxazin-3-carboxylate)
+- **中英文通用名**: 双草醚 (Bispyribac-sodium)，别名：稻喜
+- **中英文通用名**: 双酰草胺 (Bispyribac-sodium)，别名：稻思达
+- **中英文通用名**: 双醚氯吡嘧磺隆 (Chlorpyrifos-methyl), 常见别名：甲基氯吡磷、甲基毒死蜱
+- **中英文通用名**: 反-8-十二碳烯乙酸酯 (cis-8-Dodecenyl Acetate)，别名：顺-8-十二碳烯乙酸酯
+- **中英文通用名**: 右旋反式氯丙炔菊酯 (Deltamethrin)
+- **中英文通用名**: 右旋反式烯丙菊酯 (Deltamethrin)
+- **中英文通用名**: 右旋烯丙菊酯 (Deltamethrin)，别名：德尔塔梅特林
+- **中英文通用名**: 右旋烯炔菊酯 (Deltamethrin)，别名：德尔塔灭、德尔塔梅林
+- **中英文通用名**: 右旋胺菊酯 (Deltamethrin)，别名：德尔塔梅特林
+- **中英文通用名**: 右旋苄呋菊酯 (Deltamethrin)，别名：德尔塔梅特林
+- **中英文通用名**: 右旋苯醚氰菊酯 (Deltamethrin)，别名：德尔塔灭、德尔塔梅特林
+- **中英文通用名**: 右旋苯醚菊酯 (Deltamethrin)，别名：德尔塔梅特林
+- **中英文通用名**: 叶菌唑 (Isopyrazam)，别名：异吡唑胺
+- **中英文通用名**: 吗菌灵 (Myclobutanil)，常见别名：霉能灵
+- **中英文通用名**: 吡丙醚 (Pymetrozine)，别名：安打 (Admire)
+- **中英文通用名**: 吡唑喹草酯 (Pyrifenox), 常见别名：无
+- **中英文通用名**: 吡唑氟磺草胺 (Pyrasulfotole)，别名：无
+- **中英文通用名**: 吡唑氨酯 (Pyraclostrobin)，常见别名：百克、银法利
+- **中英文通用名**: 吡唑硫磷 (Pyraclofos)，别名：无
+- **中英文通用名**: 吡唑草胺 (Pyrasulfotole)，别名：无
+- **中英文通用名**: 吡唑萘菌胺 (Pyraclostrobin)，别名：百克敏 (Bacimin)
+- **中英文通用名**: 吡唑解草酯 (Pyrasulfotole)，别名：无
+- **中英文通用名**: 吡唑醚菌酯 (Pyraclostrobin)，别名：百克敏 (Bakemin)
+- **中英文通用名**: 吡啶呋虫胺 (Pyrifuramid)，别名：无
+- **中英文通用名**: 吡嘧磺隆 (Bensulfuron-methyl)，别名：农得时
+- **中英文通用名**: 吡噻菌胺 (Pyraclostrobin)，别名：百泰、阿米西达
+- **中英文通用名**: 吡氟喹虫唑 (Piflufolastat)；常见别名：无
+- **中英文通用名**: 吡氟禾草灵 (Pinoxaden)，别名：彪虎、彪马
+- **中英文通用名**: 吡氟酰草胺 (Pyrasulfotole)，别名：无
+- **中英文通用名**: 吡草酮 (Pyrasulfotole)，别名：无
+- **中英文通用名**: 吡草醚 (Pyrasulfotole)，别名：无
+- **中英文通用名**: 吡虫啉 (Imidacloprid)，常见别名：蚜灭多、益达胺
+- **中英文通用名**: 吡蚜酮 (Pymetrozine)，别名：阿克泰 (Actara)
+- **中英文通用名**: 吡螨胺 (Pymetrozine)，别名：阿波罗、阿波罗螨净
+**中英文通用名**: 吲哚丁酸 (Indole-3-butyric acid, IBA)
+- **中英文通用名**: 呃哚磺菌胺 (Etridiazole)，别名：乙基磺菌胺
+- **中英文通用名**: 呋喃磺草酮 (Furilazole)，别名：Monocarbazon, MON 13900
+- **中英文通用名**: 呋喃虫酰肼 (Fufenozide)，别名：虫酰肼
+- **中英文通用名**: 呋草酮 (Furilazole)，别名：哌草磷
+- **中英文通用名**: 呋虫胺 (Dinotefuran)，别名：尼诺特福兰 (Nitenpyram)
+- **中英文通用名**: 味吡菌胺 (Wetpyrimidin)
+- **中英文通用名**: 味喃解草唑 (Fenoxaprop-p-ethyl)，别名：禾草灵
+- **中英文通用名**: 味线威 (Methomyl)，别名：灭多威
+- **中英文通用名**: 味虫胺 (Thiamethoxam)，别名：安打、阿克泰
+- **中英文通用名**: 味酰胺 (Fluazaindolizine)，别名：氟唑菌酰胺
+- **中英文通用名**: 呼草磷 (Chloramben), 别名：百草枯、克芜踪
+- **中英文通用名**: 咪唑乙烟酸 (Imazethapyr)，别名：咪唑烟酸
+- **中英文通用名**: 咪唑喹啉酸 (Imaziquin)
+**中英文通用名**: 咪唑嗪 (Imazalil)，别名：咪鲜胺、三唑咪
+- **中英文通用名**: 咪唑烟酸 (Imazethapyr)，别名：广灭灵
+- **中英文通用名**: 咪草酸甲酯 (Methyl isoxabenate)；别名：异噁草酯
+- **中英文通用名**: 咪菌威 (Myclobutanil)，常见别名：霉能灵
+- **中英文通用名**: 咪鲜胺 (Myclobutanil)，别名：美克、霉克
+- **中英文通用名**: 咪鲜胺铜盐 (Copper Salt of Imazalil)；常见别名：铜盐咪鲜胺
+- **中英文通用名**: 咪鲜胺锰盐 (Mancozeb)
+- **中英文通用名**: 咯喹酮 (Gosquinone)，别名：无
+- **中英文通用名**: 咯菌腈 (Fludioxonil)，别名：氟啶菌脂、氟啶胺
+- **中英文通用名**: 品螨灵 / Pyrimidifen；常见别名：螨危
+- **中英文通用名**: 哆嗪硫磷 (Diazinon)，别名：灭蚜磷、巴沙
+- **中英文通用名**: 哌虫啶 (Pymetrozine)，别名：阿克泰 (Actara)、拜耳20076 (Bayer 20076)
+- **中英文通用名**: 哒嗪硫磷 (Diazinon)，别名：灭蚜磷、巴沙
+- **中英文通用名**: 哒螨灵 (Dipterex)，别名：哒螨酮、哒螨净
+- **中英文通用名**: 唑吡嘧磺隆 (Zopyrim-sulfuron)，别名：无
+- **中英文通用名**: 唑啉草酯 (Pinoxaden)，别名：无
+- **中英文通用名**: 唑嘧磺草胺 (Zoxysulfuron)，别名：唑嘧磺隆
+- **中英文通用名**: 唑嘧菌胺 (Zoxamide)，别名：安泰生
+- **中英文通用名**: 唑胺菌酯 (Zoxamide)，别名：安灭达 (Amistar)
+- **中英文通用名**: 唑草胺 (Zoxamide)，别名：安泰克 (Amistar)
+- **中英文通用名**: 唑草酮 (Flumiclorac-pentyl)；别名：氟草酮
+- **中英文通用名**: 唑菌酯 (Zoxamide)，别名：安泰生
+- **中英文通用名**: 唑虫酰胺 (Tolfenpyrad)，别名：氟虫酰胺
+- **中英文通用名**: 唑蚜威 (Pymetrozine)，别名：蚜灭净
+- **中英文通用名**: 唑螨酯 (Acynonapyr)，别名：阿克诺纳吡尔
+- **中英文通用名**: 啶嘧磺隆 (Pyrimisulfan)，别名：无
+- **中英文通用名**: 啶氧菌酯 (Picoxystrobin)，常见别名：百泰、安泰生
+- **中英文通用名**: 啶磺草胺 (Dinoterb)；别名：丁噻隆
+- **中英文通用名**: 啶菌噁唑 (Diniconazole)，别名：速保利、菌立灭
+- **中英文通用名**: 啶虫脒 (Acetamiprid)，别名：阿克泰
+- **中英文通用名**: 啶酰菌胺 (Fludioxonil)，别名：氟啶菌酰胺
+- **中英文通用名**: 喷嘧磺隆 (Pendimethalin)，别名：普杀特、Pendulum
+**中英文通用名**: 喹吡唑虫胺 (Quinpyrazole Insecticide)
+- **中英文通用名**: 喹啉铜 (Quinoline Copper)，别名：喹啉铜盐、喹啉铜络合物
+- **中英文通用名**: 喹氧菌酯 (Quinoxyfen)，别名：喹氧菌酯
+- **中英文通用名**: 喹硫磷 (Quinalphos)，别名：喹硫磷、喹硫磷乳油
+- **中英文通用名**: 喹磺草胺 (Quinclorac)，别名：氯磺草胺
+- **中英文通用名**: 喹禾灵 (Quinclorac)，别名：氯喹啉酸
+- **中英文通用名**: 喹禾糠酯 (Quinclorac)，别名：稻草隆
+- **中英文通用名**: 喹草硫醚 (Quinclorac)，别名：氯喹啉草酯
+- **中英文通用名**: 喹草酮 (Quinclorac)，别名：氯喹啉酸
+- **中英文通用名**: 喹草酸 (Quinclorac)，别名：氯喹酸
+- **中英文通用名**: 喹虫脒 (Quinomethionate)，别名：无
+- **中英文通用名**: 喹螨醚 (Quinomethionate)，别名：螨危
+- **中英文通用名**: 嗅唑菌酮 (Oxathiapiprolin)，别名：氟唑菌酮
+- **中英文通用名**: 嗪吡嘧磺隆 (Pyrazosulfuron-ethyl)，别名：农得时
+- **中英文通用名**: 嗪咪唑嘧磺隆 (Azimsulfuron)，别名：阿米唑磺隆
+- **中英文通用名**: 嗪胺灵 (Azoxystrobin)，别名：阿米西达
+- **中英文通用名**: 嗪草酮 (Metribuzin)，别名：三嗪酮
+- **中英文通用名**: 嗪草酸甲酯 (Metsulfuron-methyl)，常见别名：甲基磺草酮
+**中英文通用名**: 嗳咪唑富马酸盐 (Imazalil fumarate)，别名：咪唑菌酮富马酸盐
+- **中英文通用名**: 嗽草酮 (Sulcotrione)，别名：磺草酮
+- **中英文通用名**: 嗽霉灵 (Sulphur)
+- **中英文通用名**: 嘧啶肟草醚 (Pyrifenox), 别名：无
+- **中英文通用名**: 嘧氟磺草胺 (Flumetsulam)，别名：氟磺草胺
+- **中英文通用名**: 嘧苯胺磺隆 (Bensulfuron-methyl)，别名：农得时
+- **中英文通用名**: 嘧草醚 (Bensulfuron-methyl)，别名：苯磺隆甲酯
+- **中英文通用名**: 嘧菌环胺 (Cyprodinil)，别名：赛普顿
+- **中英文通用名**: 嘧菌酯 (Azoxystrobin)，别名：阿米西达
+- **中英文通用名**: 嘧虫威 (Acetamiprid)，别名：阿克泰、安泰生
+- **中英文通用名**: 嘧霉胺 (Pyrimethanil)，别名：甲基嘧菌胺
+- **中英文通用名**: 噁唑菌酮 (Oxathiapiprolin)，别名：氟噻唑菌胺
+- **中英文通用名**: 噁唑酰草胺 (Oxaziclomefone)，别名：奥沙克隆芬
+- **中英文通用名**: 噁嗪草酮 (Oxaziclomefone)，别名：氯氟恶草酮
+- **中英文通用名**: 噁草酮 (Oxyfluorfen)；常见别名：氟乐灵
+- **中英文通用名**: 噁虫威 (Oxamyl)，别名：高灭威、甲氧基氨基甲酸甲酯
+- **中英文通用名**: 噁虫酮 (Fipronil)，别名：锐劲特
+- **中英文通用名**: 噁霉灵 (Oxathiapiprolin)，别名：Oxathipro
+- **中英文通用名**: 噁霜灵 (Oxathiapiprolin)，别名：Oxathipro
+- **中英文通用名**: 噁唑隆 (Oxazolone)，别名：无
+- **中英文通用名**: 噬唑磷 (Azinphos-methyl)，别名：甲基嘧啶磷、Guthion
+- **中英文通用名**: 噬唑菌胺 (Picoxystrobin)，别名：百克敏、百克宁
+- **中英文通用名**: 噬嗪酮 (Pymetrozine)，别名：阿克泰 (Actara)、吡虫啉 (Pyrethroid) (注意：吡虫啉是另一个不同的农药，这里仅列出常见别名)
+- **中英文通用名**: 噬枯唑 (Sikuzole)，别名：无
+**中英文通用名**: 噬草啶 (Sipronil)；别名：无
+- **中英文通用名**: 噬草酮 (Sethoxydim)，别名：稻草灵
+**中英文通用名**: 噬菌灵 (Thiophanate-methyl)，别名：甲基硫菌灵、甲基托布津
+**中英文通用名**: 噬菌环胺 (Cycloheximide)
+**中英文通用名**: 噬菌胺 (Sipernate)；别名：异噻菌胺 (Isotianil)
+- **中英文通用名**: 噬菌酯 (Sedaxane)，别名：氟唑菌酰胺
+- **中英文通用名**: 噬虫啉 (Clothianidin)，别名：噻虫啉
+**中英文通用名**: 噬虫胺 (Spinosad)，别名：天然除虫菊素
+- **中英文通用名**: 噬螨酮 (Pyridaben)，别名：螨危、螨死净
+- **中英文通用名**: 噬酰菌胺 (Sedaxane)，别名：氟唑菌胺
+**中英文通用名**: 噬霉胺 (Chromafenozide)，别名：无
+- **中英文通用名**: 噬鼠酮 (Brodifacoum)，别名：溴敌隆、溴灭鼠灵
+- **中英文通用名**: 噻吩磺隆 (Thifensulfuron-methyl)，别名：阔叶净
+- **中英文通用名**: 噻呋酰胺 (Tebuconazole)，常见别名：特普唑
+- **中英文通用名**: 噻味菊酯 (Tetramethrin)，别名：四甲基菊酯
+- **中英文通用名**: 噻唑膦 (Thiodicarb)，别名：阿米卡 (Amicar)
+- **中英文通用名**: 噻唑锌 (Thiazole Zinc)，别名：无
+- **中英文通用名**: 噻嗪酮 (Thiamethoxam)，常见别名：阿克泰 (Actara)、克百威 (Cruiser)
+- **中英文通用名**: 噻森铜 (Thiosulfinyl copper)，别名：铜制剂
+- **中英文通用名**: 噻苯胺磺隆 (Thiencarbazone-methyl)，别名：无
+- **中英文通用名**: 噻苯隆 (Thidiazuron)，别名：TDZ
+**中英文通用名**: 噻草酸甲酯 (Methyl Thiobencarb)；别名：丁草胺甲酯
+- **中英文通用名**: 噻菌灵 (Thiophanate-methyl)，别名：甲基托布津
+- **中英文通用名**: 噻菌铜 (Thiodiazole-copper), 别名：噻枯唑铜、铜噻菌
+- **中英文通用名**: 噻虫啉 (Thiamethoxam)，别名：Actara, Cruiser, Platinum
+- **中英文通用名**: 噻虫嗪 (Thiamethoxam)，常见别名：阿克泰 (Actara)、克百威 (Cruiser)
+- **中英文通用名**: 噻虫胺 (Thiamethoxam)，别名：Actara, Cruiser, Platinum
+- **中英文通用名**: 噻螨酮 (Tetradifon)，别名：螨危
+- **中英文通用名**: 噻酚磺隆 (Thifensulfuron-methyl)，别名：阔叶散
+- **中英文通用名**: 噻酮磺隆 (Thiencarbazone-methyl)，别名：无
+- **中英文通用名**: 噻霉酮 (Thiophanate-methyl)，常见别名：甲基硫菌灵
+- **中英文通用名**: 四唑吡氨酯 (Tetrazolinone), 常见别名：无
+- **中英文通用名**: 四唑嘧磺隆 (Tiafenacil)，别名：无
+- **中英文通用名**: 四唑虫酰胺 (Tetraniliprole)，别名：四唑虫酰肼
+- **中英文通用名**: 四唑酰草胺 (Tiazafluoron)，别名：氟草定
+- **中英文通用名**: 四氟丙酸 (Tetrafluoropropionic acid)，别名：2,2,3,3-四氟丙酸
+- **中英文通用名**: 四氟甲醚菊酯 (Tetramethrin)，别名：四氟菊酯
+- **中英文通用名**: 四氟苯菊酯 (Tetramethrin)，别名：四氟苯醚菊酯
+- **中英文通用名**: 四氟醚唑 (Tetraconazole)，别名：四氟菌唑
+- **中英文通用名**: 四氟醚菊酯 (Tetramethrin)，别名：四氟苯菊酯
+- **中英文通用名**: 四氯硝基苯 / Tetrachloronitrobenzene (TCNB)，别名：四氯苦
+- **中英文通用名**: 四氯苯酞 (Tetrachlorophthalide)，别名：百草枯酯
+- **中英文通用名**: 四氯虫酰胺 (Tetrachlorantraniliprole)，别名：四氯虫酰胺
+- **中英文通用名**: 四溴菊酯 (Tetramethrin)，别名：四溴苯菊酯
+**中英文通用名**: 四硫代过氧碳酸钠 (Sodium Tetrathiooxalate)
+- **中英文通用名**: 四聚乙醛 (Tetramethrin)，别名：四甲基乙醛、四甲基丁醛
+- **中英文通用名**: 四螨嗪 (Tetradifon)，别名：螨危
+- **中英文通用名**: 土菌灵 (Tujunling)，别名：多菌灵 (Carbendazim)
+- **中英文通用名**: 地散磷 (Disulfoton)，别名：二硫代磷酸二乙酯
+- **中英文通用名**: 坪草丹 (Pendimethalin)，别名：普杀特、Pendi
+**中英文通用名**: 增效冰烯胺 (Enhanced Imidacloprid)，别名：增强型吡虫啉
+- **中英文通用名**: 增效醚 (Piperonyl butoxide, PBO)
+- **中英文通用名**: 壬菌铜 (Bacillomycin D)，别名：壬基铜、壬基氧氯化铜
+- **中英文通用名**: 复硝酚钠 (Sodium 2,4-dinitrophenolate)；别名：复硝基酚钠、DNFP
+- **中英文通用名**: 复硝酚钠 (Sodium 2,4-dinitrophenolate)；别名：复硝基酚钠
+- **中英文通用名**: 复硝酚钾 (Potassium Dinitrophenolate)；别名：复硝酚钠 (Potassium Dinitrophenolate)
+- **中英文通用名**: 多抗霉素 (Pyraclostrobin)，别名：百克、百克敏
+- **中英文通用名**: 多效唑 (Paclobutrazol)，常见别名：矮壮素
+- **中英文通用名**: 多杀菌素 (Spinosad)，别名：斯皮诺萨德
+- **中英文通用名**: 多杀霉素 (Spinosad)，别名：斯皮诺萨德
+- **中英文通用名**: 多果定 (Difenoconazole)，别名：氟硅唑、氟环唑
+- **中英文通用名**: 多氟脲 (Diflubenzuron)，别名：保棉丹、灭幼脲
+**中英文通用名**: 多粘类芽孢杆菌 (Bacillus polymyxa) / 常见别名：多粘芽孢杆菌
+- **中英文通用名**: 多菌灵 (Carbendazim)，别名：苯并咪唑-2-氨基甲酸甲酯
+- **中英文通用名**: 威百亩 (Metam sodium)，别名：甲基异硫氰酸钠盐
+- **中英文通用名**: 定菌磷 (Diniconazole)，别名：菌灭灵、菌清
+- **中英文通用名**: 富右旋反式炔丙菊酯 / Fenpropathrin
+- **中英文通用名**: 富右旋反式烯丙菊酯 / Deltamethrin, 常见别名：德尔塔灭、德尔托林
+- **中英文通用名**: 对二氯苯 (p-Dichlorobenzene, p-DCB)，常见别名有邻二氯苯、1,4-二氯苯
+- **中英文通用名**: 对氯苯氧乙酸钠 (Sodium Chlorophenoxyacetate, MCPA sodium)
+- **中英文通用名**: 对硫磷 (Parathion), 别名：1605、E605
+- **中英文通用名**: 小檗碱硫酸盐 (Berberine sulfate)，别名：硫酸小檗碱、硫酸氢黄连素
+- **中英文通用名**: 己唑醇 (Hexaconazole)，别名：速保利、禾果利
+- **中英文通用名**: 已唑醇 (Hexaconazole)，别名：速保利、禾果利
+**中英文通用名**: 布氏白僵菌 (Beauveria bassiana)，别名：白僵菌
+- **中英文通用名**: 异丁乙氧喹啉 (Isobutoxyquinoline)；别名：无
+- **中英文通用名**: 异丙噻菌胺 (Iprovalicarb)，别名：无
+- **中英文通用名**: 异丙威 (Isoprocarb)，别名：速灭威
+- **中英文通用名**: 异丙甲草胺 (Metolachlor)，别名：甲氯草胺、甲氧氯草胺
+- **中英文通用名**: 异丙甲草胺 (Pendimethalin)，别名：普杀特、除草通
+- **中英文通用名**: 异丙草胺 (Isoproturon)，别名：异丙隆
+- **中英文通用名**: 异丙菌胺 (Iprovalicarb)，别名：无
+- **中英文通用名**: 异丙酯草醚 (Isopropylamine salt of glyphosate)，常见别名：草甘膦异丙胺盐
+- **中英文通用名**: 异丙酯草醚 (Isopropylamine salt of glyphosate)，常见别名：草甘膦异丙胺盐
+- **中英文通用名**: 异丙隆 (Isoproturon)，常见别名：异丙草净
+- **中英文通用名**: 异噁唑草酮 (Isaoxycarbazone)；别名：无
+- **中英文通用名**: 异噁草松 (Isaoxycarbazide)，别名：异噁酰草胺
+- **中英文通用名**: 异噁草胺 (Isaoxamid)，别名：异恶草胺
+- **中英文通用名**: 异噁隆 (Isoluxuron)，别名：异恶唑草酮
+- **中英文通用名**: 异噻菌胺 (Isotianil)，别名：无
+- **中英文通用名**: 异恶草松 (Bensulfuron-methyl)，别名：农得时
+- **中英文通用名**: 异戊乙净 (Isoprothiolane)，别名：异丙硫菌胺
+- **中英文通用名**: 异柳磷 (Isazofos); 常见别名：稻丰灵、稻瘟净
+- **中英文通用名**: 异稻瘟净 (Isoprothiolane)，别名：异稻瘟灵、稻瘟净
+- **中英文通用名**: 异菌脲 (Iprodione)，别名：扑海因、扑霉灵
+- **中英文通用名**: 弓哚酮草酯 (Benzoxazolinone Herbicide)，常见别名：苯并噁唑酮类除草剂
+- **中英文通用名**: 弥拜菌素 (Mibaclozan)，别名：无
+- **中英文通用名**: 强固芽孢杆菌 (Bacillus firmus)，别名：坚强芽孢杆菌
+- **中英文通用名**: 恶螨脲 (Tebufenozide)，别名：螨危、螨净
+- **中英文通用名**: 戊唑醇 (Tebuconazole)，常见别名：TBZ
+- **中英文通用名**: 戊环唑 (Penthiopyrad)，常见别名：无
+- **中英文通用名**: 戊苯吡菌胺 (Penthiopyrad)，别名：氟唑菌胺
+- **中英文通用名**: 戊菌唑 (Penthiopyrad)，别名：无
+- **中英文通用名**: 戊菌隆 (Pencycuron)，别名：百菌清、百得福
+- **中英文通用名**: 扑灭津 (Prometryn)，别名：普美林、普美特
+- **中英文通用名**: 扑灭通 (Pymetrozine)，别名：安打 (Admire)
+- **中英文通用名**: 扑草净 (Bensulide)，别名：苯磺隆
+- **中英文通用名**: 扑草灭 (Paraquat)
+- **中英文通用名**: 扑草胺 (Propanil)，别名：普拉尼尔、稻田除草剂
+- **中英文通用名**: 抑芽丹 (Daminozide)，别名：B-Nine, Alar
+- **中英文通用名**: 抑草丁 (Difenzoquat)，别名：除草定、Difenzoquat Metilsulfate
+- **中英文通用名**: 抑草磷 (Glyphosate)，常见别名：农达 (Roundup)
+- **中英文通用名**: 抑菌灵 (Chlorothalonil)，别名：百菌清
+- **中英文通用名**: 抑霉唑 (Imazalil)，常见别名：咪唑菌酮
+- **中英文通用名**: 抑食肼 (Chlorfenapyr)，别名：除虫肼
+- **中英文通用名**: 抗倒酯 (Paclobutrazol)，别名：矮壮素
+- **中英文通用名**: 抗蚜威 (Pymetrozine)，别名：蚜灭净
+- **中英文通用名**: 拌种灵 (Thiram)；常见别名：赛力散、铁灭克
+- **中英文通用名**: 拿草特 (Naptalam)，别名：拿捕净、拿草净
+- **中英文通用名**: 敌敌畏 (DDVP, Dichlorvos), 常见别名：灭害灵、灭多威
+- **中英文通用名**: 敌瘟磷 (Edifenphos)，别名：稻瘟净、稻瘟灵
+- **中英文通用名**: 敌百虫 (Dichlorvos)，别名：DDVP
+- **中英文通用名**: 敌百虫 (Dichlorvos)，别名：DDVP
+- **中英文通用名**: 敌磺钠 (Disodium tetrathiomolybdate)，别名：四硫代钼酸钠
+- **中英文通用名**: 敌稗 (Bentazon)，别名：敌稗胺、稗草敌
+- **中英文通用名**: 敌草快 (Diquat)；常见别名：除草快、迪克瓦特
+- **中英文通用名**: 敌草胺 (Pendimethalin)，别名：除草通、普杀特
+- **中英文通用名**: 敌草腈 (Dichlobenil)，别名：除草通、草枯灵
+- **中英文通用名**: 敌草隆 (Diuron)；常见别名：枯草隆、除草通
+- **中英文通用名**: 敌菌丹 (Mancozeb)，别名：代森锰锌、多菌灵锌
+- **中英文通用名**: 敌螨普 (Acetamiprid)，别名：阿克泰、安泰生
+- **中英文通用名**: 敌鼠 (Diphacinone)，别名：敌鼠钠盐 (Sodium Diphacinone)
+- **中英文通用名**: 春雷霉素 (Kasugamycin)，别名：卡斯霉素
+- **中英文通用名**: 春雷霉素盐酸盐水合物 / Kasugamycin Hydrochloride Hydrate
+- **中英文通用名**: 杀扑磷 (Chlorpyrifos)，别名：乐果、Dursban
+- **中英文通用名**: 杀线威 (Carbofuran)，别名：呋喃丹
+- **中英文通用名**: 杀草强 (Chlortoluron)，别名：氯磺隆
+- **中英文通用名**: 杀草敏 (Chlomethoxynil)，别名：氯甲氧基苯腈
+- **中英文通用名**: 杀草砜 (Sulfentrazone)，别名：磺草酮
+- **中英文通用名**: 杀草隆 (Chloramben)，别名：百草枯、克芜踪
+- **中英文通用名**: 杀虫单 (Carbosulfan)，别名：克百威
+- **中英文通用名**: 杀虫双酸 (Bistrifluoromethylbenzamide)，别名：双氟苯酰胺
+- **中英文通用名**: 杀虫环 (Hexaflumuron)，别名：虫螨灵
+- **中英文通用名**: 杀虫磺 (英文通用名: Sulfoxide, 常见别名: 苯氧威)
+- **中英文通用名**: 杀螟丹 (Cartap), 别名：灭虫丹、卡特普
+- **中英文通用名**: 杀螟丹盐酸盐 / Thiodicarb hydrochloride (常见别名：杀虫丹、杀虫灵)
+- **中英文通用名**: 杀螟硫磷 (Fenitrothion)，别名：杀螟松、杀螟磷
+- **中英文通用名**: 杀螟腈 (Chlorbenzuron)，别名：杀螟丹
+- **中英文通用名**: 杀螺胺 (Methiocarb)，别名：螺螨酯、螺螨净
+- **中英文通用名**: 杀螺胺乙醇胺盐 (英文名: Metaldehyde Ethanolamine Salt, 常见别名: 无)
+- **中英文通用名**: 杀铃脲 (Chlorfluazuron)，别名：氟铃脲
+- **中英文通用名**: 杀鼠灵 (Warfarin)，别名：华法林
+- **中英文通用名**: 杀鼠迷 (Brodifacoum)，别名：溴敌隆、溴灭灵
+- **中英文通用名**: 杀鼠醚 (Brodifacoum)，常见别名：溴敌隆
+- **中英文通用名**: 林丹 (Lindane)，六氯环己烷 (Hexachlorocyclohexane, HCH)
+**中英文通用名**: 枯草芽孢杆菌 (Bacillus subtilis)，别名：地衣芽孢杆菌
+- **中英文通用名**: d-柠檬烯 (D-Limonene)，别名：右旋柠檬烯
+**中英文通用名**: 梨小性迷向素 / Pheromone for Codling Moth (梨小食心虫性信息素)
+**中英文通用名**: 棉褐带卷蛾 GV 病毒 / Cotton Brown Band Roller GV Virus (常见别名：棉褐带卷蛾核型多角体病毒)
+- **中英文通用名**: 棉铃威 (Cyclanilide)，别名：杀铃脲
+- **中英文通用名**: 棉隆 (Dazomet)；别名：巴斯夫棉隆
+- **中英文通用名**: 橙花叔醇 (Nerolidol)，别名：3,7,11-三甲基-1,6,10-十二烷三烯-3-醇
+- **中英文通用名**: 残杀威 (Carbofuran)，别名：呋喃丹、克百威
+- **中英文通用名**: 毒死蜱 (Chlorpyrifos)，常见别名：乐果、Dursban
+- **中英文通用名**: 毒氟磷 (Fosetyl-aluminum)，别名：磷酰铝、磷酰基铝
+- **中英文通用名**: 毒草胺 (Toxicam)；常见别名：草毒灵、除草净
+- **中英文通用名**: 毒莠定 (Pendimethalin)，别名：普杀特、Pendulum
+- **中英文通用名**: 毒虫畏 (Dichlorvos)，别名：DDVP
+- **中英文通用名**: 氟丁酰草胺 (Flufenacet)，别名：氟草胺
+- **中英文通用名**: 氟丙嘧草酯 (Flucarbazone-sodium)，别名：氟丙草酯钠盐
+- **中英文通用名**: 氟丙菊酯 (Fluvalinate)，别名：保棉丹、保棉宁
+- **中英文通用名**: 氟乐灵 (Flumetralin)，别名：氟草灵
+- **中英文通用名**: 氟乙酰胺 (Fluoroacetamide)，常见别名：1081、氟鼠灵
+- **中英文通用名**: 氟吗啉 (Flumorph)，别名：无
+- **中英文通用名**: 氟吡呋喃酮 (Flupyradifurone)，别名：Sivanto
+- **中英文通用名**: 氟吡磺隆 (Fluazifop-p-butyl)，常见别名：氟乐灵
+- **中英文通用名**: 氟吡禾灵 (Fluazifop-p-butyl)，常见别名：氟吡甲禾灵
+- **中英文通用名**: 氟吡草腙 (Fluazifop-p-butyl)，常见别名：氟吡甲禾灵
+- **中英文通用名**: 氟吡草酮 (Fluopyram)，常见别名：氟吡唑菌胺
+- **中英文通用名**: 氟吡菌胺 (Fluopyram)，别名：氟吡唑菌胺
+- **中英文通用名**: 氟吡菌酰胺 (Fluxapyroxad)，别名：氟吡菌胺
+- **中英文通用名**: 氟吡酰草胺 (Fluazifop-p-butyl)，常见别名：氟吡甲禾灵
+- **中英文通用名**: 氟咯草酮 (Fluazifop)，常见别名：禾草克
+- **中英文通用名**: 氟哒嗪草酯 (Fluazaindolizine)
+- **中英文通用名**: 氟唑环菌胺 (Fluoxastrobin)，常见别名：氟环唑
+- **中英文通用名**: 氟唑磺隆 (Florasulam)，别名：氟磺隆
+- **中英文通用名**: 氟唑菌苯胺 (Fluxapyroxad)，常见别名：无
+- **中英文通用名**: 氟唑菌酰羟胺 (Fluxapyroxad)
+- **中英文通用名**: 氟唑菌酰胺 (Fluxapyroxad)，常见别名：无
+- **中英文通用名**: 氟啶嘧磺隆 (Flumetsulam)，别名：氟磺隆
+- **中英文通用名**: 氟啶胺 (Fluazinam)，常见别名：无
+- **中英文通用名**: 氟啶脲 (Flufenoxuron)，别名：氟虫脲
+- **中英文通用名**: 氟啶草酮 (Fluazifop)，常见别名：氟乐灵、氟草灵
+- **中英文通用名**: 氟啶虫胺睛 (Flonicamid)，别名：氟啶虫酰胺
+- **中英文通用名**: 氟啶虫胺腈 (Flonicamid)，别名：氟啶虫酰胺
+- **中英文通用名**: 氟啶虫酰胺 (Flonicamid)，别名：氟虫酰胺
+- **中英文通用名**: 氟喹唑 (Fluquinconazole)，常见别名：无
+- **中英文通用名**: 氟嘧磺隆 (Flumetsulam)，别名：氟磺隆、氟甲磺隆
+- **中英文通用名**: 氟嘧菌胺 (Fludioxonil)，别名：氟啶菌胺
+- **中英文通用名**: 氟嘧菌酯 (Fluoxastrobin)，别名：氟吡菌胺
+- **中英文通用名**: 氟噻唑吡乙酮 (Fluoxapiprazole)，别名：无
+- **中英文通用名**: 氟噻唑菌腈 (Fluxapyroxad)，常见别名：无
+- **中英文通用名**: 氟噻草胺 (Flufenacet)，常见别名：氟草胺
+- **中英文通用名**: 氟氯吡啶酯 (Fluroxypyr), 别名：氟草烟、氟氯吡氧乙酸
+- **中英文通用名**: 氟氯氨草酯 (Fluroxypyr), 常见别名：氟草烟
+- **中英文通用名**: 氟氯氰菊酯 (Deltamethrin)，别名：德尔塔灭、德尔特梅特
+- **中英文通用名**: 氟氯苯菊酯 (Flucythrinate)，别名：百灭宁
+- **中英文通用名**: 氟氯菌核利 (Fluorochloronil)，常见别名：无
+- **中英文通用名**: 氟氰戊菊酯 / Flucythrinate；常见别名：无
+**中英文通用名**: 氟消草 (Fluazifop)；常见别名：禾草克、禾草净
+- **中英文通用名**: 氟烯线砜 (Fluensulfone)，别名：线虫克星
+- **中英文通用名**: 氟环唑 (Fluquinconazole)，常见别名：无
+- **中英文通用名**: 氟砜草胺 (Flumetsulam)，别名：氟磺草胺
+- **中英文通用名**: 氟硅唑 (Flusilazole)，常见别名：氟环唑
+- **中英文通用名**: 氟硅菊酯 (Flufenoxuron)，别名：氟虫脲
+- **中英文通用名**: 氟硅酸钠 (Sodium Fluosilicate)，别名：氟硅酸盐
+- **中英文通用名**: 氟硫草定 (Flumetsulam)，别名：氟磺胺草醚
+- **中英文通用名**: 氟磺胺草醚 (Flumetsulam)，别名：氟磺酰草醚
+- **中英文通用名**: 氟磺酰草胺 (Flumetsulam)，别名：氟磺酰胺
+- **中英文通用名**: 氟磺隆 (Florasulam)，常见别名：无
+- **中英文通用名**: 氟胺氰菊酯 (Flufenoxuron)，常见别名：氟虫脲
+- **中英文通用名**: 氟胺磺隆 (Flumetsulam)，别名：氟磺隆
+- **中英文通用名**: 氟胺草唑 (Fluazifop)
+- **中英文通用名**: 氟胺草酯 (Flumetsulam)，别名：氟磺隆
+- **中英文通用名**: 氟节胺 (Flutolanil)，别名：氟草胺
+- **中英文通用名**: 氟苯氧喹啉 (Fluorobenoxiquinoline)；无常见别名
+- **中英文通用名**: 氟苯脲 (Flufenoxuron)，常见别名：氟环脲
+- **中英文通用名**: 氟苯虫酰胺 (Flubendiamide)，常见别名：氟虫酰胺
+- **中英文通用名**: 氟茚吡菌胺 (Fluindapyr)，常见别名无
+- **中英文通用名**: 氟茚唑菌胺 (Fluindapyr)，常见别名：无
+- **中英文通用名**: 氟草啶 (Flumioxazin)，别名：氟草净
+- **中英文通用名**: 氟草隆 (Fluometuron)，别名：氟乐灵
+- **中英文通用名**: 氟菌唑 (Flutriafol)，常见别名：三环唑
+- **中英文通用名**: 氟虫双酰胺 (Flubendiamide)，别名：氟苯虫酰胺
+- **中英文通用名**: 氟虫酸酯 (Flufenoxuron)，别名：氟虫脲
+- **中英文通用名**: 氟虫胺 (Flufenoxuron)，别名：氟虫脲
+- **中英文通用名**: 氟虫脲 (Flufenoxuron)，常见别名：氟环脲
+- **中英文通用名**: 氟虫腈 (Fipronil)，别名：锐劲特 (Regent)
+- **中英文通用名**: 氟蚁腙 (Flufenoxuron)，别名：氟虫腙
+- **中英文通用名**: 氟螨嗪 (Flufenoxuron)，常见别名：螨危
+- **中英文通用名**: 氟酮磺草胺 (Flumetsulam)，别名：氟磺胺草醚
+- **中英文通用名**: 氟酮磺隆 (Flumetsulam)，别名：氟磺隆
+- **中英文通用名**: 氟酰胺 (Flutolanil)，别名：福美双
+- **中英文通用名**: 氟酰脲 (Flufenoxuron)，常见别名：氟虫脲
+- **中英文通用名**: 氟醚唑 (Flutriafol)，常见别名：氟环唑
+- **中英文通用名**: 氟醚菌酰胺 (Fluoxapiprazam)，别名：氟唑菌酰胺
+- **中英文通用名**: 氟铃脲 (Flufenoxuron)，别名：氟螨脲
+- **中英文通用名**: 氟鼠灵 (Flocoumafen)，别名：灭鼠灵
+**中英文通用名**: 氢氰酸 (Hydrocyanic acid)，又称氰化氢 (Hydrogen cyanide, HCN)
+- **中英文通用名**: 氧乐果 (Omethoate)，别名：灭蚜松、灭蚜灵
+- **中英文通用名**: 氧化乐果 (Omethoate)，别名：灭蚜威、甲基硫环磷
+- **中英文通用名**: 氧化亚铜 (Cuprous Oxide)；常见别名：Cu2O
+- **中英文通用名**: 氧化菱锈灵 (Oxycarboxin)，别名：氧羧菌灵
+- **中英文通用名**: 氧氯化铜 (Cupric oxychloride)；常见别名：氢氧化铜、碱式氯化铜
+- **中英文通用名**: 氨唑草酮 (Amicarbazone)，别名：无
+**中英文通用名**: 氨基乙氟灵 (Aminofluorine)
+- **中英文通用名**: 氨基寡糖素 (Oligosaccharin)；别名：壳寡糖、几丁寡糖
+**中英文通用名**: 氨基氰 (Aminonitrile)，别名：氰基胺
+- **中英文通用名**: 氨氟乐灵 (Amfluzin); 常见别名：无
+- **中英文通用名**: 氨氯吡啶酸 (Aminopyralid)，别名：胺吡啶酸
+- **中英文通用名**: 氨磺乐灵 (Aminocyclopyrachlor)，别名：氨氯吡啶酸
+- **中英文通用名**: 氨磺磷 (Amidosulfuron)，别名：无
+- **中英文通用名**: 氯丙嘧啶酸 (Chlorpropham)；别名：CIPC
+- **中英文通用名**: 氯乙酸 (Chloroacetic acid)，别名：一氯乙酸
+- **中英文通用名**: 氯化苦 (Phosgene)，别名：光气
+- **中英文通用名**: 氯吡嘧磺隆 (Chlorpyrifos), 常见别名：毒死蜱
+- **中英文通用名**: 氯吡脲 (Chlorpyrifos)，别名：毒死蜱
+**中英文通用名**: 氯啶 (Chlorpyrifos)，别名：乐果、Dursban、Lorsban
+- **中英文通用名**: 氯啶菌酯 (Chlorothalonil)，别名：百菌清
+- **中英文通用名**: 氯嘧磺隆 (Chlorimuron-ethyl)，别名：广灭灵
+- **中英文通用名**: 氯噻啉 (Clothianidin)，常见别名有噻虫啉
+- **中英文通用名**: 氯氟吡啶酯 (Chlorfluroxym)；常见别名：无
+- **中英文通用名**: 氯氟吡氧乙酸 (Clopyralid)，别名：除草定、三氟羧草醚
+- **中英文通用名**: 氯氟吡氧乙酸异辛酯 (Chlorfluroxymet)；常见别名：使它隆异辛酯
+- **中英文通用名**: 氯氟联苯吡菌胺 (Chlorfluazuron)，别名：除虫脲
+- **中英文通用名**: 氯氟醚菊酯 (Chlorfluazuron)，别名：除虫脲
+- **中英文通用名**: 氯氟醚菌唑 (Fluoxapiprazole)，常见别名：无
+- **中英文通用名**: 氯氧磷 (Chlorpyrifos)，常见别名：乐果、Dursban
+- **中英文通用名**: 氯氨吡啶酸 (Chlorpyridinyl acid)，别名：百草枯 (Paraquat) (注：百草枯是氯氨吡啶酸的一种常见形式，但严格来说，氯氨吡啶酸是指其酸形式)
+**中英文通用名**: 氯氨环丙酸 (Chlorantraniliprole)，别名：Rynaxypyr
+- **中英文通用名**: zeta-氯氰菊酯 (Zeta-cypermethrin)，别名：百灭宁、速灭杀丁
+- **中英文通用名**: 氯溴异氰尿酸 (Chlorinated Brominated Isocyanuric Acid, CBI)；常见别名：百菌清
+- **中英文通用名**: 氯灭鼠灵 / Chlorophacinone；别名：灭鼠宁、灭鼠灵
+- **中英文通用名**: 氯烯炔菊酯 (Chlorfenapyr)，别名：除虫酯、杀虫酯
+- **中英文通用名**: 氯甲丹 (Chloromethine)，别名：甲基氯化物
+- **中英文通用名**: 氯甲磷 (Chlormephos)，别名：甲基氯化磷
+- **中英文通用名**: 氯硝胺 (Chlorantraniliprole)，别名：氰氟虫腙
+- **中英文通用名**: 氯磺隆 (Chlorsulfuron)，别名：绿磺隆
+- **中英文通用名**: 氯苯嘧啶醇 (Chlorantraniliprole)，别名：Rynaxypyr
+- **中英文通用名**: 氯苯氧乙酸 (Chlorophenoxyacetic acid)，常见别名有2,4-D
+- **中英文通用名**: 氯苯胺灵 (Chlorbenzilate)，别名：苯胺灵、氯苯胺酯
+- **中英文通用名**: 氯草敏 (Chlorocholine chloride)，别名：克芜踪 (Paraquat dichloride)（注意：这里纠正了名称，因为“氯草敏”通常指的是克芜踪）
+- **中英文通用名**: 氯菊酯 (Permethrin)，别名：百灭宁、安灭菌
+- **中英文通用名**: 氯菊酯 (Permethrin)，别名：百灭宁、百治灵
+- **中英文通用名**: 氯萘吡菌胺 (Chlorantraniliprole)，别名：Rynaxypyr
+- **中英文通用名**: 氯虫苯甲酰胺 (Chlorantraniliprole)，别名：Rynaxypyr
+- **中英文通用名**: 氯虫酰肼 (Chlorantraniliprole)，别名：Rynaxypyr
+- **中英文通用名**: 氯酞亚胺 (Chlorantraniliprole)，别名：Rynaxypyr
+- **中英文通用名**: 氯酞酸二甲酯 (Dimethyl Chloroterephthalate, DCTP)
+- **中英文通用名**: 氯酞酸甲酯 (Methyl Chlorophenylacetate, MCA)
+- **中英文通用名**: 氯酯磺草胺 (Chlorimuron-ethyl)，别名：广灭灵
+- **中英文通用名**: 氯酰草膦 (Chlorimuron-ethyl)，别名：广灭灵
+- **中英文通用名**: 氯酸钠 / Sodium chlorate
+- **中英文通用名**: 氯鼠酮 (Chlorophacinone)，别名：灭鼠灵、克鼠宁
+- **中英文通用名**: 氰咪唑硫磷 (Cyazofamid)，别名：赛福 (Sefu)
+- **中英文通用名**: 氰戊菊酯 (Cypermethrin)，常见别名有百灭宁、赛百宁
+- **中英文通用名**: 氰氟草酯 (Cyhalofop-butyl)，常见别名：氰氟灵、氰氟灵丁酯
+- **中英文通用名**: 氰氟虫腙 (Cyflumetofen)，别名：氟虫腙
+- **中英文通用名**: 氰氟虫腺 (Cyflumetofen)，别名：氟虫胺
+- **中英文通用名**: 氰烯菌酯 (Cyazofamid)，别名：赛福
+- **中英文通用名**: 氰草津 (Atrazine)，别名：阿特拉津、三嗪农
+- **中英文通用名**: 氰菌胺 (Cyprodinil)，别名：赛普顿 (Cyproconazole) (注意：赛普顿是另一个不同的化合物，这里仅列出常见别名)
+- **中英文通用名**: 氰霜唑 (Cymoxanil)，别名：安克 (Anker)
+- **中英文通用名**: 水胺硫磷 (Isocarbophos); 别名：异丙威、异丙磷
+- **中英文通用名**: 水黄皮素 (Karanjin)，别名：水黄皮次素
+**中英文通用名**: 油酸（Oleic Acid），十八烯酸，顺-9-十八烯酸
+- **中英文通用名**: 治螟磷 (Azinphos-methyl)，别名：甲基治螟磷、Guthion
+- **中英文通用名**: 波尔多液 / Bordeaux mixture；石硫合剂（别名）
+- **中英文通用名**: 消螨通 / Amitraz
+- **中英文通用名**: 涕灭威 (Temephos)，别名：倍硫磷、硫丹磷
+- **中英文通用名**: 淡紫拟青霉 (Paecilomyces lilacinus)，别名：淡紫拟青霉菌
+- **中英文通用名**: 混灭威 (Methomyl)，别名：速灭威、灭多威
+- **中英文通用名**: 溴噁草松 (Bromoxynil)；常见别名：草枯灵、草灭灵
+- **中英文通用名**: 溴敌隆 (Brodifacoum)，别名：溴鼠灵
+- **中英文通用名**: 溴氟醚菊酯 / Bifluthrin；常见别名：无
+- **中英文通用名**: 溴氰菊酯 (Deltamethrin)，别名：德尔塔灭、德尔塔梅斯
+- **中英文通用名**: 溴氰虫酰胺 (Brompyrazam)，别名：溴虫酰胺
+- **中英文通用名**: 溴甲烷 (Methyl bromide)，别名：溴化甲烷、甲基溴
+- **中英文通用名**: 溴硝醇 (Bromonitrol)；别名：2,4-二溴-6-硝基苯酚
+- **中英文通用名**: 溴苯腈 (Bromoxynil)；常见别名：溴氧腈
+- **中英文通用名**: 溴菌腈 (Bromothiozine)，别名：百菌清 (Brachysporin)
+- **中英文通用名**: 溴虫氟苯双酰胺 (Brompyrazam)
+- **中英文通用名**: 溴虫腈 (Bromcyanthrin)；常见别名：百灭宁
+- **中英文通用名**: 溴螨酯 (Bromopropylate)，别名：螨危
+- **中英文通用名**: 溴谷隆 (Bromacil)，别名：溴敌隆、溴灭灵
+- **中英文通用名**: 溴鼠灵 (Bromadiolone)，别名：溴敌隆
+- **中英文通用名**: 溴鼠胺 (Bromadiolone)，别名：溴敌隆、溴灭鼠灵
+- **中英文通用名**: 2,4-滴 (2,4-Dichlorophenoxyacetic acid)，常见别名有2,4-D
+- **中英文通用名**: 2,4-滴丁酯 (2,4-D butyl ester)，别名：2,4-二氯苯氧乙酸丁酯
+- **中英文通用名**: 2,4-滴丁酸 (2,4-Dichlorophenoxyacetic acid butyl ester)，常见别名有2,4-DB
+- **中英文通用名**: 2,4-滴异辛酯 (2,4-D octyl ester)，别名：2,4-D 异辛基酯
+- **中英文通用名**: 滴滴涕, DDT, Dichlorodiphenyltrichloroethane
+- **中英文通用名**: 2,4-滴钠盐 (Sodium salt of 2,4-D)，常见别名包括2,4-D钠盐
+- **中英文通用名**: 灭多威 (Methomyl)，别名：速灭威
+- **中英文通用名**: 灭幼脲 (Chlorbenzuron)，别名：除虫脲、灭幼宝
+- **中英文通用名**: 灭线磷 (Phoxim)，别名：福美磷、氧乐果
+- **中英文通用名**: 灭草松 (Bentazon)，别名：苯达松
+- **中英文通用名**: 灭菌丹 (Metam Sodium)，别名：甲基硫代硫酸钠
+- **中英文通用名**: 灭菌唑 (Myclobutanil)，常见别名：粉锈宁
+- **中英文通用名**: 灭藻醌 (Algaecide Quinone)，别名：藻克星
+- **中英文通用名**: 灭蚜磷 (Phosphocarb), 别名：蚜灭磷、蚜虱净
+- **中英文通用名**: 灭蝇胺 (Cyromazine)，别名：环丙氨嗪
+- **中英文通用名**: 灭螨醌 (Pymetrozine)，别名：安打螨
+- **中英文通用名**: 灭锈胺 (Pyraclostrobin)，别名：吡唑醚菌酯
+- **中英文通用名**: 炔丙菊酯 (Propoxur), 别名：拜灭宁 (Baygon)
+- **中英文通用名**: 炔味菊酯 (Cyphenothrin)，别名：赛灭宁
+- **中英文通用名**: 炔咪菊酯 (Pymetrozine)，别名：阿维菌素 B1a
+- **中英文通用名**: 炔苯酰草胺 (Quizalofop-p-ethyl)，常见别名：禾草特
+- **中英文通用名**: 炔草酯 (Pinoxaden)，别名：炔草酸
+- **中英文通用名**: 炔螨特 / Propargite；常见别名：螨危、螨死净
+- **中英文通用名**: 烟嘧磺隆 (Nicosulfuron)，别名：玉农乐
+- **中英文通用名**: 烟碱 (Nicotine)，别名：尼古丁
+**中英文通用名**: 烯丙基硫醚 (Allyl Sulfide)，别名：丙烯基硫醚
+- **中英文通用名**: 烯丙苯噻唑 (Pyraclostrobin)，别名：百克、百克威
+- **中英文通用名**: R-烯唑醇 (英文名: R-Propiconazole, 常见别名: Propiconazole)
+- **中英文通用名**: 烯啶虫胺 (Nitenpyram)，别名：尼替吡胺
+- **中英文通用名**: 烯效唑 (Uniconazole)
+- **中英文通用名**: 烯禾啶 (Sethoxydim)，别名：禾草灵
+- **中英文通用名**: 烯肟菌胺 (Oxathiapiprolin)，别名：Oxathipro
+- **中英文通用名**: 烯肟菌酯 (Enestroburin)，别名：烯肟菌胺
+- **中英文通用名**: 烯草胺 (Clodinafop)；常见别名：麦草畏
+- **中英文通用名**: 烯草酮 (Clodinafop), 常见别名：克草灵
+- **中英文通用名**: 烯虫乙酯 (Pyriproxyfen)，别名：灭幼宝、扑虱灵
+- **中英文通用名**: 烯虫炔酯 (Tebufenozide)，别名：特福力
+- **中英文通用名**: 烯虫磷 (Chlorpyrifos), 常见别名：乐果、Dursban
+- **中英文通用名**: S-烯虫酯 (S-kinoprene)；别名：保幼激素类似物
+- **中英文通用名**: 烯酰吗啉 (Fenamidone)，别名：安泰生、安泰灵
+- **中英文通用名**: 特丁净 (Tebuthiuron)，别名：特丁隆
+- **中英文通用名**: 特丁噻草隆 (Tribenuron-methyl)，别名：苯磺隆甲酯
+- **中英文通用名**: 特丁津 (Tebuconazole)，别名：特普唑、特布康唑
+- **中英文通用名**: 特丁硫磷 (Tebufenozide)，别名：特丁苯酚
+- **中英文通用名**: 特丁通 (Tebuconazole)，别名：特普唑、特布康唑
+- **中英文通用名**: 特草定 (Tribenuron-methyl)，别名：苯磺隆甲酯
+- **中英文通用名**: 王铜 (Bacillus thuringiensis var. kurstaki, Btk) / 硫酸铜 (Copper sulfate)
+- **中英文通用名**: 环丙唑醇 (Cyproconazole)，常见别名有环丙唑、赛普唑
+- **中英文通用名**: 环丙嘧啶酸 (Cyclopyrimidic acid)，别名：无
+**中英文通用名**: 环丙嘧啶醇 (Cyclopropimide)；常见别名：无
+- **中英文通用名**: 环丙嘧磺隆 (Cyclosulfamuron)，别名：环丙磺酰胺
+- **中英文通用名**: 环丙氟虫胺 (Cyflumetofen)，别名：氟虫胺
+- **中英文通用名**: 环丙草磺胺 (Cyclosulfamuron)；别名：无
+- **中英文通用名**: 环丙酰草胺 (Cycloxydim)，别名：环丙氟草胺
+- **中英文通用名**: 环吡氟草酮 (Haloxydine)
+- **中英文通用名**: 环唑醇 (Cyazofamid)，别名：安泰生
+- **中英文通用名**: 环嗪酮 (Hexazinone)，别名：阿特拉津、阿特灵
+- **中英文通用名**: 环庚草醚 (Cycloheximide)，别名：环己酰亚胺
+- **中英文通用名**: 环戊噁草酮 (Cycloxydim)，别名：环庚噁草酮
+- **中英文通用名**: 环氟菌胺 (Fluazinam)，常见别名：氟环唑
+- **中英文通用名**: 环氧嘧磺隆 (Eprosulfam)，别名：无
+- **中英文通用名**: 环氧虫啶 (Epoxyconazole)，别名：环丙唑醇
+- **中英文通用名**: 环磺酮 (Mesotrione)，别名：Callisto
+- **中英文通用名**: 环苯吡菌胺 (Cyclobutratin), 别名：环戊菌胺
+- **中英文通用名**: 环苯草酮 (Bensulfuron-methyl)，别名：苯磺隆甲酯
+- **中英文通用名**: 环草定 (Cyclosulfamuron)，别名：环磺隆
+- **中英文通用名**: 环草隆 (Cyclosulfamuron)，别名：环磺隆
+- **中英文通用名**: 环虫腈 (Chlorfenapyr)，别名：除虫腈
+- **中英文通用名**: 环虫酰肼 (Tebufenozide)，别名：特福力
+- **中英文通用名**: 环酯草醚 (Halosulfuron-methyl)，别名：稻思达
+- **中英文通用名**: 环酰菌胺 (Cycloheximide)，别名：环己酰亚胺
+- **中英文通用名**: 甘蓝夜蛾核多角体病毒 (Plutella xylostella nucleopolyhedrovirus, PxyNPV)
+- **中英文通用名**: 甜菜宁 (Betanin)
+- **中英文通用名**: 甜菜安 (Bensulfuron-methyl)，别名：苯磺隆甲酯
+**中英文通用名**: 甜菜蛾多衣壳核多角体病毒 (Beet armyworm nucleopolyhedrovirus, BAWNPV)
+- **中英文通用名**: 生物丙烯菊酯 / Bioallethrin；常见别名：生物丙烯菊酯、生物丙烯菊酯-B
+- **中英文通用名**: 生物丙烯菊酯 S-环戊烯基异构体 / Bioallethrin S-cyclopentenyl isomer
+- **中英文通用名**: S-生物烯丙菊酯 (S-Bioallethrin)；别名：S-烯丙菊酯
+- **中英文通用名**: 生物苄呋菊酯 / Biofenvalerate；常见别名：无
+- **中英文通用名**: 甲呋酰胺 (Mefenpyr), 别名：解草酯
+- **中英文通用名**: 甲咪唑烟酸 (Methiozolin)，别名：无
+- **中英文通用名**: 甲哌鎓 (Mepiquat)，别名：甲哌氯、甲基哌啶氯化物
+- **中英文通用名**: 甲嘧磺隆 (Metsulfuron-methyl)，别名：甲基磺草酮
+- **中英文通用名**: 甲噻诱胺 (Methoxyfenozide)，别名：甲氧虫酰肼
+- **中英文通用名**: 甲基乙拌磷 (Methomyl)，别名：甲拌磷、Lannate
+- **中英文通用名**: 甲基二磺隆 (Metsulfuron-methyl)，别名：甲磺隆、甲基磺隆
+- **中英文通用名**: 甲基内吸磷 (Methomyl)，别名：灭多威
+- **中英文通用名**: 甲基吡啶磷 (Methylpyridaphenthion)，别名：甲基吡啶硫磷
+- **中英文通用名**: 甲基吡噁磷 (Methylpyrimiphos)，别名：甲基嘧啶磷
+- **中英文通用名**: 甲基嘧啶磷 (Methidathion)，别名：甲基嘧啶磷、嘧啶磷甲酯
+- **中英文通用名**: 甲基对硫磷 (Methyl Parathion)，别名：甲基1605、甲基硫磷、甲基对氧磷
+- **中英文通用名**: 甲基毒死蜱 (Methyl parathion)，别名：甲基对硫磷、甲基帕硫磷
+- **中英文通用名**: 甲基毒虫畏 (Methomyl)，别名：灭多威
+- **中英文通用名**: 甲基硫菌灵 (Methyl Thiophanate)，别名：甲基托布津 (Thiophanate-methyl)
+- **中英文通用名**: 甲基碘磺隆钠盐 (Methyl Iodosulfuron-methyl-sodium)；常见别名：无
+- **中英文通用名**: 甲基立枯磷 (Methyl isofenphos)，别名：甲基异菌磷、甲基异柳磷
+- **中英文通用名**: 甲基胂酸 (Methylarsonic acid)，别名：甲胂酸
+- **中英文通用名**: 甲基谷硫磷 (Methoxychlor)，别名：灭蚊灵、灭蝇灵
+- **中英文通用名**: 甲拌磷 (Methamidophos)，别名：3911、甲基硫环磷
+- **中英文通用名**: 甲氧咪草烟 (Methiozolin)，别名：无
+- **中英文通用名**: 甲氧噻草胺 (Methiothepin)，别名：噻草安
+- **中英文通用名**: 甲氧磺草胺 (Mesosulfuron-methyl)，别名：甲氧磺隆
+- **中英文通用名**: 甲氧苄氟菊酯 (Meperfluthrin)，别名：蚊灭酯
+- **中英文通用名**: 甲氧虫酰肼 (Methoxyfenozide)，别名：甲氧虫酰胺
+- **中英文通用名**: 甲氧隆 (Methoxyfenozide)，别名：甲氧虫酰肼
+- **中英文通用名**: 甲氨基阿维菌素苯甲酸盐 / Abamectin Benzoate；常见别名：甲维盐
+- **中英文通用名**: 2,4-二氯苯氧乙酸 (2,4-Dichlorophenoxyacetic acid, 2,4-D); 常见别名：2,4-D
+- **中英文通用名**: 2,4-二氯苯氧乙酸丁酯 (2,4-D butyl ester)；2,4-D丁酯
+- **中英文通用名**: 甲4氯乙硫酯 (Chlorpyrifos-methyl)，别名：甲基毒死蜱
+- **中英文通用名**: 2甲4氯异辛酯 (MCPA isooctyl ester)，常见别名：麦草畏异辛酯
+- **中英文通用名**: 2,4-二氯苯氧乙酸钠 (Sodium 2,4-Dichlorophenoxyacetate)，常见别名有2甲4氯钠盐、2,4-D钠盐
+- **中英文通用名**: 甲氰菊酯 (Cypermethrin)，常见别名：氰戊菊酯
+**中英文通用名**: 甲硫唑草啉 (Methiozolin)
+- **中英文通用名**: 甲磺草胺 (Mesosulfuron-methyl)，别名：甲基磺草胺
+- **中英文通用名**: 甲磺隆 (Metsulfuron-methyl)，常见别名有甲基磺草酮、甲磺隆甲酯
+- **中英文通用名**: 甲羧除草醚 (Carfentrazone-ethyl)，别名：甲羧除草剂
+- **中英文通用名**: 甲胺磷 (Methamidophos)，别名：甲基氨基甲酸酯、甲基氨基甲酸甲酯
+- **中英文通用名**: 甲苯氟磺胺 (Tolclofos-methyl)，别名：甲基托布津
+- **中英文通用名**: 甲草胺 (Alachlor)，常见别名：Lasso, Finale, Micro-Tech
+- **中英文通用名**: 甲萘威 (Carbaryl)，别名：西维因、Sevin
+- **中英文通用名**: 甲萘灵 (Methanilam)；别名：N-(1,1-二甲基乙基)-2-萘胺
+- **中英文通用名**: 甲酰氨基嘧磺隆 (Flumetsulam)，别名：氟磺胺草醚
+- **中英文通用名**: 甲酰胺磺隆 (Florasulam)，别名：无
+- **中英文通用名**: 甲醚菊酯 (Prallethrin)，别名：百灭宁
+- **中英文通用名**: 甲霜灵 (Mefenoxam)，别名：安克 (Ancore)
+- **中英文通用名**: 申嗪霉素 (Szinomycin)，别名：链霉菌素
+- **中英文通用名**: 百治磷 (Bensulide)，别名：苯硫磷
+- **中英文通用名**: 百草枯 (Paraquat)；常见别名：克芜踪 (Gramoxone)
+- **中英文通用名**: 百菌清 (Chlorothalonil)，别名：克菌丹、多菌灵
+- **中英文通用名**: 短小芽孢杆菌 (Bacillus pumilus)，别名：无
+- **中英文通用名**: 矮壮素 (Chlormequat Chloride)，别名：CCC
+- **中英文通用名**: 石硫合剂 / Lime sulfur；别名：石灰硫磺合剂
+- **中英文通用名**: 矿物油 / Mineral Oil；石蜡油、白油
+- **中英文通用名**: 砜吡草唑 (Sulcotrione)，别名：磺草酮
+- **中英文通用名**: 砜嘧磺隆 (Sulfometuron methyl)，别名：甲磺隆
+- **中英文通用名**: 砺嘧磺隆 (Lisinopril) / 别名：无
+- **中英文通用名**: 硅噻菌胺 (Silthioconazole)，别名：硅噻唑
+- **中英文通用名**: 硅氟唑 (Silthiofam)，别名：无
+- **中英文通用名**: 硝磺草酮 (Mesotrione)，别名：百速顿 (Besuntron)
+- **中英文通用名**: 硝苯菌酯 (Nitrofen)；别名：硝酚、2,4-二硝基-6-(2,4,6-三氯苯氧基)苯酚
+- **中英文通用名**: 硝虫硫磷 (Oxamyl)
+- **中英文通用名**: 硫丹 (Sulphur)；别名：硫磺、花硫
+- **中英文通用名**: 硫双威 (Thiodicarb)，别名：甲基硫环磷、甲基硫环酯
+- **中英文通用名**: 硫磺 (Sulfur)，别名：硫、黄硫、花硫
+- **中英文通用名**: 硫线磷 (Phoxim)，别名：福美磷、福辛
+- **中英文通用名**: 硫虫酰胺 (Tolfenpyrad)，别名：氟虫酰胺
+- **中英文通用名**: 硫酰氟 (Sulfuryl fluoride)，别名：氟化硫酰、氟化硫氧
+- **中英文通用名**: 硫酸铜, Copper sulfate, 蓝矾, 胆矾
+- **中英文通用名**: 硫酸铜钙 (Cupric Calcium Sulfate, CaCuSO4·2H2O)；常见别名：波尔多液
+- **中英文通用名**: 硫黄 (Sulfur)，别名：硫磺、硫
+- **中英文通用名**: 硼酸钠 (Sodium borate)，别名：硼砂、四硼酸钠
+- **中英文通用名**: 碘嗪磺隆 (Iodosulfuron-methyl-sodium)，别名：碘磺隆
+- **中英文通用名**: 碘甲烷 (Methyl iodide)，别名：碘代甲烷
+- **中英文通用名**: 碘苯腈 (Iodosulfuron-methyl-sodium)，别名：碘磺草胺钠盐
+- **中英文通用名**: 碱式硫酸铜 (Cupric hydroxide sulfate)；常见别名：波尔多液 (Bordeaux mixture)
+- **中英文通用名**: 磷化氢 (Phosphine)，别名：磷化氢气体
+- **中英文通用名**: 磷化铝 (Aluminum Phosphide)，常见别名有 AlP、Phostoxin
+- **中英文通用名**: 磷胺 (Phosphamidon)，别名：灭蚜磷、蚜灭多
+- **中英文通用名**: 磺羧丁嘧啶 (Sulfentrazone)，别名：磺酰脲丁基三唑
+- **中英文通用名**: 磺胺喹噁啉 (Sulfamethoxine)，别名：磺胺喹恶啉、SMX
+- **中英文通用名**: 磺胺螨酯 (Sulfamethoxazole)，别名：SMZ
+- **中英文通用名**: 磺苯呋草酮 (Sulcotrione)，别名：磺草酮
+- **中英文通用名**: 磺草灵 (Sulfosulfuron)，别名：磺酰脲灵
+- **中英文通用名**: 磺草酮 (Sulfentrazone)，别名：磺酰三唑酮
+- **中英文通用名**: 磺菌胺 (Sulfentrazone)，别名：磺草酮
+- **中英文通用名**: 磺酰磺隆 (Sulfosulfuron)，别名：磺磺隆
+- **中英文通用名**: 磺酰草吡唑 (Sulfonylurea Pyrazole)，常见别名：无
+- **中英文通用名**: 福美双 (Thiram)，别名：赛力散、多菌灵
+- **中英文通用名**: 福美铁 (Ferrous Dimethyldithiocarbamate)，常见别名有 Ferbam、Ferbam、Agroferm
+- **中英文通用名**: 福美锌 (Folpet)，别名：福美双锌、锌福美双
+- **中英文通用名**: 禾草丹 (Propanil)，别名：稻草灵
+- **中英文通用名**: 禾草敌 (Propanil)，别名：稻草灵
+- **中英文通用名**: 禾草灭 (Propanil)，别名：稻草灵
+- **中英文通用名**: 禾草灵 (Haloxyfop), 别名：稻草灵
+- **中英文通用名**: 禾草灵甲酯 (Mecoprop-P, MCPA methyl ester)
+- **中英文通用名**: 禾草畏 (Quizalofop-p-ethyl)，别名：禾草灵、禾草净
+- **中英文通用名**: 种菌唑 (Tebuconazole)，别名：特普唑、特布康唑
+- **中英文通用名**: 稀禾定 (Sethoxydim)，常见别名：禾草灵
+- **中英文通用名**: 稗草畏 (Bispyribac-sodium)，别名：稻杰
+- **中英文通用名**: 稗草胺 (Bensulfuron-methyl)，别名：苯磺隆甲酯
+- **中英文通用名**: 稻丰散 (Bensulide)，别名：苯硫磷
+- **中英文通用名**: 稻瘟灵 (Fenaminostrobin)，别名：稻瘟净、稻瘟灵
+- **中英文通用名**: 稻瘟酯 (Isoprothiolane)，别名：稻瘟灵
+- **中英文通用名**: 稻瘟酰胺 (Fenaminostrobin)，别名：稻瘟灵
+- **中英文通用名**: 米多霉素 (Mildiomycin)，别名：米多霉素A
+- **中英文通用名**: 粉唑醇 (Picoxystrobin)，别名：百克、百克威
+- **中英文通用名**: 粉病灵 / Myclobutanil；常见别名：速保利、百克
+- **中英文通用名**: 精吡氟禾草灵 (Fluazifop-P-butyl)，别名：禾草克
+- **中英文通用名**: 精喹禾灵 (Quizalofop-p-ethyl)，别名：精喹禾草灵
+- **中英文通用名**: 精噁唑禾草灵 (Fenoxaprop-P)，别名：高效精噁唑禾草灵
+- **中英文通用名**: 精异丙甲草胺 (S-metolachlor)；别名：甲基磺草胺
+- **中英文通用名**: 精2,4-滴丙酸 (Cloprop), 常见别名包括2,4-D丙酸
+- **中英文通用名**: 精2甲4氯丙酸 (MCPA, Mecoprop)
+- **中英文通用名**: 精甲霜灵 (Mandipropamid)，别名：无
+- **中英文通用名**: 精禾草灵甲酯 (Methiozolin)
+- **中英文通用名**: 精苯霜灵 (Fludioxonil)，别名：氟啶胺
+- **中英文通用名**: 精草铵膦 (Glufosinate-ammonium)，别名：草铵膦铵盐
+- **中英文通用名**: 精草铵膦铵盐 (Glufosinate Ammonium)，常见别名：草铵膦铵盐
+- **中英文通用名**: 精高效氯氟氰菊酯 / Lambda-cyhalothrin；常见别名：百树得、百速特
+- **中英文通用名**: 糖菌唑 (Triazoxide)，别名：三唑氧
+- **中英文通用名**: 绿谷隆 (Glufosinate), 常见别名：草铵膦
+- **中英文通用名**: 绿麦隆 (Pendimethalin)，别名：普杀特、农思它
+- **中英文通用名**: 缬氨菌酯 (Valaminostrobin)，别名：无
+- **中英文通用名**: 缬菌胺 (Valinomycin)，别名：瓦林霉素
+- **中英文通用名**: 缬霉威 (Valmeyan), 别名：无
+- **中英文通用名**: 羟哌酯 (Piperonyl butoxide, PBO), 常见别名：羟基苯甲酸丁酯
+**中英文通用名**: 14-羟基芸苔素甾醇 (Brassinolide, 14-Hydroxybrassinosteroid)
+- **中英文通用名**: 联苯三唑醇 (Biphenyltriazole), 别名：百菌清
+- **中英文通用名**: 联苯吡菌胺 (Bixafen)，别名：拜耳 Xemium
+- **中英文通用名**: 联苯肼酯 (Bifenazate)，别名：螨危
+- **中英文通用名**: 联苯菊酯 (Bifenthrin)，别名：百灭宁、拜灭特
+- **中英文通用名**: 肆菌酯 (Sijunzhi)，别名：无
+- **中英文通用名**: 肟菌酯 (Xemium)，别名：氟唑菌酰胺 (Fluxapyroxad)
+**中英文通用名**: 肥草胺 (Fenoxaprop); 别名：禾草灵
+**中英文通用名**: 肥草酮 (Fluroxypyr), 别名：氟草酮、氟氧草酯
+- **中英文通用名**: 肼醚菌胺 (Hymexazol)，别名：肼菌酯
+- **中英文通用名**: 胺唑草酮 (Amicarbazone)，别名：无
+- **中英文通用名**: 胺苯磺隆 (Amidosulfuron)，别名：安磺隆
+- **中英文通用名**: 胺菊酯 (Pyrethrin I, Pyrethrin II, Pyrethrins)
+- **中英文通用名**: 胺菊酯[(1R)-异构体] / (1R)-trans-Chrysanthemate；常见别名：(1R)-反式胺菊酯
+- **中英文通用名**: 胺鲜酯 (Amidofluraz); 常见别名：氟环唑胺
+- **中英文通用名**: 脱叶磷 (Defoliaphos)，别名：落叶磷
+- **中英文通用名**: 腈吡螨酯 (Cyenopyrafen)
+- **中英文通用名**: 腈苯唑 (Tebuconazole)，别名：特普唑、特布康唑
+- **中英文通用名**: 腈菌唑 (Myconazole)，别名：腈菌灵、腈菌灵
+- **中英文通用名**: 腐霉利 (Fenhexamid)，别名：速克灵、速克灵
+**中英文通用名**: 艾迪 67 (Edi 67), 别名：无
+- **中英文通用名**: 芋嘧磺隆 (Bispyribac-sodium)，别名：稻喜、稻杰
+- **中英文通用名**: 芦草唑 (Lurazole)，别名：无
+- **中英文通用名**: 芮虫威 (Rimonan), 别名：无
+**中英文通用名**: 芹菜夜蛾核多角体病毒 (Celery Looper Nucleopolyhedrovirus, CLNPV)
+- **中英文通用名**: 苄味菊酯 (Benzyl pyrethroid)，别名：苄基拟除虫菊酯
+- **中英文通用名**: 苄嘧磺隆 (Bensulfuron-methyl)，别名：农得时
+- **中英文通用名**: 苄氨基嘌呤 (Benzylaminopurine, BA)
+- **中英文通用名**: 苄草丹 (Bensulfuron-methyl)，别名：农得时、农得利
+- **中英文通用名**: 苏云金杆菌 (Bacillus thuringiensis, Bt)，常见别名：Bt菌
+- **中英文通用名**: 苏云金杆菌(以色列亚种) / Bacillus thuringiensis subsp. israelensis (Bti)
+- **中英文通用名**: 苏云金杆菌 δ-内毒素 / Bacillus thuringiensis δ-endotoxin (常见别名：Bt毒素、Bt蛋白)
+**中英文通用名**: 苏敌丁 (Sulfoximine)；别名：氟啶虫胺腈 (Flupyradifurone)
+- **中英文通用名**: 苯丁锡 (Benomyl)，别名：苯来特、苯菌灵
+- **中英文通用名**: 苯唑氟草酮 (Benzofenap)；别名：无
+- **中英文通用名**: 苯唑草酮 (Benzobicyclon)，别名：Benzobicyclon
+- **中英文通用名**: 苯啶菌酮 (Bixafen)，别名：拜耳3017
+- **中英文通用名**: 苯嗪草酮 (Benzobicyclon)；别名：Benzobicyclon
+- **中英文通用名**: 苯嘧磺草胺 (Bensulfuron-methyl)，别名：农得时
+- **中英文通用名**: 苯嘧草唑 (Benzobicyclon)，别名：Benzobicyclon
+- **中英文通用名**: 苯噻草胺 (Bensulfuron-methyl)，常见别名：农得时
+- **中英文通用名**: 苯噻菌胺 (Benthiavalicarb)
+- **中英文通用名**: 苯噻酰草胺 (Benthiocarb)；别名：稻丰灵、稻宁
+- **中英文通用名**: 苯并烯氟菌唑 (Benzovindiflupyr)，别名：氟唑菌苯胺
+- **中英文通用名**: 苯氧喹啉 (Phenoxyquinoline)，常见别名：无
+- **中英文通用名**: 苯氧威 (Bifenox)；别名：苯氧基苯氧基乙酸酯
+- **中英文通用名**: 苯氧菌胺 (Benodanil)，别名：苯氧菌灵
+- **中英文通用名**: 苯硫威 (Bensulide)，别名：苯硫磷、苯基硫代磷酸酯
+- **中英文通用名**: 苯硫磷 (Phosmet)，别名：灭线磷
+**中英文通用名**: 苯磺噁唑草 (Bensulfozole)；别名：无
+- **中英文通用名**: 苯磺隆 (Bensulfuron-methyl)，别名：农得时
+- **中英文通用名**: 苯线磷 (Benomyl)，别名：苯来特
+**中英文通用名**: 苯肽胺酸 (Benthiocarb)；别名：苯硫酰胺、苯基硫代氨基甲酸酯
+- **中英文通用名**: 苯胺灵 (Benzanilide)；别名：苯基酰胺
+- **中英文通用名**: 苯草醚 (Bensulide)，别名：扑草净
+- **中英文通用名**: 苯菌灵 (Benomyl)，别名：苯来特、苯酰菌胺
+- **中英文通用名**: 苯菌酮 (Benzovindiflupyr)，别名：氟唑菌苯胺
+- **中英文通用名**: 苯螨特 (Bifenazate)，别名：敌螨特
+- **中英文通用名**: 苯酰菌胺 (Benzovindiflupyr)，别名：氟唑菌酰胺 (Fluxapyroxad)
+- **中英文通用名**: 苯醚氰菊酯[(1R)-反式异构体] / Bifenthrin [(1R)-trans isomer]
+- **中英文通用名**: 苯醚甲环唑 (Difenoconazole)，别名：三环唑、三唑醇
+- **中英文通用名**: 苯醚菊酯[(1R)-反式异构体] / Bifenthrin [(1R)-trans isomer]
+- **中英文通用名**: 苯醚菌酯 (Benzovindiflupyr)，别名：氟唑菌酯
+- **中英文通用名**: 苯锈啶 (Bixafen)，别名：拜耳 3018
+- **中英文通用名**: 苯霜灵 (Benalaxyl)，别名：苯菌灵
+- **中英文通用名**: 苹果蠹蛾颗粒体病毒 (Cydia pomonella granulovirus, CpGV)
+- **中英文通用名**: 茚嗪氟草胺 (Flufenacet)，别名：氟唑草胺
+- **中英文通用名**: 茚虫威 (Indoxacarb)，别名：安打、普尊
+- **中英文通用名**: 茵草敌 (Chlorpropham)，别名：抑芽丹、芽枯灵
+**中英文通用名**: 草不隆 (Sethoxydim)；常见别名：赛托昔丁、赛托克
+**中英文通用名**: 草乃敌 (Bromoxynil)；常见别名：溴氧腈
+- **中英文通用名**: 草噁嗪酮 (Benzoxazinone)，常见别名：无
+- **中英文通用名**: 草地贪夜蛾核多角体病毒 (Spodoptera frugiperda nucleopolyhedrovirus, SfNPV)
+- **中英文通用名**: 草多索 (Chlorsulfuron)，别名：氯磺隆
+- **中英文通用名**: 草甘膦 (Glyphosate)，常见别名有农达 (Roundup)、百草枯 (Paraquat) 等
+- **中英文通用名**: 草甘膦二甲胺盐 (Glyphosate Diammonium Salt)，常见别名有农达 (Roundup)、草净 (Rodeo)、克无踪 (Touchdown)
+- **中英文通用名**: 草甘膦异丙胺盐 (Glyphosate Isopropylamine Salt)，常见别名：农达 (Roundup)
+- **中英文通用名**: 草甘膦钾盐 (Potassium Glyphosate)，常见别名有 Roundup, Rodeo, AquaNeat
+- **中英文通用名**: 草甘膦铵盐 (Ammonium Glyphosate)，常见别名有农达 (Roundup)、百草枯 (Paraquat)（注意：百草枯是另一个不同的除草剂）
+- **中英文通用名**: 草达津 (Pendimethalin)，别名：普杀特、扑草净
+- **中英文通用名**: 草铵膦 (Glufosinate)，常见别名有磷酰胺基甲酸酯、Basta、Liberty
+- **中英文通用名**: 草除灵 (Bensulfuron-methyl)，别名：苯磺隆
+- **中英文通用名**: 荧灭净 / Fluometuron；常见别名：氟草净
+- **中英文通用名**: 莎稗磷 (Sethoxydim)，别名：赛克草、赛克稗
+- **中英文通用名**: 莠去津 (Atrazine)，常见别名有阿特拉津、三嗪酮
+- **中英文通用名**: 莠灭净 / Atrazine；常见别名：阿特拉津、阿特拉松
+- **中英文通用名**: 菌核净 (Carbendazim)，别名：苯并咪唑-4-甲酸甲酯
+- **中英文通用名**: 菜青虫颗粒体病毒 (Plutella xylostella Granulovirus, PxGV)
+- **中英文通用名**: 菱锈灵 (Tebuconazole)，别名：特普唑、特布康唑
+- **中英文通用名**: 萎锈灵 (Carboxin)，别名：苯锈灵、苯菌灵
+- **中英文通用名**: 萘乙酰胺 (Naphthylacetylamide, NAA)
+- **中英文通用名**: 萘乙酸 (Naphthaleneacetic acid, NAA)，常见别名有萘乙酸钠、萘乙酸钾
+- **中英文通用名**: 萘乙酸钠 (Sodium Naphthenate)，常见别名有NAA钠盐、Naphthaleneacetic acid sodium salt
+- **中英文通用名**: 萘吡菌胺 (Naphthalisopropylamine)，别名：无
+- **中英文通用名**: 虫螨腈 (Chlorfenapyr)，别名：阿克泰 (Actara)、虫螨净 (Pylon)
+- **中英文通用名**: 虫酰肼 (Tebufenozide)，别名：特福力
+- **中英文通用名**: 虱螨脲 (Lufenuron)，别名：灭幼脲
+- **中英文通用名**: 蝎毒磷 (Scorpaenophthalamide)，别名：蝎毒素
+- **中英文通用名**: 螺环菌胺 (Sedaxane)，别名：氟唑菌胺
+- **中英文通用名**: 螺甲螨酯 (Spiromesifen), 别名：迈特灵
+- **中英文通用名**: 螺虫乙酯 (Spirotetramat)，别名：阿克泰 (Acerate)
+- **中英文通用名**: 螺螨双酯 (Spiromesifen)，别名：迈特灵
+- **中英文通用名**: 螺螨酯 (Spiromesifen)，别名：迈特灵
+**中英文通用名**: 24-表芸·三表芸 (24-Epibrassinolide and 28-Homobrassinolide)
+- **中英文通用名**: 24-表芸苔素内酯 (Brassinolide, 24-Epibrassinolide)
+- **中英文通用名**: 28-表高芸苔素内酯 (Brassinolide, 28-epibrassinolide)
+- **中英文通用名**: 西玛津 (Simazine)，常见别名有西马津、赛马津
+- **中英文通用名**: 西草净 (Sethoxydim)，别名：赛克津、塞托昔丁
+- **中英文通用名**: 解草啶 (Pendimethalin)，别名：普杀特、农思它
+- **中英文通用名**: 解草嗪 (Quizalofop-p-ethyl)，常见别名：禾草灵
+- **中英文通用名**: 解草腈 (Bensulide)，别名：苯磺隆
+- **中英文通用名**: 解草酯 (Clodinafop), 常见别名：麦草灵
+- **中英文通用名**: S-诱抗素 / S-Indoleacetonitrile, 别名：S-IAA
+**中英文通用名**: 诱杀烯混剂 / Attracticide Mixture
+- **中英文通用名**: 诱虫烯 (Lurexene)，别名：诱虫酯
+- **中英文通用名**: 诱虫醚 (Spinosad)，别名：斯皮诺萨德
+- **中英文通用名**: 诱蝇羧酯 (Furalaxyl)，别名：福美双、福美锌
+- **中英文通用名**: 诱蝇酮 (Furalaxyl)，别名：福美双、福美锌
+- **中英文通用名**: 调嘧醇 (Pyraclostrobin)，别名：吡唑醚菌酯
+- **中英文通用名**: 调果酸 (Ethephon)，别名：乙烯利
+- **中英文通用名**: 调环酸钙 (Calcium Tetcyclasate)，别名：调环酸钙盐
+- **中英文通用名**: 调节膦 (Regulon)，别名：调环磷 (Trinexapac-ethyl)
+- **中英文通用名**: 谷实夜蛾核多角体病毒 (Helicoverpa armigera nucleopolyhedrovirus, HaNPV)
+**中英文通用名**: 赤霉素 (Gibberellin)；常见别名：GA3 (Gibberellic Acid)
+- **中英文通用名**: 赤霉酸 (Gibberellic Acid, GA3)；赤霉素
+- **中英文通用名**: 辛噻酮 (Xintiaokong)，别名：无
+- **中英文通用名**: 辛硫磷 (Phoxim)，别名：福美磷、福森
+- **中英文通用名**: 辛酰溴苯腈 (Bromoxynil octanoate)，常见别名：溴苯腈辛酸酯
+- **中英文通用名**: 辛酰碘苯腈 (Iodosulfuron-methyl-sodium)，别名：碘苯腈
+- **中英文通用名**: 辛酸铜 (Cupric Caprylate) / 铜辛酸盐
+- **中英文通用名**: 速灭威 (Carbaryl)，别名：西维因、克百威
+- **中英文通用名**: 速灭磷 (Sumithion)，别名：速灭杀、速灭磷乳油
+- **中英文通用名**: 避蚊胺 (DEET, N,N-二乙基-3-甲基苯甲酰胺)
+- **中英文通用名**: 邻苯基酚 (o-Phenylphenol, OPP)；常见别名：邻苯酚、邻羟基苯甲酚
+- **中英文通用名**: 酞菌酯 (Pyraclostrobin)，别名：百克、百克威
+- **中英文通用名**: 酰嘧磺隆 (Azimsulfuron)，别名：阿米西达
+- **中英文通用名**: 酰氨寡糖素醋酸盐 (Acetamidofos acetate)
+- **中英文通用名**: 醋酸苯汞 (Phenylmercuric acetate, PMA), 常见别名：苯基汞醋酸盐
+- **中英文通用名**: 醚磺隆 (Ethoxysulfuron)，别名：乙氧磺隆
+- **中英文通用名**: 醚苯磺隆 (Ethoxysulfuron)，别名：乙氧磺隆
+- **中英文通用名**: 醚菊酯 (Etofenprox)，别名：乙氧菊酯
+- **中英文通用名**: 醚菌胺 (Ethaboxam)，别名：无
+- **中英文通用名**: 醚菌酯 (Kresoxim-methyl)，别名：百克、凯润
+**中英文通用名**: 野燕枯 (Paraquat)
+**中英文通用名**: 野燕枯甲硫酸盐 (Methasulfocarb), 常见别名：野麦畏、燕麦畏
+- **中英文通用名**: 野麦畏 (Pinoxaden)，别名：麦喜、麦极
+- **中英文通用名**: 金合欢醇 (Farnesol)，别名：法呢醇、法尼醇
+- **中英文通用名**: 金龟子绿僵菌 (Metarhizium anisopliae)，别名：绿僵菌、绿霉菌
+- **中英文通用名**: 链霉素 (Streptomycin)，别名：链丝菌素
+- **中英文通用名**: 阿维菌素 (Abamectin)，别名：伊维菌素 (Ivermectin)、阿维菌素B1 (Abamectin B1)
+- **中英文通用名**: 除草定 (Chloramben)，别名：百草枯、克芜踪
+- **中英文通用名**: 除虫脲 (Chlorfluazuron)，别名：氟虫脲
+- **中英文通用名**: 除虫菊素 (Pyrethrin)，别名：天然除虫菊酯
+- **中英文通用名**: 除虫菊酯 (Pyrethroids)，常见别名包括合成除虫菊酯、拟除虫菊酯
+- **中英文通用名**: 霜脲氰 / Cymoxanil；常见别名：霜霉威
+- **中英文通用名**: 霜霉威 (Propamocarb)
+- **中英文通用名**: 霜霉威盐酸盐 (Propamocarb Hydrochloride)，常见别名：普力克
+- **中英文通用名**: 霜霉威盐酸盐 (Propamocarb Hydrochloride)，别名：普力克
+- **中英文通用名**: 顺-8-十二碳烯乙酸酯 (cis-8-Dodecenyl Acetate)，别名：顺-8-十二碳烯醋酸酯
+**中英文通用名**: 顺-8-十二碳烯醇 (cis-8-Dodecenol, 8-十二碳烯-1-醇)
+- **中英文通用名**: 顺式氯氰菊酯 (Cypermethrin, cis-isomer); 常见别名：百灭宁、速灭杀丁
+- **中英文通用名**: 马拉硫磷 (Malathion)，常见别名：马拉松、马拉松
+- **中英文通用名**: 马来酰肼 (Maleic Hydrazide)，别名：马来酰肼、马莱酰肼
+**中英文通用名**: 马鞭草酮 (Verbascoside)，别名：马鞭草苷
+- **中英文通用名**: 驱蚊酯 (Icaridin, Picaridin), 常见别名：派卡瑞丁
+- **中英文通用名**: 高效反式氯氰菊酯 / Transfluthrin
+- **中英文通用名**: 高效氟吡甲禾灵 / Haloxyfop-P-methyl
+- **中英文通用名**: 高效氟吡禾灵 (Haloxyfop-P-methyl)，别名：氟吡甲禾灵
+- **中英文通用名**: 高效氟氯氰菊酯 / Beta-Cyfluthrin；常见别名：拜耳特福灵
+- **中英文通用名**: 高效氯氟氰菊酯 / Lambda-cyhalothrin；常见别名：百树得、百灭宁
+- **中英文通用名**: 高效氯氰菊酯 / Lambda-cyhalothrin；常见别名：百树得、百灭宁
+- **中英文通用名**: 高2,4-滴丙酸 (High 2,4-Dichlorophenoxyacetic acid propionic acid)；常见别名：高2,4-滴丙酸
+- **中英文通用名**: 28-高芸苔素内酯 (Brassinolide, 28-Homobrassinolide)
+- **中英文通用名**: 鱼藤酮 (Rotenone)，别名：鱼藤精、鱼藤素
+- **中英文通用名**: 麦穗宁 (Mesurol), 别名：甲基硫菌灵 (Methyl Thiophanate)
+- **中英文通用名**: 麦草氟 (Fluazifop)，常见别名：麦草灵
+- **中英文通用名**: 麦草畏 (MCPA, 2-Methyl-4-chlorophenoxyacetic acid)，常见别名有百草敌、麦草灵
+**中英文通用名**: 鼠得克 (Rodicide)，别名：溴敌隆 (Bromadiolone)
