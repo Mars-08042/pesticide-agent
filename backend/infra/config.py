@@ -66,32 +66,6 @@ def _get_cors_origins() -> List[str]:
 
 
 @dataclass
-class UploadConfig:
-    """文件上传配置"""
-    max_file_size: int = field(
-        default_factory=lambda: int(os.getenv("MAX_FILE_SIZE", str(50 * 1024 * 1024)))
-    )  # 50MB
-    allowed_markdown_extensions: List[str] = field(default_factory=lambda: [".md"])
-    allowed_recipe_extensions: List[str] = field(
-        default_factory=lambda: [".md", ".txt", ".json", ".csv", ".xlsx"]
-    )
-
-
-@dataclass
-class AgentConfig:
-    """Agent 配置"""
-    max_iterations: int = field(
-        default_factory=lambda: int(os.getenv("AGENT_MAX_ITERATIONS", "5"))
-    )
-    confidence_threshold: int = field(
-        default_factory=lambda: int(os.getenv("AGENT_CONFIDENCE_THRESHOLD", "60"))
-    )
-    context_max_length: int = field(
-        default_factory=lambda: int(os.getenv("AGENT_CONTEXT_MAX_LENGTH", "8000"))
-    )
-
-
-@dataclass
 class DatabaseConfig:
     """数据库配置"""
     host: str = field(default_factory=lambda: os.getenv("POSTGRES_HOST", "localhost"))
@@ -147,10 +121,6 @@ class RAGChunkingConfig:
     min_chunk_words: int = field(
         default_factory=lambda: int(os.getenv("RECIPE_KB_MIN_CHUNK_WORDS", "100"))
     )
-    # 分块级别：h2 表示按二级标题切分
-    split_level: str = field(
-        default_factory=lambda: os.getenv("RECIPE_KB_SPLIT_LEVEL", "h2")
-    )
     # 按语义边界切分，无需重叠
     chunk_overlap: int = 0
     # 保留标题行
@@ -164,13 +134,13 @@ class RAGRetrievalConfig:
     vector_top_n: int = field(
         default_factory=lambda: int(os.getenv("VECTOR_SEARCH_TOP_N", "20"))
     )
+    # 最终返回数量（Rerank 成功或降级时都使用）
+    final_top_k: int = field(
+        default_factory=lambda: int(os.getenv("RETRIEVAL_FINAL_TOP_K", "5"))
+    )
     # 最低相似度阈值（宽松召回）
     similarity_threshold: float = field(
         default_factory=lambda: float(os.getenv("SIMILARITY_THRESHOLD", "0.3"))
-    )
-    # Rerank 后返回数量
-    rerank_top_k: int = field(
-        default_factory=lambda: int(os.getenv("RERANK_TOP_K", "5"))
     )
 
 
@@ -216,20 +186,6 @@ class RecipeKBConfig:
         )
     )
 
-    # LLM 元数据提取配置（兼容旧代码）
-    llm_api_key: str = field(
-        default_factory=lambda: os.getenv("RECIPE_KB_LLM_API_KEY", "")
-    )
-    llm_api_base: str = field(
-        default_factory=lambda: os.getenv("RECIPE_KB_LLM_API_BASE", "https://api.openai.com/v1")
-    )
-    llm_model_name: str = field(
-        default_factory=lambda: os.getenv("RECIPE_KB_LLM_MODEL_NAME", "gpt-4o-mini")
-    )
-    llm_temperature: float = field(
-        default_factory=lambda: float(os.getenv("RECIPE_KB_LLM_TEMPERATURE", "0.1"))
-    )
-
     # RAG 分块配置
     chunking: RAGChunkingConfig = field(default_factory=RAGChunkingConfig)
     # RAG 检索配置
@@ -261,8 +217,6 @@ class AppConfig:
     """应用总配置"""
     environment: Environment = field(default_factory=get_environment)
     server: ServerConfig = field(default_factory=ServerConfig)
-    upload: UploadConfig = field(default_factory=UploadConfig)
-    agent: AgentConfig = field(default_factory=AgentConfig)
     database: DatabaseConfig = field(default_factory=DatabaseConfig)
     task_manager: TaskManagerConfig = field(default_factory=TaskManagerConfig)
     recipe_kb: RecipeKBConfig = field(default_factory=RecipeKBConfig)

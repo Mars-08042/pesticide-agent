@@ -1,16 +1,14 @@
 import React from 'react';
 import { KBItem } from '../types';
-import { FileText, X, Settings, Check, Loader2, FlaskConical } from 'lucide-react';
+import { FileText, X, Check, Loader2 } from 'lucide-react';
 
 interface RightSidebarProps {
   isOpen: boolean;
   kbItems: KBItem[];
-  onManageKBs: () => void;
   onToggleKB: (id: string) => void;
-  onOpenRecipeCenter?: () => void;
 }
 
-export const RightSidebar: React.FC<RightSidebarProps> = ({ isOpen, kbItems, onManageKBs, onToggleKB, onOpenRecipeCenter }) => {
+export const RightSidebar: React.FC<RightSidebarProps> = ({ isOpen, kbItems, onToggleKB }) => {
   const activeKbItems = kbItems.filter(kb => kb.status === 'active');
   const indexingKbItems = kbItems.filter(kb => kb.status === 'indexing' || kb.status === 'processing');
 
@@ -24,29 +22,8 @@ export const RightSidebar: React.FC<RightSidebarProps> = ({ isOpen, kbItems, onM
     >
       <div className="w-80 h-full flex flex-col p-5">
 
-        {/* Action Buttons at Top */}
-        <div className="space-y-4 mb-6 pt-2">
-          <button
-            onClick={onOpenRecipeCenter}
-            className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-green-400 to-green-500 hover:from-green-500 hover:to-green-600 text-white font-medium py-3 px-4 rounded-xl shadow-soft-md hover:shadow-soft-lg active:scale-[0.98] transition-all text-sm"
-          >
-            <FlaskConical className="w-4 h-4" />
-            研配中心
-          </button>
-
-          <div className="border-t border-dashed border-green-200/50"></div>
-
-          <button
-            onClick={onManageKBs}
-            className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-green-400 to-green-500 hover:from-green-500 hover:to-green-600 text-white font-medium py-3 px-4 rounded-xl shadow-soft-md hover:shadow-soft-lg active:scale-[0.98] transition-all text-sm"
-          >
-            <Settings className="w-4 h-4" />
-            管理知识库与上传
-          </button>
-        </div>
-
         {/* Selected KBs Section */}
-        <div className="mb-6">
+        <div className="mb-6 pt-2">
           <h3 className="font-bold text-green-700 mb-3">已选知识库:</h3>
           <div className="flex flex-wrap gap-2">
             {kbItems.filter(i => i.selected && i.status === 'active').map(kb => (

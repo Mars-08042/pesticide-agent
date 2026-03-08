@@ -55,7 +55,7 @@ class HybridRetriever:
     def search(
         self,
         query: str,
-        top_k: int = 5,
+        top_k: Optional[int] = None,
         filters: Optional[Dict[str, Any]] = None,
         use_rerank: bool = True,
     ) -> List[RetrievalResult]:
@@ -64,7 +64,7 @@ class HybridRetriever:
 
         Args:
             query: 查询文本
-            top_k: 最终返回数量
+            top_k: 最终返回数量（不传时从配置读取）
             filters: 元数据过滤条件
             use_rerank: 是否使用 Rerank 重排序
 
@@ -72,6 +72,7 @@ class HybridRetriever:
             检索结果列表
         """
         retrieval_config = self.config.recipe_kb.retrieval
+        final_top_k = top_k if top_k is not None else retrieval_config.final_top_k
 
         # 1. 向量检索（宽松召回）
         vector_results = self.vector_store.search_by_query(
@@ -90,7 +91,7 @@ class HybridRetriever:
         # 2. Rerank 重排序
         if use_rerank and len(vector_results) > 1:
             try:
-                reranked = self._rerank(query, vector_results, top_k)
+                reranked = self._rerank(query, vector_results, final_top_k)
                 return reranked
             except Exception as e:
                 logger.warning(f"Rerank 失败，降级为向量检索结果: {e}")
@@ -102,7 +103,7 @@ class HybridRetriever:
                 score=chunk.similarity,
                 retrieval_score=chunk.similarity,
             )
-            for chunk in vector_results[:top_k]
+            for chunk in vector_results[:final_top_k]
         ]
 
     def _rerank(
@@ -149,7 +150,7 @@ class HybridRetriever:
     def search_with_intent(
         self,
         query: str,
-        top_k: int = 5,
+        top_k: Optional[int] = None,
         intent: Optional[Dict[str, Any]] = None,
     ) -> List[RetrievalResult]:
         """
@@ -159,7 +160,7 @@ class HybridRetriever:
 
         Args:
             query: 查询文本
-            top_k: 返回数量
+            top_k: 返回数量（不传时从配置读取）
             intent: 预提取的意图（如不提供则自动提取）
 
         Returns:
@@ -226,7 +227,7 @@ class HybridRetriever:
     def get_context_for_agent(
         self,
         query: str,
-        top_k: int = 5,
+        top_k: Optional[int] = None,
         max_length: int = 8000,
     ) -> str:
         """
@@ -236,7 +237,7 @@ class HybridRetriever:
 
         Args:
             query: 查询文本
-            top_k: 检索数量
+            top_k: 检索数量（不传时从配置读取）
             max_length: 最大上下文长度
 
         Returns:

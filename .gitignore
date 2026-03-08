@@ -34,8 +34,11 @@ nul
 
 # ============ 项目特定忽略 ============
 
+formulate_scorer/
+
 # Claude Code 本地配置
 .claude/
+.ace-tool
 
 # Dify RAG 参考实现
 dify-rag-reference/

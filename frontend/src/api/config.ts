@@ -1,4 +1,7 @@
-export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+const rawApiBaseUrl = import.meta.env.VITE_API_BASE_URL?.trim();
+export const API_BASE_URL = rawApiBaseUrl
+  ? rawApiBaseUrl.replace(/\/+$/, '')
+  : 'http://localhost:8000';
 
 export function formatApiError(errorData: any): string {
   const detail = errorData?.detail;

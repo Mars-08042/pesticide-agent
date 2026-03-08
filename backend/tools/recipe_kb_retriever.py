@@ -66,18 +66,22 @@ class RecipeKBRetrieverTool:
     def _search(
         self,
         query: str,
-        limit: int,
+        limit: Optional[int] = None,
         filters: Optional[Dict[str, Any]] = None,
     ) -> List[RetrieverItem]:
+        from infra.config import get_config
+
+        retrieval_config = get_config().recipe_kb.retrieval
+        final_limit = limit if limit is not None else retrieval_config.final_top_k
         retriever = self._get_retriever()
-        results = retriever.search(query=query, top_k=limit, filters=filters or None)
+        results = retriever.search(query=query, top_k=final_limit, filters=filters or None)
         return self._to_items(results)
 
     def search_recipes(
         self,
         active_ingredients: Optional[List[str]] = None,
         formulation_type: Optional[str] = None,
-        limit: int = 3,
+        limit: Optional[int] = None,
     ) -> List[RetrieverItem]:
         query_parts = [*(active_ingredients or [])]
         if formulation_type:
@@ -96,7 +100,7 @@ class RecipeKBRetrieverTool:
         self,
         active_ingredients: Optional[List[str]] = None,
         formulation_type: Optional[str] = None,
-        limit: int = 3,
+        limit: Optional[int] = None,
     ) -> List[RetrieverItem]:
         query_parts = [*(active_ingredients or [])]
         if formulation_type:
@@ -115,7 +119,7 @@ class RecipeKBRetrieverTool:
         self,
         keywords: Optional[List[str]] = None,
         formulation_type: Optional[str] = None,
-        limit: int = 3,
+        limit: Optional[int] = None,
     ) -> List[RetrieverItem]:
         query_parts = [*(keywords or [])]
         if formulation_type:
@@ -131,7 +135,7 @@ class RecipeKBRetrieverTool:
     def search_knowledge(
         self,
         keywords: Optional[List[str]] = None,
-        limit: int = 3,
+        limit: Optional[int] = None,
     ) -> List[RetrieverItem]:
         query = " ".join([p for p in (keywords or []) if p]) or "通用知识"
         return self._search(query=query, limit=limit, filters=None)
@@ -141,4 +145,3 @@ def get_recipe_kb_retriever_tool() -> RecipeKBRetrieverTool:
     """获取配方知识库检索工具实例"""
 
     return RecipeKBRetrieverTool()
-

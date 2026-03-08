@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import { LeftSidebar } from './components/LeftSidebar';
 import { RightSidebar } from './components/RightSidebar';
 import { ChatMessage } from './components/ChatMessage';
-import { KBManagerModal } from './components/KBManagerModal';
-import { ConfirmModal } from './components/recipe-kb/ConfirmModal';
-import { RecipeKBManager } from './components/recipe-kb';
+import { ConfirmModal } from './components/ConfirmModal';
 import { PanelLeftClose, PanelLeftOpen, PanelRightClose, PanelRightOpen, Square, Send, Globe, ChevronDown } from 'lucide-react';
 import { ROUTE_MODE_OPTIONS, RouteMode } from './types';
 
@@ -40,12 +38,6 @@ const App: React.FC = () => {
 
   const {
     kbItems,
-    isKBManagerOpen,
-    setIsKBManagerOpen,
-    isRecipeKBOpen,
-    setIsRecipeKBOpen,
-    loadKnowledgeBase,
-    handleDeleteKB,
     toggleKBSelection
   } = useKnowledgeBase();
 
@@ -260,18 +252,7 @@ const App: React.FC = () => {
         <RightSidebar
           isOpen={isRightSidebarOpen}
           kbItems={kbItems}
-          onManageKBs={() => setIsKBManagerOpen(true)}
           onToggleKB={toggleKBSelection}
-          onOpenRecipeCenter={() => setIsRecipeKBOpen(true)}
-        />
-
-        {/* KB Manager Modal */}
-        <KBManagerModal
-          isOpen={isKBManagerOpen}
-          onClose={() => setIsKBManagerOpen(false)}
-          kbItems={kbItems}
-          onDelete={handleDeleteKB}
-          onUploadSuccess={loadKnowledgeBase}
         />
 
         {/* Delete Session Confirm Modal */}
@@ -283,12 +264,6 @@ const App: React.FC = () => {
           message="确定要删除此会话吗？此操作无法撤销。"
           isDestructive={true}
           confirmText="删除"
-        />
-
-        {/* Recipe KB Manager (Full Screen Overlay) */}
-        <RecipeKBManager
-          isOpen={isRecipeKBOpen}
-          onClose={() => setIsRecipeKBOpen(false)}
         />
 
       </div>

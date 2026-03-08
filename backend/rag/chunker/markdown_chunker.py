@@ -46,7 +46,6 @@ class MarkdownChunker:
         self,
         max_chunk_words: Optional[int] = None,
         min_chunk_words: Optional[int] = None,
-        split_level: str = "h2",
     ):
         """
         初始化分块器
@@ -54,12 +53,10 @@ class MarkdownChunker:
         Args:
             max_chunk_words: 最大分块词数，默认从配置读取
             min_chunk_words: 最小分块词数，默认从配置读取
-            split_level: 分块级别，默认 "h2"
         """
         config = get_config()
         self.max_chunk_words = max_chunk_words or config.recipe_kb.chunking.max_chunk_words
         self.min_chunk_words = min_chunk_words or config.recipe_kb.chunking.min_chunk_words
-        self.split_level = split_level
 
     def chunk_file(self, file_path: str) -> List[Chunk]:
         """
