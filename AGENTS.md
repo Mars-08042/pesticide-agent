@@ -1,5 +1,8 @@
 # Repository Guidelines
 
+## Global Constraints
+如果需要搜索项目代码，请优先使用 `fast-context` MCP 服务；只有在其结果不足、需要补充精确文本匹配，或做快速二次确认时，再使用 `rg`、`Select-String` 等本地搜索命令。
+
 ## Project Structure & Current State
 仓库采用前后端分离结构。`backend/` 是当前真实主链路，包含 `agent/`（LangGraph 工作流与子图）、`api/`（FastAPI 路由、SSE、执行与持久化）、`infra/`（配置、数据库、日志、任务管理）、`rag/`（文档分块、向量检索与重排序）、`tools/`（搜索、抓取、配方检索工具）和 `scripts/`（数据导入与初始化 SQL）。`frontend/` 为 React 19 + Vite + TypeScript 聊天界面。`dify-rag-reference/` 仅作参考，不参与当前主运行链路。
 
@@ -17,6 +20,9 @@
 
 ## Coding Style & Naming Conventions
 Python 使用 4 空格缩进，模块/函数采用 `snake_case`，建议为对外接口补充类型标注。TypeScript/React 使用函数组件，组件文件采用 `PascalCase`，Hook 使用 `useXxx` 命名并放在 `frontend/src/hooks`。前端优先使用 `@/` 路径别名；不要恢复已经删除的 `recipe-kb` / `knowledge` 旧接口封装，除非后端对应路由已先恢复。
+
+## Code Search Priority
+如果需要搜索项目代码，请优先使用 `fast-context` MCP 服务；只有在其结果不足、需要补充精确文本匹配，或做快速二次确认时，再使用 `rg`、`Select-String` 等本地搜索命令。
 
 ## Configuration Discipline
 后端环境变量模板位于 `backend/.env.example`，真实本地配置位于 `backend/.env`。两者必须保持**键名与顺序一致**，新增、删除或改名配置项时要同步两边。当前检索相关关键配置包括：

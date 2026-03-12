@@ -46,8 +46,11 @@ class AgentState(TypedDict):
     # 会话 ID（用于子图实时推送步骤事件）
     session_id: Optional[str]
 
-    # 路由模式：auto=自动判断，generation=配方生成，optimization=配方优化
-    route_mode: Literal["auto", "generation", "optimization"]
+    # 执行模式：generation=配方生成，optimization=配方优化
+    route_mode: Literal["generation", "optimization"]
+
+    # 当本地知识不足时，是否允许联网检索
+    enable_web_search: bool
 
     # 原始配方文本（优化模式必填）
     original_recipe: Optional[str]

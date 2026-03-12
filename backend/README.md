@@ -74,6 +74,8 @@ backend/
 - `agent.graph.PesticideAgent` 负责封装 LangGraph 图
 - `api.dependencies` 负责资源初始化与生命周期，不再使用旧的 `infra/container.py`
 - `agent/workflow` 提供状态、节点、日志与图构建
+- 聊天请求当前由前端显式选择 `generation` / `optimization`；不再保留自动路由分支
+- 当 `enable_web_search=true` 且本地检索无法确认时，子图会调用 `tools/web_search.py` 与 `tools/content_scraper.py` 补充真实网页资料；若仍不足，则直接返回失败提示而不是猜测
 
 ### RAG / 工具链
 

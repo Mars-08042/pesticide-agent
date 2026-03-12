@@ -10,7 +10,7 @@
 
 import asyncio
 import logging
-from typing import Optional, List, Literal
+from typing import Optional, List, Literal, Dict, Any
 from datetime import datetime
 
 from fastapi import APIRouter, Depends, HTTPException, Query
@@ -52,9 +52,13 @@ class ChatRequest(BaseModel):
         default=None,
         description="知识库文档 ID 列表，用于限定检索范围。为空则使用全部活动文档"
     )
-    route_mode: Literal["auto", "generation", "optimization"] = Field(
-        default="auto",
-        description="路由模式：auto=自动判断，generation=配方生成，optimization=配方优化"
+    route_mode: Literal["generation", "optimization"] = Field(
+        default="generation",
+        description="执行模式：generation=配方生成，optimization=配方优化"
+    )
+    enable_web_search: bool = Field(
+        default=False,
+        description="当本地知识不足以确认答案时，是否允许联网搜索真实资料"
     )
     original_recipe: Optional[str] = Field(
         default=None,
@@ -142,6 +146,7 @@ async def generate_sse_events(
     use_checkpointer: bool = True,
     skip_user_message: bool = False,
     route_mode: str = "generation",
+    enable_web_search: bool = False,
     original_recipe: Optional[str] = None,
     optimization_targets: Optional[List[str]] = None
 ):
@@ -174,7 +179,17 @@ async def generate_sse_events(
     try:
         # 保存用户消息
         if not skip_user_message:
-            save_user_message(db, session_id, query)
+            save_user_message(
+                db,
+                session_id,
+                query,
+                metadata={
+                    "route_mode": route_mode,
+                    "enable_web_search": enable_web_search,
+                    "original_recipe": original_recipe,
+                    "optimization_targets": optimization_targets or [],
+                }
+            )
 
         # 构建初始状态
         initial_state: AgentState = {
@@ -185,6 +200,7 @@ async def generate_sse_events(
             "kb_ids": kb_ids,
             "session_id": session_id,
             "route_mode": route_mode,
+            "enable_web_search": enable_web_search,
             "original_recipe": original_recipe,
             "optimization_targets": optimization_targets or [],
         }
@@ -293,6 +309,7 @@ async def chat_stream(
                 db=db,
                 kb_ids=request.kb_ids,
                 route_mode=request.route_mode,
+                enable_web_search=request.enable_web_search,
                 original_recipe=request.original_recipe,
                 optimization_targets=request.optimization_targets
             ):
@@ -400,7 +417,7 @@ async def regenerate_response(
         raise HTTPException(status_code=503, detail="系统繁忙，请稍后重试")
 
     try:
-        user_query, target_message_id = await _find_regenerate_target(
+        user_query, target_message_id, user_metadata = await _find_regenerate_target(
             db, request.session_id, request.message_id
         )
 
@@ -417,7 +434,11 @@ async def regenerate_response(
                     agent=agent,
                     db=db,
                     use_checkpointer=True,
-                    skip_user_message=True
+                    skip_user_message=True,
+                    route_mode=user_metadata.get("route_mode", "generation"),
+                    enable_web_search=bool(user_metadata.get("enable_web_search", False)),
+                    original_recipe=user_metadata.get("original_recipe"),
+                    optimization_targets=user_metadata.get("optimization_targets") or [],
                 ):
                     yield event
             finally:
@@ -445,7 +466,7 @@ async def _find_regenerate_target(
     db: DatabaseManager,
     session_id: str,
     message_id: Optional[int]
-) -> tuple[str, int]:
+) -> tuple[str, int, Dict[str, Any]]:
     """查找重新生成的目标消息和对应的用户问题"""
     batch_size = 50
     before_id = None
@@ -510,7 +531,13 @@ async def _find_regenerate_target(
     if not user_query:
         raise HTTPException(status_code=400, detail="未找到对应的用户问题")
 
-    return user_query, message_id
+    user_metadata = {}
+    for idx in range(target_idx - 1, -1, -1):
+        if all_messages[idx]["role"] == "user":
+            user_metadata = all_messages[idx].get("metadata", {}) or {}
+            break
+
+    return user_query, message_id, user_metadata
 
 
 # ============ 任务管理接口 ============

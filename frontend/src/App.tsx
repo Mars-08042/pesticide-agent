@@ -5,7 +5,7 @@ import { ChatMessage } from './components/ChatMessage';
 import { ConfirmModal } from './components/ConfirmModal';
 import { MaterialsManagerModal } from './components/MaterialsManagerModal';
 import { PanelLeftClose, PanelLeftOpen, PanelRightClose, PanelRightOpen, Square, Send, Globe, ChevronDown } from 'lucide-react';
-import { KnowledgeEntityType, ROUTE_MODE_OPTIONS, RouteMode } from './types';
+import { KnowledgeEntityType, OPTIMIZATION_TARGET_OPTIONS, ROUTE_MODE_OPTIONS, RouteMode } from './types';
 
 // Custom Hooks
 import { useSessions } from './hooks/useSessions';
@@ -53,6 +53,10 @@ const App: React.FC = () => {
     setEnableWebSearch,
     routeMode,
     setRouteMode,
+    originalRecipe,
+    setOriginalRecipe,
+    optimizationTargets,
+    setOptimizationTargets,
     messagesEndRef,
     chatContainerRef,
     handleScroll,
@@ -166,7 +170,7 @@ const App: React.FC = () => {
 
           {/* Chat Input Area */}
           <div className="absolute bottom-6 left-0 right-0 px-6 sm:px-8">
-            {/* 控制选项栏：联网搜索 + 路由模式 */}
+            {/* 控制选项栏：联网搜索 + 执行模式 */}
             <div className="flex items-center gap-2 mb-2">
               {/* 联网搜索开关 */}
               <button
@@ -182,13 +186,13 @@ const App: React.FC = () => {
                 <span>联网搜索</span>
               </button>
 
-              {/* 路由模式选择 */}
+              {/* 执行模式选择 */}
               <div className="relative group">
                 <select
                   value={routeMode}
                   onChange={(e) => setRouteMode(e.target.value as RouteMode)}
                   className="appearance-none pl-3 pr-8 py-1.5 rounded-xl text-sm font-medium transition-all duration-200 bg-white/60 backdrop-blur-sm text-slate-600 border border-green-100/50 hover:bg-white/80 hover:border-green-200 hover:shadow-sm cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-200/50 focus:border-green-300"
-                  title="选择路由模式"
+                  title="选择执行模式"
                 >
                   {ROUTE_MODE_OPTIONS.map((option) => (
                     <option key={option.value} value={option.value}>
@@ -199,6 +203,50 @@ const App: React.FC = () => {
                 <ChevronDown className="absolute right-2.5 top-1/2 -translate-y-1/2 w-4 h-4 text-green-400 pointer-events-none transition-transform duration-200 group-hover:text-green-500" />
               </div>
             </div>
+
+            {routeMode === 'optimization' && (
+              <div className="mb-3 rounded-2xl border border-amber-200/70 bg-gradient-to-br from-amber-50/95 to-orange-50/90 backdrop-blur-sm shadow-soft-sm p-4 space-y-3">
+                <div>
+                  <div className="text-sm font-semibold text-amber-800 mb-1">原始配方</div>
+                  <textarea
+                    value={originalRecipe}
+                    onChange={(e) => setOriginalRecipe(e.target.value)}
+                    placeholder="输入需要优化的原始配方组成、比例、现有问题或实验现象"
+                    className="w-full min-h-[92px] rounded-xl border border-amber-200/80 bg-white/80 px-3 py-2.5 text-sm text-slate-700 placeholder:text-slate-400 resize-y focus:outline-none focus:ring-2 focus:ring-amber-200/70 focus:border-amber-300"
+                  />
+                </div>
+                <div>
+                  <div className="text-sm font-semibold text-amber-800 mb-2">优化目标</div>
+                  <div className="flex flex-wrap gap-2">
+                    {OPTIMIZATION_TARGET_OPTIONS.map((option) => {
+                      const selected = optimizationTargets.includes(option.value);
+                      return (
+                        <button
+                          key={option.value}
+                          type="button"
+                          onClick={() =>
+                            setOptimizationTargets(
+                              selected
+                                ? optimizationTargets.filter((item) => item !== option.value)
+                                : [...optimizationTargets, option.value]
+                            )
+                          }
+                          className={`px-3 py-1.5 rounded-xl text-sm font-medium border transition-all duration-200 ${
+                            selected
+                              ? 'bg-amber-500 text-white border-amber-500 shadow-sm'
+                              : 'bg-white/70 text-amber-700 border-amber-200 hover:bg-white hover:border-amber-300'
+                          }`}
+                          title={option.description}
+                        >
+                          {option.label}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            )}
+
             <div className="group relative bg-white/90 backdrop-blur-md border border-green-200/50 rounded-2xl shadow-soft-md p-2 flex items-end gap-3 transition-all duration-300 focus-within:shadow-soft-lg focus-within:border-green-300 focus-within:ring-4 focus-within:ring-green-100/50">
               {/* 聚焦时的流光边框效果 */}
               <div className="

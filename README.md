@@ -10,7 +10,7 @@
 
 - **后端真实路由**：`/api/session`、`/api/chat`、`/api/events`、`/api/materials`、`/health`
 - **已移除接口**：`/api/knowledge`、`/api/recipe-kb`、`/api/upload`
-- **前端现状**：当前前端聚焦聊天、会话、右侧辅助面板，以及原药 / 助剂数据管理弹层；知识库文档管理/上传页面仍未恢复
+- **前端现状**：当前前端聚焦聊天、会话、右侧辅助面板，以及原药 / 助剂数据管理弹层；聊天区由用户显式选择“配方生成 / 配方优化”，优化模式需填写原始配方与优化目标；知识库文档管理/上传页面仍未恢复
 - **保留模块**：`backend/tools`、`backend/rag/retrieval/hybrid_retriever.py`、`backend/tools/recipe_kb_retriever.py` 仍然保留
 
 ## 技术栈
@@ -106,6 +106,7 @@ npm run dev
 说明：
 
 - 当前前端支持原药 / 助剂数据管理，但仍不暴露知识库文档管理、配方知识库管理和上传页面
+- `/api/chat/stream` 当前由前端显式传入 `route_mode=generation|optimization`；启用 `enable_web_search` 时，仅在本地知识不足时才联网补充真实资料，若仍不足则前端弹出提示并中止生成
 - 后端 RAG / 工具链仍保留，用于数据导入、检索封装和后续功能恢复
 
 ## 配置说明

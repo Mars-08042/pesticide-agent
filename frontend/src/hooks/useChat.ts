@@ -1,17 +1,19 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { Message, AgentStep, StepType, SSEEvent, KBItem, RouteMode, OptimizationTarget } from '../types';
 import { chatApi } from '../api/chat';
+import { useToast } from '../components/Toast';
 
 export const useChat = (
   currentSessionId: string | null,
   setIsLoadingHistory: (loading: boolean) => void,
   handleCreateSession: (title: string) => Promise<string>
 ) => {
+  const { warning, error: showError } = useToast();
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputValue, setInputValue] = useState('');
   const [generatingSessions, setGeneratingSessions] = useState<Set<string>>(new Set());
   const [isUserScrolling, setIsUserScrolling] = useState(false);
-  const [routeMode, setRouteMode] = useState<RouteMode>('auto');
+  const [routeMode, setRouteMode] = useState<RouteMode>('generation');
   const [enableWebSearch, setEnableWebSearch] = useState(false);
 
   // 优化模式专用状态
@@ -21,6 +23,7 @@ export const useChat = (
   const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const chatContainerRef = useRef<HTMLDivElement>(null);
+  const shownToastKeysRef = useRef<Set<string>>(new Set());
 
   // 会话消息缓存：存储每个会话的实时消息状态（包括正在生成的消息）
   const sessionMessagesCacheRef = useRef<Map<string, Message[]>>(new Map());
@@ -136,7 +139,32 @@ export const useChat = (
     }
   };
 
+  const validateModeConfig = useCallback(() => {
+    if (routeMode !== 'optimization') return true;
+    if (!originalRecipe.trim()) {
+      showError('优化模式需要先填写原始配方');
+      return false;
+    }
+    if (optimizationTargets.length === 0) {
+      showError('优化模式需要至少选择一个优化目标');
+      return false;
+    }
+    return true;
+  }, [routeMode, originalRecipe, optimizationTargets, showError]);
+
   const handleStreamEvent = useCallback((event: SSEEvent, assistantMsgId: string) => {
+    const toastMessage = event.metadata?.toast_message;
+    const toastType = event.metadata?.toast_type;
+    const toastKey = toastMessage ? `${event.type}:${event.created_at}:${toastMessage}` : '';
+    if (toastMessage && !shownToastKeysRef.current.has(toastKey)) {
+      shownToastKeysRef.current.add(toastKey);
+      if (toastType === 'error') {
+        showError(toastMessage);
+      } else {
+        warning(toastMessage);
+      }
+    }
+
     setMessages(prev => {
       const newMessages = [...prev];
       const lastMsgIndex = newMessages.findIndex(m => m.id === assistantMsgId);
@@ -196,9 +224,10 @@ export const useChat = (
       newMessages[lastMsgIndex] = lastMsg;
       return newMessages;
     });
-  }, []);
+  }, [showError, warning]);
 
   const handleChatRequest = useCallback(async (sessionId: string, query: string, selectedKBs: KBItem[]) => {
+     if (!validateModeConfig()) return;
      startGenerating(sessionId);
 
      const assistantMsgId = (Date.now() + 1).toString();
@@ -226,6 +255,7 @@ export const useChat = (
          query: query,
          kb_ids: selectedKbIds.length > 0 ? selectedKbIds : undefined,
          route_mode: routeMode,
+         enable_web_search: enableWebSearch,
          original_recipe: routeMode === 'optimization' ? originalRecipe : undefined,
          optimization_targets: routeMode === 'optimization' ? optimizationTargets : undefined
        }, (event) => {
@@ -250,10 +280,11 @@ export const useChat = (
      } finally {
        stopGenerating(sessionId);
      }
-  }, [routeMode, originalRecipe, optimizationTargets, startGenerating, stopGenerating, handleStreamEvent]);
+  }, [routeMode, enableWebSearch, originalRecipe, optimizationTargets, startGenerating, stopGenerating, handleStreamEvent, validateModeConfig]);
 
   const handleSendMessage = useCallback(async (selectedKBs: KBItem[]) => {
     if (!inputValue.trim()) return;
+    if (!validateModeConfig()) return;
 
     let sessionId = currentSessionId;
     const query = inputValue; // 保存输入内容，因为后面会清空
@@ -301,7 +332,7 @@ export const useChat = (
     // 让 useEffect 来处理清除，以确保它能拦截到状态变更引起的作用
 
     handleChatRequest(sessionId, query, selectedKBs);
-  }, [inputValue, currentSessionId, handleCreateSession, handleChatRequest, startGenerating]);
+  }, [inputValue, currentSessionId, handleCreateSession, handleChatRequest, startGenerating, validateModeConfig]);
 
   const handleEditMessage = useCallback(async (messageId: string, newContent: string, selectedKBs: KBItem[]) => {
     if (isGenerating || !currentSessionId) return;
@@ -316,9 +347,6 @@ export const useChat = (
 
     const newMessages = messages.slice(0, msgIndex + 1);
     newMessages[msgIndex] = { ...newMessages[msgIndex], content: newContent };
-    setMessages(newMessages);
-    startGenerating(currentSessionId);
-
     const assistantMsgId = (Date.now() + 1).toString();
     const assistantMessage: Message & { message_type?: string; created_at?: string } = {
       id: assistantMsgId,
@@ -328,12 +356,19 @@ export const useChat = (
       steps: [],
       created_at: new Date().toISOString()
     };
-    setMessages(prev => [...prev, assistantMessage]);
 
     try {
       const selectedKbIds = selectedKBs.filter(kb => kb.selected).map(kb => kb.id);
       const numericId = nextAssistantMsg ? parseInt(nextAssistantMsg.id, 10) : NaN;
       const isValidDbId = !isNaN(numericId) && numericId < 1000000000;
+
+      if (!isValidDbId && !validateModeConfig()) {
+        return;
+      }
+
+      setMessages(newMessages);
+      startGenerating(currentSessionId);
+      setMessages(prev => [...prev, assistantMessage]);
 
       if (isValidDbId) {
         await chatApi.regenerate({
@@ -348,6 +383,7 @@ export const useChat = (
           query: newContent,
           kb_ids: selectedKbIds.length > 0 ? selectedKbIds : undefined,
           route_mode: routeMode,
+          enable_web_search: enableWebSearch,
           original_recipe: routeMode === 'optimization' ? originalRecipe : undefined,
           optimization_targets: routeMode === 'optimization' ? optimizationTargets : undefined
         }, (event) => {
@@ -373,7 +409,7 @@ export const useChat = (
     } finally {
       stopGenerating(currentSessionId);
     }
-  }, [isGenerating, currentSessionId, messages, startGenerating, stopGenerating, handleStreamEvent, routeMode, originalRecipe, optimizationTargets]);
+  }, [isGenerating, currentSessionId, messages, startGenerating, stopGenerating, handleStreamEvent, routeMode, enableWebSearch, originalRecipe, optimizationTargets, validateModeConfig]);
 
   const handleRegenerate = useCallback(async (messageId: string) => {
     if (isGenerating || !currentSessionId) return;

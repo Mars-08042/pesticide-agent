@@ -34,6 +34,9 @@ class RecipeGenState(TypedDict):
     # 模式: generation=新配方生成, optimization=配方优化
     mode: Literal["generation", "optimization"]
 
+    # 是否允许在本地知识不足时联网搜索真实资料
+    enable_web_search: bool
+
     # 原始配方（优化模式使用）
     original_recipe: Optional[str]
 
@@ -62,7 +65,8 @@ class RecipeGenState(TypedDict):
     #         "failed": [...]         # 失败实验（用于避坑）
     #     },
     #     "pesticide_info": [...],    # 原药信息
-    #     "adjuvants": [...]          # 可用助剂
+    #     "adjuvants": [...],         # 可用助剂
+    #     "web_sources": [...]        # 联网检索到的真实资料
     # }
 
     # ===== 配方草稿 =====
@@ -91,6 +95,9 @@ class RecipeGenState(TypedDict):
         "approved",    # 审查通过
         "failed"       # 生成失败
     ]
+
+    # 失败时直接反馈给用户的消息
+    failure_message: str
 
     # ===== 执行日志 =====
     logs: List[Dict[str, Any]]

@@ -82,7 +82,14 @@ class RecipeGenSubgraph:
         # 添加边
         graph.add_edge(START, "planner")
         graph.add_edge("planner", "retriever")
-        graph.add_edge("retriever", "drafter")
+        graph.add_conditional_edges(
+            "retriever",
+            self.nodes.after_retrieval,
+            {
+                "drafter": "drafter",
+                "failure": "failure",
+            }
+        )
         graph.add_edge("drafter", "critic")
 
         # 条件边: critic -> refiner/formatter/failure
@@ -116,6 +123,7 @@ class RecipeGenSubgraph:
         self,
         user_request: str,
         mode: Literal["generation", "optimization"] = "generation",
+        enable_web_search: bool = False,
         original_recipe: Optional[str] = None,
         optimization_targets: Optional[List[str]] = None
     ) -> RecipeGenState:
@@ -137,6 +145,7 @@ class RecipeGenSubgraph:
             "messages": [HumanMessage(content=user_request)],
             "user_request": user_request,
             "mode": mode,
+            "enable_web_search": enable_web_search,
             "original_recipe": original_recipe or "",
             "optimization_targets": optimization_targets or [],
             "requirements": {},
@@ -145,6 +154,7 @@ class RecipeGenSubgraph:
             "feedback": {},
             "iteration_count": 0,
             "status": "planning",
+            "failure_message": "",
             "logs": [],
             "steps": [],
         }
@@ -155,6 +165,7 @@ class RecipeGenSubgraph:
         self,
         user_request: str,
         mode: Literal["generation", "optimization"] = "generation",
+        enable_web_search: bool = False,
         original_recipe: Optional[str] = None,
         optimization_targets: Optional[List[str]] = None
     ) -> RecipeGenState:
@@ -176,6 +187,7 @@ class RecipeGenSubgraph:
             "messages": [HumanMessage(content=user_request)],
             "user_request": user_request,
             "mode": mode,
+            "enable_web_search": enable_web_search,
             "original_recipe": original_recipe or "",
             "optimization_targets": optimization_targets or [],
             "requirements": {},
@@ -184,6 +196,7 @@ class RecipeGenSubgraph:
             "feedback": {},
             "iteration_count": 0,
             "status": "planning",
+            "failure_message": "",
             "logs": [],
             "steps": [],
         }

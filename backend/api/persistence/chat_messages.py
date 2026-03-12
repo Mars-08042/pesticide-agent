@@ -7,7 +7,7 @@
 """
 
 import logging
-from typing import Optional, List, TYPE_CHECKING
+from typing import Optional, List, Dict, Any, TYPE_CHECKING
 
 if TYPE_CHECKING:
     from infra.database import DatabaseManager
@@ -19,6 +19,7 @@ def save_user_message(
     db: "DatabaseManager",
     session_id: str,
     content: str,
+    metadata: Optional[Dict[str, Any]] = None,
 ) -> Optional[int]:
     """
     保存用户消息
@@ -37,6 +38,7 @@ def save_user_message(
             role="user",
             content=content,
             message_type="text",
+            metadata=metadata,
         )
         logger.debug(f"[Chat] 保存用户消息成功: session={session_id}, message_id={message_id}")
         return message_id

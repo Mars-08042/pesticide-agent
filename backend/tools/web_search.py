@@ -6,7 +6,7 @@
 import os
 import json
 import http.client
-from typing import List, Union, Optional
+from typing import List, Union, Dict, Any
 
 
 class WebSearchTool:
@@ -26,40 +26,31 @@ class WebSearchTool:
         """检测文本是否包含中文"""
         return any('\u4E00' <= char <= '\u9FFF' for char in text)
 
-    def search(self, query: str, max_results: int = 10) -> str:
-        """
-        执行搜索
-
-        Args:
-            query: 搜索关键词
-            max_results: 最大结果数
-
-        Returns:
-            格式化的搜索结果
-        """
-        if not self.api_key:
-            return "[WebSearch] 错误: 搜索服务未配置"
-
-        conn = http.client.HTTPSConnection("google.serper.dev")
-
-        # 根据查询语言设置地区
+    def _build_payload(self, query: str, max_results: int) -> str:
+        """构建 Serper 请求体"""
         if self._contains_chinese(query):
-            payload = json.dumps({
+            return json.dumps({
                 "q": query,
                 "location": "China",
                 "gl": "cn",
                 "hl": "zh-cn",
                 "num": max_results,
             })
-        else:
-            payload = json.dumps({
-                "q": query,
-                "location": "United States",
-                "gl": "us",
-                "hl": "en",
-                "num": max_results,
-            })
+        return json.dumps({
+            "q": query,
+            "location": "United States",
+            "gl": "us",
+            "hl": "en",
+            "num": max_results,
+        })
 
+    def search_raw(self, query: str, max_results: int = 10) -> List[Dict[str, Any]]:
+        """执行搜索并返回结构化结果"""
+        if not self.api_key:
+            return []
+
+        conn = http.client.HTTPSConnection("google.serper.dev")
+        payload = self._build_payload(query, max_results)
         headers = {
             'X-API-KEY': self.api_key,
             'Content-Type': 'application/json'
@@ -76,37 +67,53 @@ class WebSearchTool:
             except Exception as e:
                 print(f"[WebSearch] 搜索失败 (尝试 {attempt + 1}): {e}")
                 if attempt == 2:
-                    return f"[WebSearch] 搜索超时，请稍后重试。"
+                    return []
                 continue
 
-        # 解析结果
-        try:
-            if "organic" not in results:
-                return f"未找到与 '{query}' 相关的结果。请尝试其他关键词。"
+        organic_results = results.get("organic", [])
+        structured_results: List[Dict[str, Any]] = []
+        for idx, page in enumerate(organic_results, 1):
+            structured_results.append({
+                "rank": idx,
+                "title": page.get("title", "无标题"),
+                "link": page.get("link", ""),
+                "snippet": page.get("snippet", ""),
+                "date": page.get("date", ""),
+                "source": page.get("source", ""),
+            })
+        return structured_results
 
-            web_snippets = []
-            for idx, page in enumerate(results["organic"], 1):
-                title = page.get("title", "无标题")
-                link = page.get("link", "")
-                snippet = page.get("snippet", "")
-                date = page.get("date", "")
-                source = page.get("source", "")
+    def search(self, query: str, max_results: int = 10) -> str:
+        """
+        执行搜索
 
-                entry = f"{idx}. [{title}]({link})"
-                if date:
-                    entry += f"\n   发布日期: {date}"
-                if source:
-                    entry += f"\n   来源: {source}"
-                if snippet:
-                    entry += f"\n   摘要: {snippet}"
+        Args:
+            query: 搜索关键词
+            max_results: 最大结果数
 
-                web_snippets.append(entry)
+        Returns:
+            格式化的搜索结果
+        """
+        if not self.api_key:
+            return "[WebSearch] 错误: 搜索服务未配置"
 
-            header = f"搜索 '{query}' 找到 {len(web_snippets)} 个结果:\n\n"
-            return header + "\n\n".join(web_snippets)
+        results = self.search_raw(query, max_results=max_results)
+        if not results:
+            return f"未找到与 '{query}' 相关的结果。请尝试其他关键词。"
 
-        except Exception as e:
-            return f"[WebSearch] 解析结果失败: {e}"
+        web_snippets = []
+        for item in results:
+            entry = f"{item['rank']}. [{item['title']}]({item['link']})"
+            if item.get("date"):
+                entry += f"\n   发布日期: {item['date']}"
+            if item.get("source"):
+                entry += f"\n   来源: {item['source']}"
+            if item.get("snippet"):
+                entry += f"\n   摘要: {item['snippet']}"
+            web_snippets.append(entry)
+
+        header = f"搜索 '{query}' 找到 {len(web_snippets)} 个结果:\n\n"
+        return header + "\n\n".join(web_snippets)
 
     def batch_search(self, queries: List[str]) -> str:
         """批量搜索"""

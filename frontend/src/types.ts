@@ -204,15 +204,14 @@ export interface StopResponse {
   message: string;
 }
 
-// 路由模式类型
-export type RouteMode = 'auto' | 'generation' | 'optimization';
+// 执行模式类型
+export type RouteMode = 'generation' | 'optimization';
 
 // 优化目标类型
 export type OptimizationTarget = 'cost' | 'performance' | 'stability' | 'substitution';
 
 // 路由模式选项配置
 export const ROUTE_MODE_OPTIONS: { value: RouteMode; label: string; description: string }[] = [
-  { value: 'auto', label: '自动', description: '由模型自动判断使用哪种模式' },
   { value: 'generation', label: '配方生成', description: '从零开始设计新配方' },
   { value: 'optimization', label: '配方优化', description: '基于现有配方进行优化' },
 ];
@@ -230,6 +229,7 @@ export interface ChatRequest {
   query: string;
   kb_ids?: string[];
   route_mode?: RouteMode;
+  enable_web_search?: boolean;
   original_recipe?: string;
   optimization_targets?: OptimizationTarget[];
 }

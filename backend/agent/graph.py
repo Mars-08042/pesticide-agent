@@ -46,8 +46,8 @@ class PesticideAgent:
         # 创建节点实例（重构后仅需 llm_client）
         self._nodes = AgentNodes(llm_client=self.llm_client)
 
-        # 创建图构建器（传递 llm_client 用于 auto 模式路由）
-        self._builder = GraphBuilder(self._nodes, llm_client=self.llm_client)
+        # 创建图构建器（由前端显式选择模式）
+        self._builder = GraphBuilder(self._nodes)
 
     def get_compiled_graph(
         self,
@@ -107,7 +107,8 @@ if __name__ == "__main__":
         "steps": [],
         "kb_ids": None,
         "session_id": None,
-        "route_mode": "auto",  # 使用 auto 模式测试
+        "route_mode": "generation",
+        "enable_web_search": False,
         "original_recipe": None,
         "optimization_targets": [],
     }

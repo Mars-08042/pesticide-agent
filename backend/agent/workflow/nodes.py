@@ -112,6 +112,7 @@ class AgentNodes(NodeMixin):
         messages = state["messages"]
         user_request = messages[-1].content if messages else ""
         route_mode = state.get("route_mode", "generation")
+        enable_web_search = state.get("enable_web_search", False)
         original_recipe = state.get("original_recipe")
         optimization_targets = state.get("optimization_targets", [])
         steps = list(state.get("steps", []))
@@ -132,6 +133,7 @@ class AgentNodes(NodeMixin):
             result = subgraph.invoke(
                 user_request=user_request,
                 mode=route_mode,
+                enable_web_search=enable_web_search,
                 original_recipe=original_recipe,
                 optimization_targets=optimization_targets
             )
@@ -229,6 +231,7 @@ class AgentNodes(NodeMixin):
         messages = state["messages"]
         user_request = messages[-1].content if messages else ""
         route_mode = state.get("route_mode", "generation")
+        enable_web_search = state.get("enable_web_search", False)
         original_recipe = state.get("original_recipe")
         optimization_targets = state.get("optimization_targets", [])
         session_id = state.get("session_id")
@@ -258,6 +261,7 @@ class AgentNodes(NodeMixin):
                 "messages": [LCHumanMessage(content=user_request)],
                 "user_request": user_request,
                 "mode": route_mode,
+                "enable_web_search": enable_web_search,
                 "original_recipe": original_recipe or "",
                 "optimization_targets": optimization_targets or [],
                 "requirements": {},
@@ -267,6 +271,7 @@ class AgentNodes(NodeMixin):
                 "feedback": {},
                 "iteration_count": 0,
                 "status": "planning",
+                "failure_message": "",
                 "logs": [],
                 "steps": [],
             }
