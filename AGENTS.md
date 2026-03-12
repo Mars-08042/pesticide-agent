@@ -3,7 +3,7 @@
 ## Project Structure & Current State
 仓库采用前后端分离结构。`backend/` 是当前真实主链路，包含 `agent/`（LangGraph 工作流与子图）、`api/`（FastAPI 路由、SSE、执行与持久化）、`infra/`（配置、数据库、日志、任务管理）、`rag/`（文档分块、向量检索与重排序）、`tools/`（搜索、抓取、配方检索工具）和 `scripts/`（数据导入与初始化 SQL）。`frontend/` 为 React 19 + Vite + TypeScript 聊天界面。`dify-rag-reference/` 仅作参考，不参与当前主运行链路。
 
-当前后端实际只注册 `/api/session`、`/api/chat`、`/api/events` 与 `/health`；旧的 `/api/knowledge`、`/api/recipe-kb`、`/api/upload` 已移出主链路。前端也不再提供知识库管理 / 上传页面。`backend/tools`、`backend/rag/retrieval/hybrid_retriever.py` 和 `backend/tools/recipe_kb_retriever.py` 需要保留，不要因为前端未直连就误删。
+当前后端实际注册 `/api/session`、`/api/chat`、`/api/events`、`/api/materials` 与 `/health`；旧的 `/api/knowledge`、`/api/recipe-kb`、`/api/upload` 已移出主链路。前端仍未恢复知识库文档管理 / 上传页面，但右侧知识库框已提供原药 / 助剂数据管理入口。`backend/tools`、`backend/rag/retrieval/hybrid_retriever.py` 和 `backend/tools/recipe_kb_retriever.py` 需要保留，不要因为前端未直连就误删。
 
 ## Build, Test, and Development Commands
 - `cd backend && pip install -r requirements.txt`：安装后端依赖。

@@ -2,15 +2,15 @@
 
 基于 FastAPI + LangGraph 的农药配方生成与优化系统。当前主运行形态为：
 
-- 后端提供会话、对话流式响应、事件推送三组 API
-- 前端提供聊天与会话管理界面
+- 后端提供会话、对话流式响应、事件推送，以及原药 / 助剂管理 API
+- 前端提供聊天、会话管理，以及原药 / 助剂数据管理界面
 - 配方知识库的分块、检索、重排序与工具封装仍保留在后端，供 RAG、数据导入和后续能力扩展使用
 
 ## 当前状态
 
-- **后端真实路由**：`/api/session`、`/api/chat`、`/api/events`、`/health`
+- **后端真实路由**：`/api/session`、`/api/chat`、`/api/events`、`/api/materials`、`/health`
 - **已移除接口**：`/api/knowledge`、`/api/recipe-kb`、`/api/upload`
-- **前端现状**：当前前端聚焦聊天、会话与右侧辅助面板；知识库管理/上传页面已移除，不再作为主链路功能暴露
+- **前端现状**：当前前端聚焦聊天、会话、右侧辅助面板，以及原药 / 助剂数据管理弹层；知识库文档管理/上传页面仍未恢复
 - **保留模块**：`backend/tools`、`backend/rag/retrieval/hybrid_retriever.py`、`backend/tools/recipe_kb_retriever.py` 仍然保留
 
 ## 技术栈
@@ -100,11 +100,12 @@ npm run dev
 | `/api/chat` | 对话接口（SSE 流式响应） |
 | `/api/session` | 会话管理 |
 | `/api/events` | 事件推送 |
+| `/api/materials` | 原药 / 助剂管理 |
 | `/health` | 健康检查 |
 
 说明：
 
-- 当前前端不再暴露知识库管理、配方知识库管理和上传页面
+- 当前前端支持原药 / 助剂数据管理，但仍不暴露知识库文档管理、配方知识库管理和上传页面
 - 后端 RAG / 工具链仍保留，用于数据导入、检索封装和后续功能恢复
 
 ## 配置说明

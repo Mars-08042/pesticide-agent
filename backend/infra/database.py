@@ -893,11 +893,71 @@ class DatabaseManager:
         """按中文名获取原药信息"""
         with self.get_cursor(dict_cursor=True) as cursor:
             cursor.execute(
-                "SELECT * FROM pesticides WHERE name_cn = %s",
+                """
+                SELECT *
+                FROM pesticides
+                WHERE LOWER(BTRIM(name_cn)) = LOWER(BTRIM(%s))
+                LIMIT 1
+                """,
                 (name_cn,)
             )
             result = cursor.fetchone()
             return dict(result) if result else None
+
+    def update_pesticide(
+        self,
+        pesticide_id: int,
+        name_cn: str,
+        name_en: str,
+        aliases: str,
+        chemical_class: str,
+        cas_number: str,
+        molecular_info: str,
+        physicochemical: str,
+        bioactivity: str,
+        toxicology: str,
+        resistance_risk: str,
+        first_aid: str,
+        safety_notes: str
+    ) -> bool:
+        """更新原药信息"""
+        with self.get_cursor() as cursor:
+            cursor.execute(
+                """
+                UPDATE pesticides
+                SET name_cn = %s,
+                    name_en = %s,
+                    aliases = %s,
+                    chemical_class = %s,
+                    cas_number = %s,
+                    molecular_info = %s,
+                    physicochemical = %s,
+                    bioactivity = %s,
+                    toxicology = %s,
+                    resistance_risk = %s,
+                    first_aid = %s,
+                    safety_notes = %s,
+                    updated_at = CURRENT_TIMESTAMP
+                WHERE id = %s
+                RETURNING id
+                """,
+                (
+                    name_cn,
+                    name_en,
+                    aliases,
+                    chemical_class,
+                    cas_number,
+                    molecular_info,
+                    physicochemical,
+                    bioactivity,
+                    toxicology,
+                    resistance_risk,
+                    first_aid,
+                    safety_notes,
+                    pesticide_id,
+                )
+            )
+            return cursor.fetchone() is not None
 
     def search_pesticides(
         self,
@@ -962,7 +1022,7 @@ class DatabaseManager:
                 """
                 SELECT DISTINCT chemical_class
                 FROM pesticides
-                WHERE chemical_class IS NOT NULL
+                WHERE chemical_class IS NOT NULL AND BTRIM(chemical_class) != ''
                 ORDER BY chemical_class
                 """
             )
@@ -1025,6 +1085,64 @@ class DatabaseManager:
             )
             result = cursor.fetchone()
             return dict(result) if result else None
+
+    def get_adjuvant_by_product_name(self, product_name: str) -> Optional[Dict[str, Any]]:
+        """按商品名获取助剂信息"""
+        with self.get_cursor(dict_cursor=True) as cursor:
+            cursor.execute(
+                """
+                SELECT *
+                FROM adjuvants
+                WHERE LOWER(BTRIM(product_name)) = LOWER(BTRIM(%s))
+                LIMIT 1
+                """,
+                (product_name,)
+            )
+            result = cursor.fetchone()
+            return dict(result) if result else None
+
+    def update_adjuvant(
+        self,
+        adjuvant_id: int,
+        formulation_type: str,
+        product_name: str,
+        function: str,
+        adjuvant_type: str,
+        appearance: str,
+        ph_range: str,
+        remarks: str,
+        company: str
+    ) -> bool:
+        """更新助剂信息"""
+        with self.get_cursor() as cursor:
+            cursor.execute(
+                """
+                UPDATE adjuvants
+                SET formulation_type = %s,
+                    product_name = %s,
+                    function = %s,
+                    adjuvant_type = %s,
+                    appearance = %s,
+                    ph_range = %s,
+                    remarks = %s,
+                    company = %s,
+                    updated_at = CURRENT_TIMESTAMP
+                WHERE id = %s
+                RETURNING id
+                """,
+                (
+                    formulation_type,
+                    product_name,
+                    function,
+                    adjuvant_type,
+                    appearance,
+                    ph_range,
+                    remarks,
+                    company,
+                    adjuvant_id,
+                )
+            )
+            return cursor.fetchone() is not None
 
     def search_adjuvants(
         self,
@@ -1098,6 +1216,7 @@ class DatabaseManager:
                 """
                 SELECT DISTINCT formulation_type
                 FROM adjuvants
+                WHERE formulation_type IS NOT NULL AND BTRIM(formulation_type) != ''
                 ORDER BY formulation_type
                 """
             )
@@ -1110,7 +1229,7 @@ class DatabaseManager:
                 """
                 SELECT DISTINCT function
                 FROM adjuvants
-                WHERE function IS NOT NULL
+                WHERE function IS NOT NULL AND BTRIM(function) != ''
                 ORDER BY function
                 """
             )

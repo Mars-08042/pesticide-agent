@@ -45,7 +45,7 @@ from infra.logging_config import setup_logging, get_logger
 setup_logging()
 logger = get_logger("api")
 
-from api.routers import chat_router, session_router, events_router
+from api.routers import chat_router, session_router, events_router, materials_router
 from api.dependencies import init_resources, cleanup_resources
 
 
@@ -110,6 +110,7 @@ else:
 app.include_router(session_router, prefix="/api/session", tags=["会话管理"])
 app.include_router(chat_router, prefix="/api/chat", tags=["对话"])
 app.include_router(events_router, prefix="/api/events", tags=["事件推送"])
+app.include_router(materials_router, prefix="/api/materials", tags=["原药与助剂管理"])
 
 
 @app.get("/", tags=["健康检查"])

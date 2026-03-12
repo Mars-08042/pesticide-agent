@@ -1,14 +1,20 @@
 import React from 'react';
 import { KBItem } from '../types';
-import { FileText, X, Check, Loader2 } from 'lucide-react';
+import { Beaker, Check, FileText, FlaskConical, Loader2, X } from 'lucide-react';
 
 interface RightSidebarProps {
   isOpen: boolean;
   kbItems: KBItem[];
   onToggleKB: (id: string) => void;
+  onOpenManager: (type: 'pesticide' | 'adjuvant') => void;
 }
 
-export const RightSidebar: React.FC<RightSidebarProps> = ({ isOpen, kbItems, onToggleKB }) => {
+export const RightSidebar: React.FC<RightSidebarProps> = ({
+  isOpen,
+  kbItems,
+  onToggleKB,
+  onOpenManager,
+}) => {
   const activeKbItems = kbItems.filter(kb => kb.status === 'active');
   const indexingKbItems = kbItems.filter(kb => kb.status === 'indexing' || kb.status === 'processing');
 
@@ -22,9 +28,46 @@ export const RightSidebar: React.FC<RightSidebarProps> = ({ isOpen, kbItems, onT
     >
       <div className="w-80 h-full flex flex-col p-5">
 
+        <div className="mb-5 rounded-2xl border border-green-100/80 bg-white/70 p-3.5 shadow-soft-sm">
+          <div className="mb-3">
+            <h3 className="font-bold text-green-700">知识数据管理</h3>
+            <p className="mt-1 text-xs leading-5 text-slate-500">
+              进入原药或助剂管理界面，支持分页查询、增删改查和 JSON 自动填充。
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-2">
+            <button
+              onClick={() => onOpenManager('pesticide')}
+              className="flex items-center justify-between rounded-2xl border border-green-200/80 bg-gradient-to-r from-white to-green-50 px-3.5 py-3 text-left transition-all duration-200 hover:border-green-300 hover:shadow-soft-sm"
+            >
+              <div className="flex items-center gap-3">
+                <div className="rounded-xl bg-green-100 p-2 text-green-600">
+                  <FlaskConical className="w-4 h-4" />
+                </div>
+                <div>
+                  <div className="text-sm font-semibold text-slate-700">管理原药</div>
+                </div>
+              </div>
+            </button>
+
+            <button
+              onClick={() => onOpenManager('adjuvant')}
+              className="flex items-center justify-between rounded-2xl border border-green-200/80 bg-gradient-to-r from-white to-green-50 px-3.5 py-3 text-left transition-all duration-200 hover:border-green-300 hover:shadow-soft-sm"
+            >
+              <div className="flex items-center gap-3">
+                <div className="rounded-xl bg-emerald-100 p-2 text-emerald-600">
+                  <Beaker className="w-4 h-4" />
+                </div>
+                <div>
+                  <div className="text-sm font-semibold text-slate-700">管理助剂</div>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+
         {/* Selected KBs Section */}
         <div className="mb-6 pt-2">
-          <h3 className="font-bold text-green-700 mb-3">已选知识库:</h3>
           <div className="flex flex-wrap gap-2">
             {kbItems.filter(i => i.selected && i.status === 'active').map(kb => (
               <div key={kb.id} className="flex items-center gap-1 bg-gradient-to-r from-green-400 to-green-500 text-white px-3 py-1.5 rounded-full text-xs font-medium shadow-soft-sm">
@@ -37,9 +80,6 @@ export const RightSidebar: React.FC<RightSidebarProps> = ({ isOpen, kbItems, onT
                 </button>
               </div>
             ))}
-            {kbItems.filter(i => i.selected && i.status === 'active').length === 0 && (
-                <span className="text-sm text-green-400 italic">未选择知识库</span>
-            )}
           </div>
         </div>
 
@@ -103,12 +143,6 @@ export const RightSidebar: React.FC<RightSidebarProps> = ({ isOpen, kbItems, onT
                 </span>
               </div>
             ))}
-
-            {kbItems.length === 0 && (
-              <div className="text-sm text-green-400 text-center py-4">
-                暂无知识库
-              </div>
-            )}
           </div>
         </div>
 

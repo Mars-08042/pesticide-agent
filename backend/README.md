@@ -52,13 +52,14 @@ backend/
 
 ## API 路由
 
-当前 `backend/api/server.py` 实际注册的路由只有：
+当前 `backend/api/server.py` 实际注册的路由有：
 
 | 路由前缀 | 功能 |
 |---------|------|
 | `/api/session` | 会话管理 |
 | `/api/chat` | 对话与流式响应 |
 | `/api/events` | 事件推送 |
+| `/api/materials` | 原药 / 助剂管理 |
 | `/health` | 健康检查 |
 
 说明：

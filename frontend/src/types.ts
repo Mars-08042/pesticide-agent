@@ -73,6 +73,96 @@ export interface DeleteResponse {
   message: string;
 }
 
+export type KnowledgeEntityType = 'pesticide' | 'adjuvant';
+export const MATERIAL_PAGE_SIZE_OPTIONS = [10, 20, 50, 100] as const;
+
+export interface PesticidePayload {
+  name_cn: string;
+  name_en: string;
+  aliases: string;
+  chemical_class: string;
+  cas_number: string;
+  molecular_info: string;
+  physicochemical: string;
+  bioactivity: string;
+  toxicology: string;
+  resistance_risk: string;
+  first_aid: string;
+  safety_notes: string;
+}
+
+export interface PesticideSummary {
+  id: number;
+  name_cn: string;
+  name_en?: string | null;
+  aliases?: string | null;
+  chemical_class?: string | null;
+  cas_number?: string | null;
+  molecular_info?: string | null;
+  created_at: string;
+}
+
+export interface PesticideRecord extends PesticideSummary {
+  physicochemical?: string | null;
+  bioactivity?: string | null;
+  toxicology?: string | null;
+  resistance_risk?: string | null;
+  first_aid?: string | null;
+  safety_notes?: string | null;
+  updated_at: string;
+}
+
+export interface PesticideListResponse {
+  items: PesticideSummary[];
+  total: number;
+  page: number;
+  page_size: number;
+  total_pages: number;
+}
+
+export interface PesticideOptionsResponse {
+  chemical_classes: string[];
+}
+
+export interface AdjuvantPayload {
+  formulation_type: string;
+  product_name: string;
+  function: string;
+  adjuvant_type: string;
+  appearance: string;
+  ph_range: string;
+  remarks: string;
+  company: string;
+}
+
+export interface AdjuvantRecord {
+  id: number;
+  formulation_type: string;
+  product_name: string;
+  function?: string | null;
+  adjuvant_type?: string | null;
+  appearance?: string | null;
+  ph_range?: string | null;
+  remarks?: string | null;
+  company?: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface AdjuvantListResponse {
+  items: AdjuvantRecord[];
+  total: number;
+  page: number;
+  page_size: number;
+  total_pages: number;
+}
+
+export interface AdjuvantOptionsResponse {
+  formulation_types: string[];
+  functions: string[];
+  companies: string[];
+}
+
 // ============ 知识库文档相关类型 ============
 
 export interface DocumentInfo {

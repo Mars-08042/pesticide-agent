@@ -3,8 +3,9 @@ import { LeftSidebar } from './components/LeftSidebar';
 import { RightSidebar } from './components/RightSidebar';
 import { ChatMessage } from './components/ChatMessage';
 import { ConfirmModal } from './components/ConfirmModal';
+import { MaterialsManagerModal } from './components/MaterialsManagerModal';
 import { PanelLeftClose, PanelLeftOpen, PanelRightClose, PanelRightOpen, Square, Send, Globe, ChevronDown } from 'lucide-react';
-import { ROUTE_MODE_OPTIONS, RouteMode } from './types';
+import { KnowledgeEntityType, ROUTE_MODE_OPTIONS, RouteMode } from './types';
 
 // Custom Hooks
 import { useSessions } from './hooks/useSessions';
@@ -15,6 +16,7 @@ const App: React.FC = () => {
   // UI Layout State
   const [isLeftSidebarOpen, setIsLeftSidebarOpen] = useState(true);
   const [isRightSidebarOpen, setIsRightSidebarOpen] = useState(true);
+  const [managerType, setManagerType] = useState<KnowledgeEntityType | null>(null);
 
   // Custom Hooks - State & Logic
   const {
@@ -253,6 +255,7 @@ const App: React.FC = () => {
           isOpen={isRightSidebarOpen}
           kbItems={kbItems}
           onToggleKB={toggleKBSelection}
+          onOpenManager={setManagerType}
         />
 
         {/* Delete Session Confirm Modal */}
@@ -264,6 +267,12 @@ const App: React.FC = () => {
           message="确定要删除此会话吗？此操作无法撤销。"
           isDestructive={true}
           confirmText="删除"
+        />
+
+        <MaterialsManagerModal
+          entityType={managerType}
+          isOpen={managerType !== null}
+          onClose={() => setManagerType(null)}
         />
 
       </div>
