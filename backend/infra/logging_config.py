@@ -7,6 +7,8 @@
 
 import logging
 import sys
+from datetime import datetime
+from pathlib import Path
 from typing import Optional
 
 from .config import get_config, Environment
@@ -15,6 +17,65 @@ from .config import get_config, Environment
 # 日志格式
 LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 LOG_FORMAT_DETAILED = "%(asctime)s - %(name)s - %(levelname)s - [%(filename)s:%(lineno)d] - %(message)s"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+LOGS_DIR = PROJECT_ROOT / "logs"
+
+
+class DailyFileHandler(logging.Handler):
+    """按日期将日志写入项目根目录 logs/YYYYMMDD.log。"""
+
+    def __init__(self, logs_dir: Path, encoding: str = "utf-8"):
+        super().__init__()
+        self.logs_dir = logs_dir
+        self.encoding = encoding
+        self._current_date = ""
+        self._file_handler: Optional[logging.FileHandler] = None
+
+    def emit(self, record: logging.LogRecord) -> None:
+        try:
+            handler = self._ensure_file_handler()
+            handler.emit(record)
+        except Exception:
+            self.handleError(record)
+
+    def setFormatter(self, fmt: logging.Formatter) -> None:
+        super().setFormatter(fmt)
+        if self._file_handler is not None:
+            self._file_handler.setFormatter(fmt)
+
+    def setLevel(self, level: int) -> None:
+        super().setLevel(level)
+        if self._file_handler is not None:
+            self._file_handler.setLevel(level)
+
+    def close(self) -> None:
+        try:
+            if self._file_handler is not None:
+                self._file_handler.close()
+        finally:
+            self._file_handler = None
+            super().close()
+
+    def _ensure_file_handler(self) -> logging.FileHandler:
+        current_date = datetime.now().strftime("%Y%m%d")
+        if self._file_handler is not None and self._current_date == current_date:
+            return self._file_handler
+
+        self.logs_dir.mkdir(parents=True, exist_ok=True)
+        if self._file_handler is not None:
+            self._file_handler.close()
+
+        file_handler = logging.FileHandler(
+            self.logs_dir / f"{current_date}.log",
+            encoding=self.encoding,
+        )
+        file_handler.setLevel(self.level)
+        if self.formatter is not None:
+            file_handler.setFormatter(self.formatter)
+
+        self._file_handler = file_handler
+        self._current_date = current_date
+        return file_handler
 
 
 def setup_logging(
@@ -44,7 +105,10 @@ def setup_logging(
     logging.basicConfig(
         level=level,
         format=log_format,
-        handlers=[logging.StreamHandler(sys.stdout)],
+        handlers=[
+            logging.StreamHandler(sys.stdout),
+            DailyFileHandler(LOGS_DIR),
+        ],
         force=True  # 强制重新配置，覆盖第三方库的设置
     )
 
