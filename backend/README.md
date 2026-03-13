@@ -107,6 +107,10 @@ Copy-Item .env.example .env
 | 检索 | `RETRIEVAL_FINAL_TOP_K` | 最终返回数量（Rerank 成功或降级时统一生效） |
 | 分块 | `RECIPE_KB_MAX_CHUNK_WORDS` / `RECIPE_KB_MIN_CHUNK_WORDS` | 文档分块阈值 |
 | 工具 | `SERPER_KEY_ID` / `TAVILY_API_KEY` / `JINA_API_KEYS` | 搜索与抓取 |
+| 工具 | `WEB_SEARCH_PROVIDER` / `WEB_SCRAPER_PROVIDER` | 搜索/正文抓取 provider 切换 |
+| 工具 | `WEB_SEARCH_MAX_RESULTS` / `WEB_SEARCH_REQUIRE_FULLTEXT` | 搜索候选数量与正文强约束 |
+| 工具 | `TAVILY_SEARCH_RETRIES` / `TAVILY_SEARCH_DEPTH` / `TAVILY_EXTRACT_DEPTH` | Tavily 搜索重试次数、搜索深度与抽取深度 |
+| 工具 | `WEB_SEARCH_INCLUDE_DOMAINS` / `WEB_SEARCH_PRIORITY_DOMAINS` / `WEB_SEARCH_TRUSTED_DOMAINS` / `WEB_SEARCH_EXCLUDE_DOMAINS` | 搜索域名控制与优先级 |
 
 ## 真实导入约定
 

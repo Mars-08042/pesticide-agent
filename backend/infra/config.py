@@ -65,6 +65,20 @@ def _get_cors_origins() -> List[str]:
         return ["*"]
 
 
+def _get_bool_env(name: str, default: str = "false") -> bool:
+    """读取布尔环境变量"""
+    value = os.getenv(name, default).strip().lower()
+    return value in {"1", "true", "yes", "on"}
+
+
+def _get_csv_env(name: str) -> List[str]:
+    """读取逗号分隔的环境变量"""
+    raw_value = os.getenv(name, "")
+    if not raw_value.strip():
+        return []
+    return [item.strip() for item in raw_value.split(",") if item.strip()]
+
+
 @dataclass
 class DatabaseConfig:
     """数据库配置"""
@@ -168,6 +182,32 @@ class MetadataExtractorConfig:
 
 
 @dataclass
+class WebSearchConfig:
+    """联网搜索配置"""
+    provider: str = field(default_factory=lambda: os.getenv("WEB_SEARCH_PROVIDER", "serper").lower())
+    max_results: int = field(default_factory=lambda: int(os.getenv("WEB_SEARCH_MAX_RESULTS", "5")))
+    require_fulltext: bool = field(default_factory=lambda: _get_bool_env("WEB_SEARCH_REQUIRE_FULLTEXT", "false"))
+    include_domains: List[str] = field(default_factory=lambda: _get_csv_env("WEB_SEARCH_INCLUDE_DOMAINS"))
+    priority_domains: List[str] = field(default_factory=lambda: _get_csv_env("WEB_SEARCH_PRIORITY_DOMAINS"))
+    trusted_domains: List[str] = field(default_factory=lambda: _get_csv_env("WEB_SEARCH_TRUSTED_DOMAINS"))
+    exclude_domains: List[str] = field(default_factory=lambda: _get_csv_env("WEB_SEARCH_EXCLUDE_DOMAINS"))
+    tavily_api_key: str = field(default_factory=lambda: os.getenv("TAVILY_API_KEY", ""))
+    tavily_search_retries: int = field(default_factory=lambda: max(1, int(os.getenv("TAVILY_SEARCH_RETRIES", "3"))))
+    tavily_search_depth: str = field(default_factory=lambda: os.getenv("TAVILY_SEARCH_DEPTH", "advanced"))
+
+
+@dataclass
+class WebScraperConfig:
+    """网页正文抓取配置"""
+    provider: str = field(default_factory=lambda: os.getenv("WEB_SCRAPER_PROVIDER", "jina").lower())
+    tavily_api_key: str = field(default_factory=lambda: os.getenv("TAVILY_API_KEY", ""))
+    tavily_extract_depth: str = field(default_factory=lambda: os.getenv("TAVILY_EXTRACT_DEPTH", "advanced"))
+    jina_api_key: str = field(default_factory=lambda: os.getenv("JINA_API_KEYS", ""))
+    timeout: int = field(default_factory=lambda: int(os.getenv("VISIT_SERVER_TIMEOUT", "60")))
+    max_content_length: int = field(default_factory=lambda: int(os.getenv("WEBCONTENT_MAXLENGTH", "100000")))
+
+
+@dataclass
 class RecipeKBConfig:
     """配方知识库配置"""
     # 知识库根目录
@@ -219,6 +259,8 @@ class AppConfig:
     server: ServerConfig = field(default_factory=ServerConfig)
     database: DatabaseConfig = field(default_factory=DatabaseConfig)
     task_manager: TaskManagerConfig = field(default_factory=TaskManagerConfig)
+    web_search: WebSearchConfig = field(default_factory=WebSearchConfig)
+    web_scraper: WebScraperConfig = field(default_factory=WebScraperConfig)
     recipe_kb: RecipeKBConfig = field(default_factory=RecipeKBConfig)
 
     def is_development(self) -> bool:

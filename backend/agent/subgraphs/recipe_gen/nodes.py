@@ -107,6 +107,19 @@ class RecipeGenNodes:
         text = (text or "").strip()
         return text if len(text) <= max_length else text[:max_length] + "\n...[内容截断]"
 
+    def _summarize_sources_for_log(self, sources: List[Dict[str, Any]], limit: int = 3) -> str:
+        if not sources:
+            return "无"
+        preview: List[str] = []
+        for item in sources[:limit]:
+            preview.append(
+                f"{self._truncate(item.get('title', 'N/A').replace(chr(10), ' '), 60)} | "
+                f"{item.get('source', 'N/A')} | {item.get('link', 'N/A')}"
+            )
+        if len(sources) > limit:
+            preview.append(f"... 共 {len(sources)} 条")
+        return " ; ".join(preview)
+
     # ============ 文本格式化 ============
 
     def _format_recipes(self, recipes: List[Dict[str, Any]]) -> str:
@@ -352,31 +365,59 @@ class RecipeGenNodes:
 
     def _search_real_world_knowledge(self, queries: List[str]) -> List[Dict[str, Any]]:
         from tools import get_web_search_tool, get_content_scraper_tool
+        from infra.config import get_config
 
         web_search_tool = get_web_search_tool()
         content_scraper_tool = get_content_scraper_tool()
+        app_config = get_config()
+        search_config = app_config.web_search
+        scraper_config = app_config.web_scraper
         web_sources: List[Dict[str, Any]] = []
         seen_links = set()
 
-        for query in queries:
+        logger.info(
+            "开始联网检索: search_provider=%s, scraper_provider=%s, require_fulltext=%s, queries=%s",
+            search_config.provider,
+            scraper_config.provider,
+            search_config.require_fulltext,
+            queries,
+        )
+
+        for index, query in enumerate(queries, 1):
+            logger.info("执行联网搜索 query[%s/%s]: %s", index, len(queries), query)
             try:
                 search_results = web_search_tool.search_raw(query, max_results=5)
             except Exception as exc:
                 logger.warning("联网搜索失败: %s", exc)
                 continue
+            logger.info(
+                "联网搜索 query[%s/%s] 命中 %s 条候选: %s",
+                index,
+                len(queries),
+                len(search_results),
+                self._summarize_sources_for_log(search_results),
+            )
             for result in search_results:
                 link = result.get("link", "").strip()
                 if not link or link in seen_links:
                     continue
                 seen_links.add(link)
-                raw_content = ""
+                raw_content = (result.get("raw_content", "") or "").strip()
+                content_provider = f"search:{search_config.provider}:raw_content" if raw_content else ""
                 try:
-                    raw_content = content_scraper_tool.scrape(link)
+                    if not raw_content:
+                        logger.info("候选结果缺少 raw_content，开始正文抓取: provider=%s, link=%s", scraper_config.provider, link)
+                        raw_content = content_scraper_tool.scrape(link)
+                        content_provider = f"scraper:{scraper_config.provider}"
                 except Exception as exc:
                     logger.warning("抓取网页失败 %s: %s", link, exc)
                 if raw_content.startswith("[ContentScraper]"):
-                    raw_content = result.get("snippet", "")
+                    logger.info("正文抓取未成功: link=%s, require_fulltext=%s", link, search_config.require_fulltext)
+                    raw_content = "" if search_config.require_fulltext else result.get("snippet", "")
+                    if raw_content:
+                        content_provider = "search:snippet_fallback"
                 if not raw_content.strip():
+                    logger.info("跳过候选结果: 无可用正文/摘要, link=%s", link)
                     continue
                 web_sources.append({
                     "query": query,
@@ -386,9 +427,26 @@ class RecipeGenNodes:
                     "date": result.get("date", ""),
                     "snippet": result.get("snippet", ""),
                     "content": self._truncate(raw_content, 2600),
+                    "trusted": result.get("trusted", False),
+                    "search_provider": search_config.provider,
+                    "content_provider": content_provider or f"search:{search_config.provider}",
                 })
+                logger.info(
+                    "采用联网来源 #%s: title=%s, source=%s, trusted=%s, content_provider=%s, link=%s",
+                    len(web_sources),
+                    result.get("title", "无标题"),
+                    result.get("source", ""),
+                    result.get("trusted", False),
+                    content_provider or f"search:{search_config.provider}",
+                    link,
+                )
                 if len(web_sources) >= 3:
+                    logger.info("联网检索达到来源上限 3 条，提前结束")
                     return web_sources
+        if web_sources:
+            logger.info("联网检索完成，最终采用 %s 条来源: %s", len(web_sources), self._summarize_sources_for_log(web_sources))
+        else:
+            logger.info("联网检索完成，但未采纳任何可用来源")
         return web_sources
 
     def _build_failure_message(self, enable_web_search: bool, missing_info: List[str]) -> str:
@@ -460,6 +518,16 @@ class RecipeGenNodes:
         logs = list(state.get("logs", []))
         steps = list(state.get("steps", []))
 
+        logger.info(
+            "进入配方检索节点: mode=%s, enable_web_search=%s, ingredients=%s, formulation_type=%s, concentration=%s, optimization_targets=%s",
+            mode,
+            enable_web_search,
+            requirements.get("active_ingredients", []),
+            requirements.get("formulation_type"),
+            requirements.get("concentration"),
+            optimization_targets,
+        )
+
         steps.append(self._create_step(
             "retriever",
             self._build_local_retrieval_request(mode, requirements, optimization_targets),
@@ -502,6 +570,13 @@ class RecipeGenNodes:
         decision = self._evaluate_knowledge_sufficiency(user_request, mode, requirements, retrieved_data)
         needs_web_search = decision.get("decision") != "enough"
         missing_info = decision.get("missing_info") or []
+        logger.info(
+            "知识充分性判断完成: decision=%s, confidence=%s, enable_web_search=%s, missing_info=%s",
+            decision.get("decision"),
+            decision.get("confidence", 0),
+            enable_web_search,
+            missing_info,
+        )
         steps.append(self._create_step(
             "retriever",
             "本地知识充足，可直接进入配方生成。" if not needs_web_search else "本地知识不足，后续需要联网检索真实资料。",
@@ -513,9 +588,11 @@ class RecipeGenNodes:
             step_type="decision"
         ))
         if not needs_web_search:
+            logger.info("跳过联网搜索: 本地知识已足够，继续进入生成/优化")
             return {"retrieved_data": retrieved_data, "status": "drafting", "logs": logs, "steps": steps}
 
         if not enable_web_search:
+            logger.info("未执行联网搜索: 已判定需要联网，但 enable_web_search=false")
             failure_message = self._build_failure_message(False, missing_info)
             steps.append(self._create_step(
                 "failure",
@@ -526,6 +603,7 @@ class RecipeGenNodes:
             return {"retrieved_data": retrieved_data, "status": "failed", "failure_message": failure_message, "logs": logs, "steps": steps}
 
         queries = self._build_web_search_queries(user_request, mode, requirements, optimization_targets)
+        logger.info("准备执行联网搜索: queries=%s", queries)
         steps.append(self._create_step(
             "retriever",
             "准备联网搜索以下关键词:\n" + "\n".join(f"- {query}" for query in queries),
@@ -534,6 +612,7 @@ class RecipeGenNodes:
         ))
         web_sources = self._search_real_world_knowledge(queries)
         if not web_sources:
+            logger.info("联网搜索结束，但未获得可用来源")
             failure_message = self._build_failure_message(True, missing_info)
             steps.append(self._create_step(
                 "failure",
@@ -544,6 +623,7 @@ class RecipeGenNodes:
             return {"retrieved_data": retrieved_data, "status": "failed", "failure_message": failure_message, "logs": logs, "steps": steps}
 
         retrieved_data["web_sources"] = web_sources
+        logger.info("联网搜索成功补充 %s 条来源: %s", len(web_sources), self._summarize_sources_for_log(web_sources))
         preview_lines = []
         for index, source in enumerate(web_sources, 1):
             preview_lines.append(

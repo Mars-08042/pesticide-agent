@@ -123,6 +123,10 @@ npm run dev
 | `RETRIEVAL_FINAL_TOP_K` | 最终返回数量（Rerank 成功或降级时统一生效） |
 | `RECIPE_KB_MAX_CHUNK_WORDS` / `RECIPE_KB_MIN_CHUNK_WORDS` | Markdown 分块阈值 |
 | `SERPER_KEY_ID` / `TAVILY_API_KEY` / `JINA_API_KEYS` | 搜索与网页抓取能力 |
+| `WEB_SEARCH_PROVIDER` / `WEB_SCRAPER_PROVIDER` | 联网搜索与正文抓取提供者切换（`serper`/`tavily`/`hybrid`、`jina`/`tavily`/`hybrid`） |
+| `WEB_SEARCH_MAX_RESULTS` / `WEB_SEARCH_REQUIRE_FULLTEXT` | 搜索候选数量与是否强制要求正文 |
+| `TAVILY_SEARCH_RETRIES` / `TAVILY_SEARCH_DEPTH` / `TAVILY_EXTRACT_DEPTH` | Tavily 搜索重试次数、搜索深度与正文抽取深度 |
+| `WEB_SEARCH_INCLUDE_DOMAINS` / `WEB_SEARCH_PRIORITY_DOMAINS` / `WEB_SEARCH_TRUSTED_DOMAINS` / `WEB_SEARCH_EXCLUDE_DOMAINS` | 搜索域名范围、优先级、可信域名与排除域名 |
 
 前端当前仅有一个可选环境变量：
 

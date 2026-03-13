@@ -116,6 +116,7 @@ pesticide_agent/
 - `tools/recipe_kb_retriever.py`：对外统一的检索封装
 - `scripts/data_import/recipe_chunks.py`：切分、元数据提取、入库
 - `tools/web_search.py` / `tools/content_scraper.py`：联网搜索与网页抓取
+- 搜索工具当前支持通过环境变量切换 `serper` / `tavily` / `hybrid` provider，并可按域名优先级、可信域名和全文要求控制联网结果
 
 ## 配置纪律
 
@@ -126,6 +127,10 @@ pesticide_agent/
 - `VECTOR_SEARCH_TOP_N`：向量检索初筛召回数
 - `RETRIEVAL_FINAL_TOP_K`：最终返回数量（Rerank 成功或降级时统一使用）
 - `RECIPE_KB_MAX_CHUNK_WORDS` / `RECIPE_KB_MIN_CHUNK_WORDS`：Markdown 分块阈值
+- `WEB_SEARCH_PROVIDER` / `WEB_SCRAPER_PROVIDER`：搜索与正文抓取 provider
+- `WEB_SEARCH_MAX_RESULTS` / `WEB_SEARCH_REQUIRE_FULLTEXT`：搜索候选数量与全文要求
+- `TAVILY_SEARCH_RETRIES` / `TAVILY_SEARCH_DEPTH` / `TAVILY_EXTRACT_DEPTH`：Tavily 搜索重试次数、搜索与抽取深度
+- `WEB_SEARCH_INCLUDE_DOMAINS` / `WEB_SEARCH_PRIORITY_DOMAINS` / `WEB_SEARCH_TRUSTED_DOMAINS` / `WEB_SEARCH_EXCLUDE_DOMAINS`：域名控制与优先级
 
 ### 维护要求
 
